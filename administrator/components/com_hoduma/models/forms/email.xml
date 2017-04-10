@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_hoduma/models/rules">
+
+	<fieldset name="general">
+		<field name="type" type="text"
+			label="COM_HODUMA_FORM_EMAIL_FIELD_TYPE"
+			description="COM_HODUMA_FORM_EMAIL_FIELD_TYPE_DESC"
+			size="60"
+			required="true"
+		/>
+		<field name="subject" type="text"
+			label="COM_HODUMA_FORM_EMAIL_FIELD_SUBJECT"
+			description="COM_HODUMA_FORM_EMAIL_FIELD_SUBJECT_DESC"
+			size="60"
+			required="true"
+		/>
+		<field name="body" type="textarea"
+			class="inputbox"
+			label="COM_HODUMA_FORM_EMAIL_FIELD_BODY"
+			description="COM_HODUMA_FORM_EMAIL_FIELD_BODY_DESC"
+			rows="16"
+			cols="50"
+			required="true"
+		/>
+		<field name="id" type="hidden" />
+	</fieldset>
+	
+	<fieldset name="editoptions">
+		<field name="published" type="list"
+			class="inputbox"
+			default="1"
+			size="1"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+		>
+			<option value="1">JPUBLISHED</option>
+			<option	value="0">JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+	
+</form>

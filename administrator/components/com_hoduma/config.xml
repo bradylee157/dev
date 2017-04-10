@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config addfieldpath="/administrator/components/com_hoduma/models/fields">
+	<fieldset
+		name="options"
+		label="COM_HODUMA_CONFIG_FIELDSET_OPTIONS_LABEL"
+		description="COM_HODUMA_CONFIG_FIELDSET_OPTIONS_DESC"
+	>
+		<field
+			name="use_bbcode"
+			type="radio"
+			default="1"
+			label="COM_HODUMA_CONFIG_FIELD_USEBBCODE_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_USEBBCODE_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="statuschart"
+			type="radio"
+			default="1"
+			label="COM_HODUMA_CONFIG_FIELD_STATUSCHART_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_STATUSCHART_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="colorhighlight"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_COLORHIGHLIGHT_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_COLORHIGHLIGHT_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+
+	<fieldset
+		name="requiredfields"
+		label="COM_HODUMA_CONFIG_FIELDSET_REQUIREDFIELDS_LABEL"
+		description="COM_HODUMA_CONFIG_FIELDSET_REQUIREDFIELDS_DESC"
+	>
+		<field
+			name="require_category"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_REQUIRECATEGORY_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_REQUIRECATEGORY_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="require_rep"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_REQUIREREP_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_REQUIREREP_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="require_solution"
+			type="radio"
+			default="1"
+			label="COM_HODUMA_CONFIG_FIELD_REQUIRESOLUTION_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_REQUIRESOLUTION_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="require_timespent"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_REQUIRETIMESPENT_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_REQUIRETIMESPENT_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+	
+	<fieldset
+		name="notifications"
+		label="COM_HODUMA_CONFIG_FIELDSET_NOTIFICATIONS_LABEL"
+		description="COM_HODUMA_CONFIG_FIELDSET_NOTIFICATIONS_DESC"
+	>
+		<field
+			name="hdnotifyname"
+			type="text"
+			default="Hoduma Helpdesk"
+			size="30"
+			label="COM_HODUMA_CONFIG_FIELD_HDNOTIFYNAME_LABEL"
+			description="COM_HODUMA_CONFIG_HDNOTIFYNAME_DESC"
+		/>
+		<field
+			name="hdreply"
+			type="text"
+			default="helpdesk@yourdomain.com"
+			size="30"
+			label="COM_HODUMA_CONFIG_FIELD_HDREPLY_LABEL"
+			description="COM_HODUMA_CONFIG_HDREPLY_DESC"
+		/>
+		<field
+			name="hdurl"
+			type="text"
+			default="http://www.yourdomain.com"
+			size="30"
+			label="COM_HODUMA_CONFIG_FIELD_HDURL_LABEL"
+			description="COM_HODUMA_CONFIG_HDURL_DESC"
+		/>
+		<field
+			name="notifyadminonnewcases"
+			type="text"
+			default=""
+			size="30"
+			label="COM_HODUMA_CONFIG_FIELD_NOTIFYADMINONNEWCASES_LABEL"
+			description="COM_HODUMA_CONFIG_NOTIFYADMINONNEWCASES_DESC"
+		/>
+		<field
+			name="notifyadminoncaseupdate"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_NOTIFYADMINONCASEUPDATE_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_NOTIFYADMINONCASEUPDATE_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="notifyuser"
+			type="radio"
+			default="1"
+			label="COM_HODUMA_CONFIG_FIELD_NOTIFYUSER_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_NOTIFYUSER_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+	
+	<fieldset
+		name="defaults"
+		label="COM_HODUMA_CONFIG_FIELDSET_DEFAULTS_LABEL"
+		description="COM_HODUMA_CONFIG_FIELDSET_DEFAULTS_DESC"
+	>
+		<field
+			name="defaultpriority"
+			type="priority"
+			default="3"
+			label="COM_HODUMA_CONFIG_FIELD_DEFAULTPRIORITY_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_DEFAULTPRIORITY_DESC"
+		/>
+		<field
+			name="pagerpriority"
+			type="priority"
+			default="3"
+			label="COM_HODUMA_CONFIG_FIELD_PAGERPRIORITY_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_PAGERPRIORITY_DESC"
+		/>
+		<field
+			name="defaultstatus"
+			type="status"
+			default="15"
+			label="COM_HODUMA_CONFIG_FIELD_DEFAULTSTATUS_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_DEFAULTSTATUS_DESC"
+		/>
+		<field
+			name="closedstatus"
+			type="status"
+			default="24"
+			label="COM_HODUMA_CONFIG_FIELD_CLOSEDSTATUS_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_CLOSEDSTATUS_DESC"
+		/>
+		<field
+			name="defaultdepartment"
+			type="department"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_DEFAULTDEPARTMENT_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_DEFAULTDEPARTMENT_DESC"
+		/>
+		<field
+			name="defaultcategory"
+			type="hcategory"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_DEFAULTCATEGORY_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_DEFAULTCATEGORY_DESC"
+		/>
+	</fieldset>
+	
+	<fieldset
+		name="hpermissions"
+		label="COM_HODUMA_CONFIG_FIELDSET_PERMISSIONS_LABEL"
+		description="COM_HODUMA_CONFIG_FIELDSET_PERMISSIONS_DESC"
+	>
+		<field
+			name="allowanonymous"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_ALLOWANONYMOUS_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_ALLOWANONYMOUS_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="userselect"
+			type="list"
+			default="50"
+			label="COM_HODUMA_CONFIG_FIELD_USERSELECT_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_USERSELECT_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="enablekb"
+			type="list"
+			default="KB_LEVEL_REP"
+			label="COM_HODUMA_CONFIG_FIELD_ENABLEKB_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_ENABLEKB_DESC"
+		>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="1">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="2">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="3">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="set_department"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SETDEPARTMENT_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SETDEPARTMENT_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="set_location"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SETLOCATION_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SETLOCATION_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="set_phone"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SETPHONE_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SETPHONE_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="set_category"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SETCATEGORY_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SETCATEGORY_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="set_status"
+			type="list"
+			default="50"
+			label="COM_HODUMA_CONFIG_FIELD_SETSTATUS_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SETSTATUS_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="set_priority"
+			type="list"
+			default="50"
+			label="COM_HODUMA_CONFIG_FIELD_SETPRIORITY_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SETPRIORITY_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="set_rep"
+			type="list"
+			default="50"
+			label="COM_HODUMA_CONFIG_FIELD_SETREP_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SETREP_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="set_timespent"
+			type="list"
+			default="50"
+			label="COM_HODUMA_CONFIG_FIELD_SETTIMESPENT_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SETTIMESPENT_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+	</fieldset>
+	
+	<fieldset
+		name="displayedfields"
+		label="COM_HODUMA_CONFIG_FIELDSET_DISPLAYEDFIELDS_LABEL"
+		description="COM_HODUMA_CONFIG_FIELDSET_DISPLAYEDFIELDS_DESC"
+	>
+		<field
+			name="show_department"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SHOWDEPARTMENT_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SHOWDEPARTMENT_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="show_location"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SHOWLOCATION_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SHOWLOCATION_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="show_phone"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SHOWPHONE_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SHOWPHONE_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="show_category"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SHOWCATEGORY_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SHOWCATEGORY_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="show_status"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SHOWSTATUS_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SHOWSTATUS_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="show_priority"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SHOWPRIORITY_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SHOWPRIORITY_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="show_rep"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SHOWREP_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SHOWREP_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="show_timespent"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SHOWTIMESPENT_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SHOWTIMESPENT_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+	</fieldset>
+	
+	<fieldset
+		name="fileattachments"
+		label="COM_HODUMA_CONFIG_FIELDSET_FILEATTACHMENTS_LABEL"
+		description="COM_HODUMA_CONFIG_FIELDSET_FILEATTACHMENTS_DESC"
+	>
+		<field
+			name="fileattach_allow"
+			type="list"
+			default="10000"
+			label="COM_HODUMA_CONFIG_FIELD_FILEATTACHALLOW_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_FILEATTACHALLOW_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="fileattach_type"
+			type="list"
+			default="2"
+			label="COM_HODUMA_CONFIG_FIELD_FILEATTACHTYPE_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_FILEATTACHTYPE_DESC"
+		>
+			<option value="2">COM_HODUMA_CONFIG_OPTION_FILESYSTEM</option>
+		</field>
+		<field
+			name="fileattach_path"
+			type="text"
+			default=""
+			size="50"
+			label="COM_HODUMA_CONFIG_FIELD_FILEATTACHPATH_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_FILEATTACHPATH_DESC"
+		/>
+		<field
+			name="fileattach_allowedextensions"
+			type="text"
+			default=".jpg,.png"
+			size="30"
+			label="COM_HODUMA_CONFIG_FIELD_FILEATTACHALLOWEDEXTENSIONS_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_FILEATTACHALLOWEDEXTENSIONS_DESC"
+		/>
+		<field
+			name="fileattach_maxsize"
+			type="text"
+			default="1048576"
+			size="15"
+			label="COM_HODUMA_CONFIG_FIELD_FILEATTACHMAXSIZE_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_FILEATTACHMAXSIZE_DESC"
+		/>
+		<field
+			name="fileattach_download"
+			type="list"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_FILEATTACHDOWNLOAD_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_FILEATTACHDOWNLOAD_DESC"
+		>
+			<option value="10000">COM_HODUMA_CONFIG_OPTION_DISABLE</option>
+			<option value="100">COM_HODUMA_CONFIG_OPTION_ADMINS</option>
+			<option value="50">COM_HODUMA_CONFIG_OPTION_REPSONLY</option>
+			<option value="25">COM_HODUMA_CONFIG_OPTION_USERSANDREPS</option>
+			<option value="0">COM_HODUMA_CONFIG_OPTION_ANYONE</option>
+		</field>
+		<field
+			name="fileattach_maxage"
+			type="text"
+			default="0"
+			size="5"
+			label="COM_HODUMA_CONFIG_FIELD_FILEATTACHMAXAGE_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_FILEATTACHMAXAGE_DESC"
+		/>
+	</fieldset>
+	
+	<fieldset
+		name="imapconfig"
+		label="COM_HODUMA_CONFIG_FIELDSET_IMAPCONFIG_LABEL"
+		description="COM_HODUMA_CONFIG_FIELDSET_IMAPCONFIG_DESC"
+	>
+		<field
+			name="imap_enabled"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_IMAPENABLED_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_IMAPENABLED_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="imap_connecttype"
+			type="list"
+			default="1"
+			label="COM_HODUMA_CONFIG_FIELD_IMAPCONNECTTYPE_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_IMAPCONNECTTYPE_DESC"
+		>
+			<option value="1">COM_HODUMA_CONFIG_OPTION_IMAP</option>
+			<option value="2">COM_HODUMA_CONFIG_OPTION_POP3</option>
+		</field>
+		<field
+			name="imap_deletemessages"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_IMAPDELETEMESSAGES_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_IMAPDELETEMESSAGES_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="imap_server"
+			type="text"
+			default=""
+			size="30"
+			label="COM_HODUMA_CONFIG_FIELD_IMAPSERVER_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_IMAPSERVER_DESC"
+		/>
+		<field
+			name="imap_username"
+			type="text"
+			default=""
+			size="30"
+			label="COM_HODUMA_CONFIG_FIELD_IMAPUSERNAME_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_IMAPUSERNAME_DESC"
+		/>
+		<field
+			name="imap_password"
+			type="text"
+			default=""
+			size="30"
+			label="COM_HODUMA_CONFIG_FIELD_IMAPPASSWORD_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_IMAPPASSWORD_DESC"
+		/>
+		<field
+			name="imap_ssl"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_IMAPSSL_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_IMAPSSL_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="imap_default_department"
+			type="department"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_IMAPDEFAULTDEPARTMENT_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_IMAPDEFAULTDEPARTMENT_DESC"
+		/>
+		<field
+			name="imap_default_category"
+			type="hcategory"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_IMAPDEFAULTCATEGORY_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_IMAPDEFAULTCATEGORY_DESC"
+		/>
+		<field
+			name="imap_default_status"
+			type="status"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_IMAPDEFAULTSTATUS_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_IMAPDEFAULTSTATUS_DESC"
+		/>
+		<field
+			name="imap_default_priority"
+			type="priority"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_IMAPDEFAULTPRIORITY_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_IMAPDEFAULTPRIORITY_DESC"
+		/>
+		<field
+			name="imap_default_rep"
+			type="rep"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_IMAPDEFAULTREP_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_IMAPDEFAULTREP_DESC"
+		/>
+	</fieldset>
+	
+	<fieldset
+		name="mysqlparams"
+		label="COM_HODUMA_CONFIG_FIELDSET_MYSQLPARAMS_LABEL"
+		description="COM_HODUMA_CONFIG_FIELDSET_MYSQLPARAMS_DESC"
+	>
+		<field
+			name="set_maxjoinsize"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_CONFIG_FIELD_SETMAXJOINSIZE_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_SETMAXJOINSIZE_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="maxjoinsize"
+			type="text"
+			default=""
+			size="10"
+			label="COM_HODUMA_CONFIG_FIELD_MAXJOINSIZE_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_MAXJOINSIZE_DESC"
+		/>
+	</fieldset>
+	
+	<fieldset
+		name="liveupdate"
+		label="COM_HODUMA_CONFIG_FIELDSET_LIVEUPDATE_LABEL"
+		description="COM_HODUMA_CONFIG_FIELDSET_LIVEUPDATE_DESC"
+	>
+		<field
+			name="downloadid"
+			type="text"
+			default=""
+			size="30"
+			label="COM_HODUMA_CONFIG_FIELD_DOWNLOADID_LABEL"
+			description="COM_HODUMA_CONFIG_FIELD_DOWNLOADID_DESC"
+		/>
+	</fieldset>
+	
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+	>
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_hoduma"
+			section="component"
+		/>
+	</fieldset>
+	
+</config>

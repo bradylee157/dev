@@ -1,0 +1,29 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA T3 Blank template for joomla 1.7
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 JoomlArt.com. All Rights Reserved.
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * Author: JoomlArt.com
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com.
+ * ------------------------------------------------------------------------
+*/
+
+ /* CHILD CONTENT
+-----------------------------------*/
+
+.ja-megamenu .childcontent .ja-moduletable h3 {
+	color: #002147;
+}
+
+/* Grouped --- */
+.ja-megamenu .group-title .menu-title {
+	color: #002147;
+}
+.ja-megamenu ul.level1 li.mega a.mega:hover,
+.ja-megamenu ul.level1 li.mega a.active{
+	color:#002147;
+}
+
+
+

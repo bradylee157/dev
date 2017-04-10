@@ -1,0 +1,1 @@
+UPDATE #__hoduma_problems h SET h.status = (SELECT id FROM #__hoduma_statuses WHERE status_id = h.status);

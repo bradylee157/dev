@@ -1,0 +1,12 @@
+ALTER TABLE `#__hoduma_problems` ADD `published` tinyint(1) NOT NULL DEFAULT 0;
+ALTER TABLE `#__hoduma_priority` ADD `ordering` int(11) NOT NULL DEFAULT 0;
+ALTER TABLE `#__hoduma_priority` ADD `published` tinyint(1) NOT NULL DEFAULT 0;
+ALTER TABLE `#__hoduma_priority` ADD `checked_out` INTEGER UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE `#__hoduma_priority` ADD `checked_out_time` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00';
+ALTER TABLE `#__hoduma_users` ADD `published` tinyint(1) NOT NULL DEFAULT 0;
+ALTER TABLE `#__hoduma_users` ADD `checked_out` INTEGER UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE `#__hoduma_users` ADD `checked_out_time` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00';
+ALTER TABLE `#__hoduma_status` ADD `ordering` int(11) NOT NULL DEFAULT 0;
+ALTER TABLE `#__hoduma_status` ADD `published` tinyint(1) NOT NULL DEFAULT 0;
+ALTER TABLE `#__hoduma_status` ADD `checked_out` INTEGER UNSIGNED NOT NULL DEFAULT '0';
+ALTER TABLE `#__hoduma_status` ADD `checked_out_time` DATETIME NOT NULL DEFAULT '0000-00-00 00:00:00';

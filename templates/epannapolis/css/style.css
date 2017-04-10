@@ -1,0 +1,341 @@
+html {
+		background:#244578;
+}
+body {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size: 14px;
+	color: #464646;
+	line-height:125%;
+	background:#fff;
+}
+@font-face {
+	font-family: 'Futura';
+	src: url('../includes/webfonts/futura.eot');
+	src: url('../includes/webfonts/futura.eot?#iefix') format('embedded-opentype'),
+	     url('../includes/webfonts/futura.woff') format('woff'),
+		 url('../includes/webfonts/futura.ttf') format('truetype'),
+		 url('../includes/webfonts/futura.svg#wf') format('svg');	   
+}	
+h1 {
+	font-family:'Futura',Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #055846;
+	font-weight:normal;
+}
+h2 {
+	font-family:'Futura',Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #055846;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+a:link, a:visited {
+	color: #3bb2c5;
+	text-decoration:none;	
+}
+a:hover {
+	text-decoration:underline;
+}
+
+#header {
+	background: url('../images/page_bg.jpg') no-repeat scroll center top transparent;			
+	width:100%;
+	min-width:980px;
+	position:relative;
+	padding:0px;
+	margin:0px;
+	height:155px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#header-inner {
+	position:relative;	
+	width:970px;
+	height:155px;
+	padding:0px;
+	margin:0px;
+	margin-left:auto;
+	margin-right:auto;
+	
+	}
+#logo {
+	position:absolute;
+	top: 24px;
+	left: 6px;
+	
+}
+#mainnav {
+	position:relative;
+	top: 10px;
+}
+#login {
+	position: absolute;
+	top: 5px;
+	right: 8px;
+	z-index: 10;
+}
+#login a {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	font-size: 12px;
+	color: #fff;
+	text-decoration:none;
+	padding-right: 15px;
+}
+#search {
+	position:absolute;
+	top: 22px;
+	right:0px;
+	background: url('../images/search_bg.jpg') no-repeat scroll left top transparent;				
+	width: 142px;
+	height: 34px;
+	z-index: 9;
+}
+#mod-finder-searchword {
+	position:absolute;
+	top: 7px;
+	left: 35px;
+	border:none;
+	width: 100px;
+	height: 14px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-height: 11px;
+	color: #666;
+	text-align:right;
+}
+#slideshow {
+	float:left;
+	width: 748px;
+	height: 370px;
+	overflow:hidden;
+	padding-top: 10px;
+	
+}
+#content {
+	position:relative;
+	padding:0px;
+	margin:0px;
+	min-height: 500px;
+}
+#left {
+  float:left;	
+  padding-top: 10px;
+  margin-right: 25px;
+  font-size: 12px;
+}
+#left.home{
+	width: 186px;	
+}
+#left.twoCol{
+	width: 186px;
+	}
+#left.threeCol{
+	width: 186px;	
+	}
+#center.home {
+	float:left;			
+	width: 748px;
+	overflow:hidden;
+}
+#center.twoCol {
+	float:left;			
+	width:748px;   		
+}
+#center.threeCol {
+	float:left;			
+	width: 537px;
+	 margin-right: 0px;
+}
+#right {
+	position: relative;
+	left:17px;
+	float:right;			
+	width: 186px;
+	padding-left: 10px;
+	padding-right: 10px;
+  font-size: 12px;	
+	}
+#right.home{}	
+#right.twoCol{}
+#right.threeCol{
+	padding-top: 10px;
+}
+#footer {
+	background: #244578 url('../images/footer_bg.jpg') repeat-x;	
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	min-height: 150px;
+	padding-top: 20px;
+	line-height: 150%;
+}
+#footer_left {
+	float:left;
+	width: 170px;	
+}
+
+#footer_right {
+	float:right;
+	text-align:right;
+}
+.spacer {
+	line-height:1px;
+	height: 15px;
+}
+/* Alignment */
+.alignleft {
+	display: inline;
+	float: left;
+}
+.alignright {
+	display: inline;
+	float: right;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+ul.menu {
+	margin:0px;
+	padding:0px;
+}
+div.moduletable-a, div.moduletable-ah, div.moduletable-b, div.moduletable-c, div.moduletable-d {
+	position:relative;
+	-moz-box-shadow: 0px 0px 5px #bfbfbf; 
+	-webkit-box-shadow: 0px 0px 5px #bfbfbf; 
+	box-shadow: 0px 0px 5px #bfbfbf;
+	padding-top: 41px;
+	padding-left:10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 15px;
+}
+div.moduletable-d {
+	padding-top: 33px;
+}
+div.moduletable-a h3, div.moduletable-ah h3, div.moduletable-b h3, div.moduletable-c h3, div.moduletable-d h3 {
+	position:absolute;
+	top:0px;
+	left:0px;
+	padding:0px;
+	margin: 0px;
+	font-family:'Futura',Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #fff;
+	line-height:31px;
+	height:31px;
+	text-align:center;
+	text-transform:uppercase;
+	width:186px;
+}
+div.moduletable-ah {
+	height: 368px;
+	padding:0px;
+}
+
+div.moduletable-a h3, div.moduletable-ah h3 {
+	background-color: #36776c;
+}
+div.moduletable-b h3 {
+	background-color: #248796;
+}
+div.moduletable-c h3 {
+	background-color: #244577;
+}
+div.moduletable-d h3 {
+	background-color: #66998e;
+}
+.box_skitter .label_skitter {
+    color: rgb(255, 255, 255);
+    display: none;
+    opacity: 0.8;
+    background: none repeat scroll 0% 0% #787878;
+}	
+	
+/* Pagination ---*/
+div.pagination {
+  text-align: center;
+  padding: 10px 0;
+}
+.pagination ul li, ul.pagenav li {
+  background: none repeat scroll 0 0 transparent !important;
+    display: inline;
+    list-style: none outside none;
+    padding: 0 7px !important;
+}
+.column .pagination ul li,
+.pagination ul{
+  float:none!important;
+  list-style:none;
+}
+.pagination ul, ul.pagenav {
+    margin: 10px 0;
+}
+.ja-content-main .counter {
+  text-align:center;
+  float:none;
+}
+.pagination ul li span.pagenav, .pagination ul li a.pagenav, ul.pagenav li a {
+    padding: 0;
+}
+.pagination li span{
+  background:none!important;
+}
+.pagination li a:hover{
+  color:#545454;
+}
+.items-more { border-bottom: 1px solid #ccc; }
+.items-more h3 { font-size: 125%; }
+.pagenav{
+  width:100%;
+}
+.pagenav li.pagenav-next{
+  float:right;
+}
+.study_name {
+	font-family:'Futura',Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	color: #055846;
+	font-weight:normal;
+
+}
+.ecdate {
+	font-size: 14px;
+	color: #464646;
+}
+a.ecdate {
+	color: #244577;
+	font-size: 12px;
+}
+.box_skitter .label_skitter p {
+    padding: 10px;
+    margin: 0px;
+    letter-spacing: 1px;
+}
+#contact-form table tr td {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#contact-form table tr th {
+	text-align:right;
+	padding-right: 5px;
+}
+input#name, input#email,input#subject  {
+	width: 350px;
+}
+select#emailid {
+	width: 357px;
+}
+textarea#contact-form-message {
+	width: 350px;
+}
+button.finder {
+	position:relative;
+	top: 5px;
+	left: 15px;
+	background:none;
+	border:none;

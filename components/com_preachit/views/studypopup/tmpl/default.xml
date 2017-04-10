@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<layout title="Audio popup layout" hidden="true">
+</layout>
+<state>
+<name>Audio popup view</name>
+<description>Shows audio popup with study details</description>
+</state>
+</metadata>

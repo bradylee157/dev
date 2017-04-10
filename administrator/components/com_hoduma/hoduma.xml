@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" method="upgrade" version="2.5">
+	<!-- Hoduma is a fork of HuruHelpDesk http://www.huruhelpdesk.net -->
+	<name>Hoduma</name>
+	<version>1.0.12</version>
+	<creationDate>2012-11-09</creationDate>
+	<author>Hoduma.com</author>
+	<authorEmail>info@hoduma.com</authorEmail>
+	<authorUrl>http://www.hoduma.com</authorUrl>
+	<copyright>2012 Hoduma.com, 2011 James R. Erickson</copyright>
+	<license>GPL v3</license>
+	<description>
+		<![CDATA[
+			<img src="components/com_hoduma/images/logo.png" />
+			<p><b>Hoduma Helpdesk</b></p>
+		]]>
+	</description>
+	
+	<scriptfile>script.php</scriptfile>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	
+	<!-- Front end files -->
+	<files folder="site">
+		<folder>controllers</folder>
+		<folder>helpers</folder>
+		<folder>models</folder>
+		<folder>tables</folder>
+		<folder>views</folder>
+		<filename>hoduma.php</filename>
+	</files>
+	<!-- Front end translation files -->
+	<languages folder="language">
+		<language tag="en-GB">en-GB.com_hoduma.ini</language>
+		<language tag="de-DE">de-DE.com_hoduma.ini</language>
+	</languages>
+	
+	<!-- Media files -->
+	<media destination="com_hoduma" folder="media">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+	
+	<administration>
+		<!-- All the stuff for the Admin area -->
+		<menu img="../media/com_hoduma/images/hoduma-16x16.png">COM_HODUMA_MENU</menu>
+		<submenu>
+			<!--
+				Note that all & must be escaped to &amp; for the file to be valid XML and be parsed by the installer
+			-->
+			<menu link="option=com_hoduma&amp;view=categories" view="categories">COM_HODUMA_MENU_CATEGORIES</menu>
+			<menu link="option=com_hoduma&amp;view=departments" view="departments">COM_HODUMA_MENU_DEPARTMENTS</menu>
+			<menu link="option=com_hoduma&amp;view=priorities" view="priorities">COM_HODUMA_MENU_PRIORITIES</menu>
+			<menu link="option=com_hoduma&amp;view=statuses" view="statuses">COM_HODUMA_MENU_STATUSES</menu>
+			<menu link="option=com_hoduma&amp;view=users" view="users">COM_HODUMA_MENU_USERS</menu>
+			<menu link="option=com_hoduma&amp;view=emails" view="emails">COM_HODUMA_MENU_EMAILS</menu>
+			<menu link="option=com_hoduma&amp;view=about" view="about">COM_HODUMA_MENU_ABOUT</menu>
+			<menu link="option=com_hoduma&amp;view=liveupdate" view="liveupdate">COM_HODUMA_MENU_UPDATE</menu>
+		</submenu>
+
+		<files folder="admin">
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>images</folder>
+			<folder>models</folder>
+			<folder>sql</folder>
+			<folder>tables</folder>
+			<folder>views</folder>
+			<folder>liveupdate</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>hoduma.php</filename>
+			<filename>index.html</filename>
+		</files>
+		
+		<languages folder="admin">
+			<language tag="en-GB">language/en-GB/en-GB.com_hoduma.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_hoduma.sys.ini</language>
+			<language tag="de-DE">language/de-DE/de-DE.com_hoduma.ini</language>
+			<language tag="de-DE">language/de-DE/de-DE.com_hoduma.sys.ini</language>
+		</languages>
+		
+	</administration>
+
+</extension>

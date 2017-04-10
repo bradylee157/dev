@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<layout title="COM_PREACHIT_VIEW_MINISTRY">
+<message>
+<![CDATA[COM_PREACHIT_VIEW_MINISTRY_DESC]]>
+</message>
+</layout>
+<state>
+<name>COM_PREACHIT_VIEW_MINISTRY</name>
+<description>COM_PREACHIT_VIEW_MINISTRY_DESC</description>
+</state>
+<fields name="params">
+<fieldset name="basic" addfieldpath="/administrator/components/com_preachit/models/fields">
+<field name="template_override" type="templatechooser" default="" label="COM_PREACHIT_VIEW_PARAMS_CHOOSE_TEMPLATE" />
+</fieldset>
+</fields>
+<fields name="request">
+<fieldset name="request" addfieldpath="/administrator/components/com_preachit/models/fields">
+              <field name="ministry" type="ministryview" default="" label="COM_PREACHIT_VIEW_PARAMS_CHOOSE_MINISTRY" required="true" />
+</fieldset>
+        </fields>
+</metadata>

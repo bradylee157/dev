@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+    <name>Avatar Slide Image</name>
+    <author>Nam Chung Tran</author>
+    <version>1.0.0</version>
+	<creationDate>March 2012</creationDate>
+	<copyright>JoomAvatar.com</copyright>
+	<license>License GNU General Public License version 2 or later</license>
+	<authorEmail>admin@joomavatar.com</authorEmail>
+	<authorUrl>www.joomavatar.com</authorUrl>
+	<edition>Free</edition>
+	<version>1.0.0</version>
+    <description>AVATAR_SLIDER_DESC</description>
+    <files>
+        <filename module="mod_AvatarSlide">mod_AvatarSlide.php</filename>
+        <filename>index.html</filename>
+        <filename>mod_AvatarSlide.xml</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+        <folder>assets</folder>
+    </files>
+    <languages>
+    	<language tag="en-GB">en-GB.mod_AvatarSlide.ini</language>
+		<language tag="en-GB">en-GB.mod_AvatarSlide.sys.ini</language>
+	</languages>
+    <config>
+    	<fields name="params">
+    		<fieldset name="basic" label="Module Parameters">
+    			<field name="Path" type="folderlist" default="" label="Select a folder images" directory="images" description="..joomla/images/.." hide_none="true" hide_default="true" size="5" multiple="multiple"/>
+    			<field name="Time" type="text" default="4000" label="Time delay (mls)" size="2"/>
+    			<field name="SlideWidth" type="text" default="980" label="Width (px)" size="2"/>
+    			<field name="SlideHeight" type="text" default="340" label="Height (px)" size="2"/>
+    			<field name="ThumbDisplay" type="text" default="3" label="Thumbnail Display" size="2"/>
+    			<field name="Auto" type="list" default="1" label="Auto Play">
+    				<option value="0">Off</option>
+    				<option value="1">On</option>
+    			</field>
+    			<field name="ThumbSize" type="list" default="1" label="Thumb Size">
+    				<option value="1">1</option>
+    				<option value="2">2</option>
+    			</field>
+    		</fieldset>
+    	</fields>	
+    </config>
+</extension>

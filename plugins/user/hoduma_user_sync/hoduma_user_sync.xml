@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" method="upgrade" type="plugin" group="user">
+	<name>Hoduma - User Sync</name>
+	<author>Hoduma.com</author>
+	<copyright>2012 Hoduma.com, 2011 James R. Erickson</copyright>
+	<license>GPL v3</license>
+	<authorEmail>info@hoduma.com</authorEmail>
+	<creationDate>06/28/2012</creationDate>
+	<authorUrl>www.hoduma.com</authorUrl>
+	<version>1.0.1</version>
+	<description>
+		Automatically synchronizes Hoduma user table with Joomla user table as Joomla users are created or deleted. 
+	</description>
+	<files>
+		<filename plugin="hoduma_user_sync">hoduma_user_sync.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="isUser" type="radio" default="0" label="Assign 'User' level by default?" description="Set as Yes to automatically give imported Joomla accounts 'User' level access to Hoduma?">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field> 
+				<field name="publishUser" type="radio" default="1" label="Should new users be published in Hoduma?" description="Set to Yes to autimatically publish new users in Hoduma. If you choose 'No' the user will be imported to Hoduma but will set to unpublished.">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</install>

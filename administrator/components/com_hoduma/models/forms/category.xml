@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_hoduma/models/rules">
+
+	<fieldset name="general">
+		<field name="cname" type="text"
+			label="COM_HODUMA_FORM_CATEGORY_FIELD_CNAME"
+			description="COM_HODUMA_FORM_CATEGORY_FIELD_CNAME_DESC"
+			size="60"
+			required="true"
+		/>
+		<field name="rep_id" type="rep"
+			label="COM_HODUMA_FORM_CATEGORY_FIELD_REPID"
+			description="COM_HODUMA_FORM_CATEGORY_FIELD_REPID_DESC"
+		/>
+		<field name="id" type="hidden" />
+	</fieldset>
+	
+	<fieldset name="editoptions">
+		<field name="published" type="list"
+			class="inputbox"
+			default="1"
+			size="1"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+		>
+			<option value="1">JPUBLISHED</option>
+			<option	value="0">JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+	
+</form>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="library" version="1.6" method="upgrade">
+	<name>Teweb</name>
+	<libraryname>teweb</libraryname>
+	<description>Te webdesign shared library</description>
+    <creationDate>October 2011</creationDate>
+    <author>Te-webdesign</author>
+    <authorEmail>paul@te-webdesign.org.uk</authorEmail>
+    <authorUrl>http://te-webdesign.org.uk</authorUrl>
+    <copyright>(C) 2011</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>1.0.8</version>
+	<files folder=".">
+        <filename>index.html</filename>
+        <folder>checks</folder>
+        <folder>media</folder>
+        <folder>file</folder>
+        <folder>messages</folder>
+        <folder>admin</folder>
+        <folder>details</folder>
+		  <folder>images</folder>
+		  <folder>effects</folder>
+		  <folder>tables</folder>
+		  <folder>scripts</folder>
+    </files>
+    <languages folder="language">
+  		<language tag="en-GB">en-GB/en-GB.lib_teweb.ini</language>
+  		<language tag="en-US">en-US/en-US.lib_teweb.ini</language>
+  		<language tag="es-ES">es-ES/es-ES.lib_teweb.ini</language>
+  		<language tag="de-DE">de-DE/de-DE.lib_teweb.ini</language>
+   	</languages>
+   <!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="te-webdesign site">http://te-webdesign.co.uk/update/media/feeds/Teweb.xml</server>
+	</updateservers>
+</extension>

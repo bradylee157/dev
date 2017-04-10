@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<layout title="Podcastlist layout" hidden="true">
+<message>
+<![CDATA[Shows all Podcasts.]]>
+</message>
+</layout>
+<state>
+<name>Podcast list</name>
+<description>Shows all Podcasts</description>
+<params>
+<param name="podcastlist_no" type="text" default="10" label="Number of podcasts per page" />
+<param name="podcastsort" type="list" default="1" label="Sort list by:">
+<option value="1">Date (Desc)</option> 
+<option value="2">Date (ASC)</option> 
+<option value="3">Manual</option>
+<option value="4">Manual (DESC)</option>
+</param>
+</params>
+</state>
+</metadata>

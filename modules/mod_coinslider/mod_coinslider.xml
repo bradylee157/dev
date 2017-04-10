@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>mod_coinslider</name>
+	<author>Daniel Pardons</author>
+	<creationDate>03 May 2011</creationDate>
+	<copyright>2010-2011, Joompad.be</copyright>
+	<license>GPLv2.0 - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<authorEmail>daniel.pardons@joompad.be</authorEmail>
+	<authorUrl>www.joompad.be</authorUrl>
+	<version>1.4.3</version>
+	<description>Based on jquery(http://www.jquery.com) and on Ivan Lazarevic "Coin Slider: Jquery Image slider with Unique Effects" script (http://workshop.rs/projects/coin-slider). See file readme_css.txt in the module directory for more information about css parameters settings.</description>
+	<files>
+		<filename module="mod_coinslider">mod_coinslider.php</filename>
+		<filename>helper.php</filename>
+		<filename>License.txt</filename>
+		<filename>index.html</filename>
+		<filename>readme_css.txt</filename>
+		<filename>mod_coinslider_gallery_parametrization.txt</filename>
+		<folder>tmpl</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.mod_coinslider.ini</language>
+	</languages>
+	<params>
+		<param name="moduleclass_sfx" type="text" size="60" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		
+		<param name="Gallery" type="spacer" default="=== Gallery settings ===" label="CS_GALLERYSETTINGS" description="" />
+
+		<param name="gallery_width" type="text" default="565" label="CS_GALLERYWIDTH" description="CS_GALLERYWIDTH_DESC" />
+		<param name="gallery_height" type="text" default="290" label="CS_GALLERYHEIGHT" description="CS_GALLERYHEIGHT_DESC" />
+		<param name="gallery_position" type="radio" default="0" label="CS_GALLERYPOSITION" description="CS_GALLERYPOSITION_DESC">
+			<option value="0">LEFT</option>
+			<option value="1">CENTERED</option>
+		</param>
+		<param name="gallery_navigation" type="radio" default="0" label="CS_GALLERYNAVIGATION" description="CS_GALLERYNAVIGATION_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="gallery_effect" type="list" default="" label="CS_GALLERYEFFECT" description="CS_GALLERYEFFECT_DESC">
+			<option value="">STANDARD</option>
+			<option value="random">RANDOMIZE</option>
+			<option value="swirl">SWIRL</option>
+			<option value="rain">RAIN</option>	
+			<option value="straight">STRAIGHT</option>
+		</param>
+		<param name="gallery_use_links" type="radio" default="0" label="CS_GALLERYUSELINKS" description="CS_GALLERYUSELINKS_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="slides_delay" type="text" default="5000" label="CS_SLIDESDELAY" description="CS_SLIDESDELAY_DESC" />
+		<param name="teaser_bgcolor" type="text" default="black" label="CS_TEASERBGCOLOR" description="CS_TEASERBGCOLOR_DESC" />
+		<param name="teaser_color" type="text" default="white" label="CS_TEASERCOLOR" description="CS_TEASERCOLOR_DESC" />
+		
+		<param name="folder" type="text" size="60" default="modules/mod_coinslider/images/" label="CS_IMAGEFOLDER" description="CS_IMAGEFOLDER_DESC" />
+
+		<param name="Gallery" type="spacer" default="=== Gallery CSS settings ===" label="CS_GALLERYCSSSETTINGS" description="" />
+		<param name="gallery_wrapper_css" type="textarea" rows="3" cols="40" default="" label="CS_GALLERYWRAPPERCSS" description="CS_GALLERYWRAPPERCSS_DESC" />
+		<param name="gallery_css" type="textarea" rows="3" cols="40" default="border: solid 0px #000;" label="CS_GALLERYCSS" description="CS_GALLERYCSS_DESC" />
+		<param name="title_css" type="textarea" rows="3" cols="40" default="font-weight: bold; font-size: 16px;" label="CS_TITLECSS" description="CS_TITLECSS_DESC" />
+		<param name="teaser_css" type="textarea" rows="5" cols="40" default="width:565px !important; margin-bottom:0px; margin-left:20px; -webkit-border-radius: 4px; -moz-border-radius: 4px; padding:10px; border-radius: 4px;" label="CS_TEASERCSS" description="CS_TEASERCSS_DESC" />
+		<param name="teaser_nl2br" type="radio" default="0" label="CS_TEASERNL2BR" description="CS_TEASERNL2BR_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="navigation_css" type="textarea" rows="5" cols="40" default="width:565px !important; margin-bottom:0px; margin-left:0px; padding: 10px;" label="CS_NAVIGATIONCSS" description="CS_NAVIGATIONCSS_DESC" />
+		<param name="navigation_a_css" type="textarea" rows="5" cols="40" default="border:1px solid #B8C4CF !important; margin-left: 5px; height: 10px; width: 10px; float: left; color: #B8C4CF; text-indent: -1000px; -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;" label="CS_NAVIGATIONACSS" description="CS_NAVIGATIONACSS_DESC" />			
+		<param name="navigation_a_active_css" type="textarea" rows="3" cols="40" default="background-color:#B8C4CF !important;" label="CS_NAVIGATIONAACTIVECSS" description="CS_NAVIGATIONAACTIVECSS_DESC" />		
+		
+		<param name="Gallery" type="spacer" default="=== Images settings ===" label="CS_IMAGESSETTINGS" description="" />
+
+    	<param name="Image 01" type="spacer" default="=== Image 01 ===" label="Image 01" description="" />
+		<param name="image_status1" type="radio" default="1" label="CS_IMGENABLING" description="CS_IMGENABLING_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="image_img1" type="text" size="60" default="image01.jpg" label="CS_IMGFILENAME" description="CS_IMGFILENAME_DESC" />
+		<param name="image_alt1" type="text" size="60" default="" label="CS_IMGALT" description="CS_IMGALT_DESC" />
+		<param name="image_title1" type="textarea" rows="1" cols="40" default="" label="CS_IMGTITLE" description="CS_IMGTITLE_DESC" />
+		<param name="image_teaser1" type="textarea" filter="raw" rows="5" cols="40" default="" label="CS_IMGTEASER" description="CS_IMGTEASER_DESC" />
+		<param name="image_url1" type="text" size="60" default="" label="CS_IMGURL" description="CS_IMGURL_DESC" />
+		<param name="target_url1" type="radio" default="_self" label="CS_IMGTARGET" description="CS_IMGTARGET_DESC">
+			<option value="_self">SELF_BROWSER</option>
+			<option value="_blank">OPEN_NEW_BROWSER</option>
+		</param>
+
+    	<param name="Image 02" type="spacer" default="=== Image 02 ===" label="Image 02" description="" />
+		<param name="image_status2" type="radio" default="0" label="CS_IMGENABLING" description="CS_IMGENABLING_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="image_img2" type="text" size="60" default="" label="CS_IMGFILENAME" description="CS_IMGFILENAME_DESC" />
+		<param name="image_alt2" type="text" size="60" default="" label="CS_IMGALT" description="CS_IMGALT_DESC" />
+		<param name="image_title2" type="textarea" rows="1" cols="40" default="" label="CS_IMGTITLE" description="CS_IMGTITLE_DESC" />
+		<param name="image_teaser2" type="textarea" filter="raw" rows="5" cols="40" default="" label="CS_IMGTEASER" description="CS_IMGTEASER_DESC" />
+		<param name="image_url2" type="text" size="60" default="" label="CS_IMGURL" description="CS_IMGURL_DESC" />
+		<param name="target_url2" type="radio" default="_self" label="CS_IMGTARGET" description="CS_IMGTARGET_DESC">
+			<option value="_self">SELF_BROWSER</option>
+			<option value="_blank">OPEN_NEW_BROWSER</option>
+		</param>
+
+    	<param name="Image 03" type="spacer" default="=== Image 03 ===" label="Image 03" description="" />
+		<param name="image_status3" type="radio" default="0" label="CS_IMGENABLING" description="CS_IMGENABLING_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="image_img3" type="text" size="60" default="" label="CS_IMGFILENAME" description="CS_IMGFILENAME_DESC" />
+		<param name="image_alt3" type="text" size="60" default="" label="CS_IMGALT" description="CS_IMGALT_DESC" />
+		<param name="image_title3" type="textarea" rows="1" cols="40" default="" label="CS_IMGTITLE" description="CS_IMGTITLE_DESC" />
+		<param name="image_teaser3" type="textarea" filter="raw" rows="5" cols="40" default="" label="CS_IMGTEASER" description="CS_IMGTEASER_DESC" />
+		<param name="image_url3" type="text" size="60" default="" label="CS_IMGURL" description="CS_IMGURL_DESC" />
+		<param name="target_url3" type="radio" default="_self" label="CS_IMGTARGET" description="CS_IMGTARGET_DESC">
+			<option value="_self">SELF_BROWSER</option>
+			<option value="_blank">OPEN_NEW_BROWSER</option>
+		</param>
+
+    	<param name="Image 04" type="spacer" default="=== Image 04 ===" label="Image 04" description="" />
+		<param name="image_status4" type="radio" default="0" label="CS_IMGENABLING" description="CS_IMGENABLING_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="image_img4" type="text" size="60" default="" label="CS_IMGFILENAME" description="CS_IMGFILENAME_DESC" />
+		<param name="image_alt4" type="text" size="60" default="" label="CS_IMGALT" description="CS_IMGALT_DESC" />
+		<param name="image_title4" type="textarea" rows="1" cols="40" default="" label="CS_IMGTITLE" description="CS_IMGTITLE_DESC" />
+		<param name="image_teaser4" type="textarea" filter="raw" rows="5" cols="40" default="" label="CS_IMGTEASER" description="CS_IMGTEASER_DESC" />
+		<param name="image_url4" type="text" size="60" default="" label="CS_IMGURL" description="CS_IMGURL_DESC" />
+		<param name="target_url4" type="radio" default="_self" label="CS_IMGTARGET" description="CS_IMGTARGET_DESC">
+			<option value="_self">SELF_BROWSER</option>
+			<option value="_blank">OPEN_NEW_BROWSER</option>
+		</param>
+
+     	<param name="Image 05" type="spacer" default="=== Image 05 ===" label="Image 05" description="" />
+		<param name="image_status5" type="radio" default="0" label="CS_IMGENABLING" description="CS_IMGENABLING_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="image_img5" type="text" size="60" default="" label="CS_IMGFILENAME" description="CS_IMGFILENAME_DESC" />
+		<param name="image_alt5" type="text" size="60" default="" label="CS_IMGALT" description="CS_IMGALT_DESC" />
+		<param name="image_title5" type="textarea" rows="1" cols="40" default="" label="CS_IMGTITLE" description="CS_IMGTITLE_DESC" />
+		<param name="image_teaser5" type="textarea" filter="raw" rows="5" cols="40" default="" label="CS_IMGTEASER" description="CS_IMGTEASER_DESC" />
+		<param name="image_url5" type="text" size="60" default="" label="CS_IMGURL" description="CS_IMGURL_DESC" />
+		<param name="target_url5" type="radio" default="_self" label="CS_IMGTARGET" description="CS_IMGTARGET_DESC">
+			<option value="_self">SELF_BROWSER</option>
+			<option value="_blank">OPEN_NEW_BROWSER</option>
+		</param>
+
+      	<param name="Image 06" type="spacer" default="=== Image 06 ===" label="Image 06" description="" />
+		<param name="image_status6" type="radio" default="0" label="CS_IMGENABLING" description="CS_IMGENABLING_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="image_img6" type="text" size="60" default="" label="CS_IMGFILENAME" description="CS_IMGFILENAME_DESC" />
+		<param name="image_alt6" type="text" size="60" default="" label="CS_IMGALT" description="CS_IMGALT_DESC" />
+		<param name="image_title6" type="textarea" rows="1" cols="40" default="" label="CS_IMGTITLE" description="CS_IMGTITLE_DESC" />
+		<param name="image_teaser6" type="textarea" filter="raw" rows="5" cols="40" default="" label="CS_IMGTEASER" description="CS_IMGTEASER_DESC" />
+		<param name="image_url6" type="text" size="60" default="" label="CS_IMGURL" description="CS_IMGURL_DESC" />
+		<param name="target_url6" type="radio" default="_self" label="CS_IMGTARGET" description="CS_IMGTARGET_DESC">
+			<option value="_self">SELF_BROWSER</option>
+			<option value="_blank">OPEN_NEW_BROWSER</option>
+		</param>
+
+      	<param name="Image 07" type="spacer" default="=== Image 07 ===" label="Image 07" description="" />
+		<param name="image_status7" type="radio" default="0" label="CS_IMGENABLING" description="CS_IMGENABLING_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="image_img7" type="text" size="60" default="" label="CS_IMGFILENAME" description="CS_IMGFILENAME_DESC" />
+		<param name="image_alt7" type="text" size="60" default="" label="CS_IMGALT" description="CS_IMGALT_DESC" />
+		<param name="image_title7" type="textarea" rows="1" cols="40" default="" label="CS_IMGTITLE" description="CS_IMGTITLE_DESC" />
+		<param name="image_teaser7" type="textarea" filter="raw" rows="5" cols="40" default="" label="CS_IMGTEASER" description="CS_IMGTEASER_DESC" />
+		<param name="image_url7" type="text" size="60" default="" label="CS_IMGURL" description="CS_IMGURL_DESC" />
+		<param name="target_url7" type="radio" default="_self" label="CS_IMGTARGET" description="CS_IMGTARGET_DESC">
+			<option value="_self">SELF_BROWSER</option>
+			<option value="_blank">OPEN_NEW_BROWSER</option>
+		</param>
+
+      	<param name="Image 08" type="spacer" default="=== Image 08 ===" label="Image 08" description="" />
+		<param name="image_status8" type="radio" default="0" label="CS_IMGENABLING" description="CS_IMGENABLING_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="image_img8" type="text" size="60" default="" label="CS_IMGFILENAME" description="CS_IMGFILENAME_DESC" />
+		<param name="image_alt8" type="text" size="60" default="" label="CS_IMGALT" description="CS_IMGALT_DESC" />
+		<param name="image_title8" type="textarea" rows="1" cols="40" default="" label="CS_IMGTITLE" description="CS_IMGTITLE_DESC" />
+		<param name="image_teaser8" type="textarea" filter="raw" rows="5" cols="40" default="" label="CS_IMGTEASER" description="CS_IMGTEASER_DESC" />
+		<param name="image_url8" type="text" size="60" default="" label="CS_IMGURL" description="CS_IMGURL_DESC" />
+		<param name="target_url8" type="radio" default="_self" label="CS_IMGTARGET" description="CS_IMGTARGET_DESC">
+			<option value="_self">SELF_BROWSER</option>
+			<option value="_blank">OPEN_NEW_BROWSER</option>
+		</param>
+
+       	<param name="Image 09" type="spacer" default="=== Image 09 ===" label="Image 09" description="" />
+		<param name="image_status9" type="radio" default="0" label="CS_IMGENABLING" description="CS_IMGENABLING_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="image_img9" type="text" size="60" default="" label="CS_IMGFILENAME" description="CS_IMGFILENAME_DESC" />
+		<param name="image_alt9" type="text" size="60" default="" label="CS_IMGALT" description="CS_IMGALT_DESC" />
+		<param name="image_title9" type="textarea" rows="1" cols="40" default="" label="CS_IMGTITLE" description="CS_IMGTITLE_DESC" />
+		<param name="image_teaser9" type="textarea" filter="raw" rows="5" cols="40" default="" label="CS_IMGTEASER" description="CS_IMGTEASER_DESC" />
+		<param name="image_url9" type="text" size="60" default="" label="CS_IMGURL" description="CS_IMGURL_DESC" />
+		<param name="target_url9" type="radio" default="_self" label="CS_IMGTARGET" description="CS_IMGTARGET_DESC">
+			<option value="_self">SELF_BROWSER</option>
+			<option value="_blank">OPEN_NEW_BROWSER</option>
+		</param>
+
+       	<param name="Image 10" type="spacer" default="=== Image 10 ===" label="Image 10" description="" />
+		<param name="image_status10" type="radio" default="0" label="CS_IMGENABLING" description="CS_IMGENABLING_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="image_img10" type="text" size="60" default="" label="CS_IMGFILENAME" description="CS_IMGFILENAME_DESC" />
+		<param name="image_alt10" type="text" size="60" default="" label="CS_IMGALT" description="CS_IMGALT_DESC" />
+		<param name="image_title10" type="textarea" rows="1" cols="40" default="" label="CS_IMGTITLE" description="CS_IMGTITLE_DESC" />
+		<param name="image_teaser10" type="textarea" filter="raw" rows="5" cols="40" default="" label="CS_IMGTEASER" description="CS_IMGTEASER_DESC" />
+		<param name="image_url10" type="text" size="60" default="" label="CS_IMGURL" description="CS_IMGURL_DESC" />
+		<param name="target_url10" type="radio" default="_self" label="CS_IMGTARGET" description="CS_IMGTARGET_DESC">
+			<option value="_self">SELF_BROWSER</option>
+			<option value="_blank">OPEN_NEW_BROWSER</option>
+		</param>
+
+		<param name="Image 11" type="spacer" default="=== Image 11 ===" label="Image 11" description="" />
+		<param name="image_status11" type="radio" default="0" label="CS_IMGENABLING" description="CS_IMGENABLING_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="image_img11" type="text" size="60" default="" label="CS_IMGFILENAME" description="CS_IMGFILENAME_DESC" />
+		<param name="image_alt11" type="text" size="60" default="" label="CS_IMGALT" description="CS_IMGALT_DESC" />
+		<param name="image_title11" type="textarea" rows="1" cols="40" default="" label="CS_IMGTITLE" description="CS_IMGTITLE_DESC" />
+		<param name="image_teaser11" type="textarea" filter="raw" rows="5" cols="40" default="" label="CS_IMGTEASER" description="CS_IMGTEASER_DESC" />
+		<param name="image_url11" type="text" size="60" default="" label="CS_IMGURL" description="CS_IMGURL_DESC" />
+		<param name="target_url11" type="radio" default="_self" label="CS_IMGTARGET" description="CS_IMGTARGET_DESC">
+			<option value="_self">SELF_BROWSER</option>
+			<option value="_blank">OPEN_NEW_BROWSER</option>
+		</param>
+
+		<param name="Image 12" type="spacer" default="=== Image 12 ===" label="Image 12" description="" />
+		<param name="image_status12" type="radio" default="0" label="CS_IMGENABLING" description="CS_IMGENABLING_DESC">
+			<option value="0">DISABLE</option>
+			<option value="1">ENABLE</option>
+		</param>
+		<param name="image_img12" type="text" size="60" default="" label="CS_IMGFILENAME" description="CS_IMGFILENAME_DESC" />
+		<param name="image_alt12" type="text" size="60" default="" label="CS_IMGALT" description="CS_IMGALT_DESC" />
+		<param name="image_title12" type="textarea" rows="1" cols="40" default="" label="CS_IMGTITLE" description="CS_IMGTITLE_DESC" />
+		<param name="image_teaser12" type="textarea" filter="raw" rows="5" cols="40" default="" label="CS_IMGTEASER" description="CS_IMGTEASER_DESC" />
+		<param name="image_url12" type="text" size="60" default="" label="CS_IMGURL" description="CS_IMGURL_DESC" />
+		<param name="target_url12" type="radio" default="_self" label="CS_IMGTARGET" description="CS_IMGTARGET_DESC">
+			<option value="_self">SELF_BROWSER</option>
+			<option value="_blank">OPEN_NEW_BROWSER</option>
+		</param>
+
+       	<param name="Jquery" type="spacer" default="=== JQUERY Settings ===" label="LABEL_LOADJQUERY" description="DECS_LOADJQUERY" />
+    	<param name="load_JQuery" type="radio" default="0" label="LABEL_LOADJQUERY" description="DECS_LOADJQUERY">
+    		<option value="1">YES</option>
+    		<option value="0">NO</option>
+    	</param>
+
+    	<param name="@spacer_load_jquery" type="spacer" default="jQuery is required by this module.  The only reason not to load the library is if it has already been loaded by another extension (template, module or plugin)." label="" description="" />
+
+	</params>
+</install>

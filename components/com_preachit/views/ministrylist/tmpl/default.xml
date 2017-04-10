@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<layout title="COM_PREACHIT_VIEW_MINISTRYLIST">
+<message>
+<![CDATA[COM_PREACHIT_VIEW_MINISTRYLIST_DESC]]>
+</message>
+</layout>
+<state>
+<name>COM_PREACHIT_VIEW_MINISTRYLIST</name>
+<description>COM_PREACHIT_VIEW_MINISTRYLIST_DESC</description>
+<params addpath="/administrator/components/com_preachit/elements">
+<param name="template_override" type="tempfolders" default="" label="COM_PREACHIT_VIEW_PARAMS_CHOOSE_TEMPLATE" />
+<param name="ministrysel" type="radio" default="0" label="COM_PREACHIT_MENU_PARAMS_MINISTRY_SEL_TITLE" 
+	description="COM_PREACHIT_MENU_PARAMS_MINISTRY_SEL_DESC"> 
+		<option value="0">PIAll</option> 
+		<option value="1">PISelect</option> </param> 
+<param name="ministryselect" 
+			type="ministrylist" 
+		default=""     		
+		multiple="multiple"
+      size="5"
+      style="width: 90%; margin: 10px 0;"
+      label="COM_PREACHIT_MENU_PARAMS_MINISTRY_SELECTION" />
+</params>
+</state>
+<fields name="params">
+<fieldset name="basic" addfieldpath="/administrator/components/com_preachit/models/fields">
+<field name="template_override" type="templatechooser" default="" label="COM_PREACHIT_VIEW_PARAMS_CHOOSE_TEMPLATE" />
+<field name="ministrysel" type="radio" default="0" label="COM_PREACHIT_MENU_PARAMS_MINISTRY_SEL_TITLE" 
+	description="COM_PREACHIT_MENU_PARAMS_MINISTRY_SEL_DESC"> 
+		<option value="0">PIAll</option> 
+		<option value="1">PISelect</option> </field> 
+<field name="ministryselect" type="ministrylist" default="" multiple="true" size="5" label="COM_PREACHIT_MENU_PARAMS_MINISTRY_SELECTION" />
+</fieldset>
+</fields>
+</metadata>

@@ -1,0 +1,42 @@
+/**
+ * @version		$Id: k2.css 702 2011-03-30 19:23:05Z joomlaworks $
+ * @package		K2
+ * @author		JoomlaWorks http://www.joomlaworks.gr
+ * @copyright	Copyright (c) 2006 - 2011 JoomlaWorks, a business unit of Nuevvo Webware Ltd. All rights reserved.
+ * @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ */
+
+/*
+### Legend ###
+Font families used:
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-family:"Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
+
+Colors used:
+	#f7fafe (light blue) used as background on all toolbars, category and user/author boxes
+
+*/
+
+
+
+/*----------------------------------------------------------------------
+	Common Elements
+----------------------------------------------------------------------*/
+/* --- Content --- */
+div.itemAuthorBlock div.itemAuthorDetails h3.itemAuthorName a,
+div.userBlock h2 {
+    color: #d77a06;
+}
+div.itemCommentsForm form input#submitCommentButton {
+    background-image: url("../images/bgd-bts.png");
+}
+
+/* --- Module --- */
+div.k2ItemsBlock ul li a.moduleItemReadMore {
+    /*background: url("../images/icon-readmore2.png") no-repeat scroll left center transparent;*/
+}
+div.itemCommentsForm .formTitle,
+div.itemComments h3.itemCommentsCounter {
+    background: url("../images/bgd-comment.png") no-repeat scroll left top transparent;
+}

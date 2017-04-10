@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_hoduma/models/rules">
+
+	<fieldset name="general">
+		<field name="joomla_id" type="user"
+			label="COM_HODUMA_FORM_USER_FIELD_JOOMLAID"
+			description="COM_HODUMA_FORM_USER_FIELD_JOOMLAID_DESC"
+		/>
+		<field
+			name="isuser"
+			type="radio"
+			default="1"
+			label="COM_HODUMA_FORM_USER_FIELD_ISUSER"
+			description="COM_HODUMA_FORM_USER_FIELD_ISUSER_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="isrep"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_FORM_USER_FIELD_ISREP"
+			description="COM_HODUMA_FORM_USER_FIELD_ISREP_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="isadmin"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_FORM_USER_FIELD_ISADMIN"
+			description="COM_HODUMA_FORM_USER_FIELD_ISADMIN_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="phone" type="text"
+			label="COM_HODUMA_FORM_USER_FIELD_PHONE"
+			description="COM_HODUMA_FORM_USER_FIELD_PHONE_DESC"
+			size="20"
+		/>
+		<field name="pageraddress" type="text"
+			label="COM_HODUMA_FORM_USER_FIELD_PAGERADDRESS"
+			description="COM_HODUMA_FORM_USER_FIELD_PAGERADDRESS_DESC"
+			size="20"
+		/>
+		<field name="phonemobile" type="text"
+			label="COM_HODUMA_FORM_USER_FIELD_PHONEMOBILE"
+			description="COM_HODUMA_FORM_USER_FIELD_PHONEMOBILE_DESC"
+			size="20"
+		/>
+		<field name="phonehome" type="text"
+			label="COM_HODUMA_FORM_USER_FIELD_PHONEHOME"
+			description="COM_HODUMA_FORM_USER_FIELD_PHONEHOME_DESC"
+			size="20"
+		/>
+		<field name="location1" type="text"
+			label="COM_HODUMA_FORM_USER_FIELD_LOCATION1"
+			description="COM_HODUMA_FORM_USER_FIELD_LOCATION1_DESC"
+			size="20"
+		/>
+		<field name="location2" type="text"
+			label="COM_HODUMA_FORM_USER_FIELD_LOCATION2"
+			description="COM_HODUMA_FORM_USER_FIELD_LOCATION2_DESC"
+			size="20"
+		/>
+		<field
+			name="department"
+			type="department"
+			default="0"
+			label="COM_HODUMA_FORM_USER_FIELD_DEPARTMENT"
+			description="COM_HODUMA_FORM_USER_FIELD_DEPARTMENT_DESC"
+		/>
+		<field
+			name="viewreports"
+			type="radio"
+			default="0"
+			label="COM_HODUMA_FORM_USER_FIELD_VIEWREPORTS"
+			description="COM_HODUMA_FORM_USER_FIELD_VIEWREPORTS_DESC"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field name="id" type="hidden" />
+	</fieldset>
+	
+	<fieldset name="editoptions">
+		<field name="published" type="list"
+			class="inputbox"
+			default="1"
+			size="1"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+		>
+			<option value="1">JPUBLISHED</option>
+			<option	value="0">JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+	
+</form>

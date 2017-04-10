@@ -1,0 +1,663 @@
+/* General definitions that carry through all of preachit unless overridden */
+
+/* background colour for alternation on lists */
+
+.piodd {
+	background-color: transparent;
+}
+.pieven {
+	background-color: transparent;
+}
+
+/* === SOME GLOBAL STYLES === */
+
+.headblock {
+	margin: 0 10px;
+	padding: 10px 10px;
+}
+#messagelist .headblock {
+	padding: 10px 5px;
+}
+
+.listblock {
+	margin: 0 10px;
+	padding: 15px 5px 15px 5px;
+}
+
+.list .listblock {
+	padding: 10px 0;
+}
+
+
+.sortlistblock {
+	background-color: #666666;
+	margin: 0 -5px;
+	padding: 8px 0;
+	border: 1px solid #C5C1BE;
+   position: relative;
+   border-radius: 10px;
+   -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+}
+
+.filtertext {
+	padding: 0 5px 0 15px;
+	color: #ffffff;
+}
+
+.sortlists {
+	margin: 0 10px;
+}
+
+.pimlsubmit {
+    float: right;
+}
+
+.inputbox {
+	background-color: #FFFFFF;
+	font-size: 90%;
+	width: 100px;
+	margin: 0 5px;
+}
+
+.additional {
+	color: #999999;
+}
+
+/* --- end SOME GLOBAL STYLES --- */
+
+/* ---- styles for javascript manipulated drop downs in message list ---- */
+
+table.pifilter td, table.pifilter tr {
+	border: none;
+}
+
+.trigger, .activetrigger {
+	font-size: 90%;
+	color: black !important;
+	text-decoration: none;
+	border:1px solid #ccc;
+	width:90px;
+	line-height: 140%;
+	white-space:nowrap;
+	overflow: hidden;
+	padding: 1px 5px;
+	background:url(../icons/ddarrow.png) top right no-repeat #ccc;
+	display:block;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	
+}
+
+.trigger:hover, .activetrigger:hover,
+.trigger:active, .activetrigger:active,
+.trigger:visited, .activetrigger:visited,
+.trigger:link, .activetrigger:link {
+	background:url(../icons/ddarrow.png) top right no-repeat #ccc !important;
+}
+
+/* style of the UL */
+.dropcontainer ul{
+	background:#fff;
+	list-style-type:none;
+	padding:0;
+	margin:0;
+	width:250px;
+	max-height: 300px;
+	overflow: auto;
+	border: 1px #cccccc solid;
+	position:absolute;
+}
+.dropdownhidden{
+	top:0;
+	left:-999em;
+}
+
+.dropcontainer ul a{
+	padding:0 .5em;
+	display:block;
+	width:15em;
+	text-decoration:none;
+	color:#666;
+}
+		
+.dropcontainer li {
+	list-style-type:none;
+}
+		
+.dropcontainer ul a:hover{
+	background:#ccc;
+}
+.dropcontainer{
+	position:relative;
+	z-index: 999;
+}
+
+
+/* === REVOLUTION styles === */
+
+.study_info {
+	color: #999999;
+	font-style: italic;
+	padding: 5px 0 5px 0;
+}
+
+.date {
+	color: #000000;
+	font-weight: bold;
+}
+#audioview .date,
+#videoview .date,
+#textview .date,
+#medialist .head .date,
+#audiopopup .date,
+#videopopup .date {
+	color: #999999;
+	float: right;
+	font-size: 105%;
+	padding: 5px 0 3px 10px;
+}
+#audiopopup .date,
+#videopopup .date {
+	margin-left: 10px;
+}
+
+.study_name {
+	font-size: 190%;
+	font-weight: bold;
+	padding: 3px 0 15px 0;
+}
+#audioview .study_name,
+#textview .study_name,
+#videoview .study_name,
+#medialist .head .study_name,
+#audiopopup .study_name,
+#videopopup .study_name {
+	font-size: 210%;
+	line-height: 30px;
+	padding: 0 0 10px 0;
+	margin: 0;
+}
+
+.subtitle {
+	color: #999999;
+	font-size: 105%;
+	padding: 0 0 0 5px;
+}
+
+.study_description {
+	padding: 2px 0 7px 0;
+}
+#audioview .study_description,
+#textview .study_description,
+#videoview .study_description,
+#medialist .head .study_description,
+#audiopopup .study_description,
+#videopopup .study_description {
+	color: #999999;
+	padding: 2px 0 15px 0;
+}
+
+.scripture,
+.teacher,
+.series,
+.duration,
+.preachittags {
+	display: inline;
+}
+.scripture span,
+.teacher span,
+.series span,
+.duration span,
+.preachittags span {
+	color: #000000;
+	font-style: normal;
+	font-weight: bold;
+	padding: 0 8px 0 5px;
+}
+.scripture span,
+.teacher span,
+.series span {
+	border-right: #999999 solid 1px;
+	margin: 0 5px 0 0;
+}
+
+#audioview .series,
+#textview .series,
+#videoview .series,
+#medialist .head .series,
+#audiopopup .series,
+#videopopup .series {
+	border: none;
+	color: #999999;
+	font-size: 105%;
+	font-weight: normal;
+}
+#audioview .series,
+#textview .series,
+#videoview .series,
+#medialist .head .series,
+#audiopopup .series,
+#videopopup .series {
+	padding: 5px 0 0 5px;
+}
+#audiopopup .series,
+#videopopup .series {
+    float: right;
+}
+#audioview .series span,
+#textview .series span,
+#videoview .series span,
+#medialist .head .series span,
+#audiopopup .series span,
+#videopopup .series span {
+    border-right: none;
+    font-weight: normal;
+}
+
+#audioview .duration,
+#videoview .duration,
+#medialist .head .duration,
+#audioview .preachittags,
+#videoview .preachittags,
+#textview .preachittags {
+    color: #999999;
+    display: block;
+    font-size: 90%;
+    font-weight: normal;
+    padding: 5px 0 0 5px;
+}
+#audioview .duration span,
+#videoview .duration span,
+#medialist .head .duration span,
+#audioview .preachittags span,
+#videoview .preachittags span,
+#textview .preachittags span {
+    color: #000000;
+    font-weight: normal;
+}
+
+.messageimage {
+	float: right;
+	margin: 5px 10px 5px 5px;
+}
+
+.teacherimage {
+	float: right;
+	margin: 5px 10px 5px 5px;
+}
+
+#teacherlist .teacherimage {
+	float: left;
+}
+
+#teacherview .teacherimage {
+	background: transparent;
+	border: 1px solid #D5D5D5;
+	float: left;
+	padding: 4px;
+}
+
+.seriesimage, .ministryimage {
+	float: right;
+	margin: 5px 10px 5px 5px;
+}
+
+#serieslist .seriesimage, #ministrylist .ministryimage, #ministryview .seriesimage {
+	float: left;
+}
+
+#seriesview .seriesimage, #ministryview .ministryimage {
+	background: transparent;
+	border: 1px solid #D5D5D5;
+	float: left;
+	padding: 4px;
+	position: relative;
+}
+
+.share {
+	float: right;
+}
+
+.sharelist {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.sharelist li {
+    list-style: none;
+    display: inline-block;
+}
+
+#audiopopup .share,
+#videopopup .share {
+    padding: 0 10px 0 0;
+}
+
+.preachittagscontainer {
+	color: #999999;
+	font-size: 105%;
+	margin: 10px 0 10px 5px;
+}
+
+#audioview .preachittagscontainer,
+#videoview .preachittagscontainer,
+#textview .preachittagscontainer {
+	margin: 0;
+}
+
+.medialinks {
+	
+	margin: 13px 0 0 0;
+	min-height: 20px;
+   font-size: 105%;
+   padding: 5px 10px;
+   background-color: #F2F2F2;
+   border: 1px solid #C5C1BE;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   position: relative;
+}
+
+#audioview .medialinks,
+#medialist .head .medialinks,
+#audiopopup .medialinks,
+#textview .medialinks,
+#videoview .medialinks,
+#popupvideo .medialinks {
+    margin: 10px 5px;
+}
+
+.videolinks,
+.audiolinks,
+.textlinks,
+.asmedialinks,
+.editlinks {
+	background-repeat: no-repeat;
+	font-weight: bold;
+	padding: 0 10px 0 20px;
+}
+.head .editlinks {
+	float: right;
+}
+#medialist .head .editlinks {
+	float: none;
+}
+.videolinks {
+	background-image: url(../icons/watchic.png);
+}
+.audiolinks {
+	background-image: url(../icons/listenic.png);
+}
+.textlinks {
+	background-image: url(../icons/textic.png);
+}
+.asmedialinks {
+	background-image: url(../icons/asmedia.png);
+}
+.editlinks {
+	background-image: url(../icons/editic.png);
+}
+
+.pilink {
+	border-right: #999999 solid 1px;
+	font-weight: normal;
+	padding: 0 5px 0 5px;
+}
+
+.pipage {
+	margin: 5px;
+	padding: 10px;
+}
+
+#audiopopup .page,
+#videopopup .page {
+    padding: 0 10px 10px 10px;
+    width: 520px;
+}
+
+.backlink {
+	font-size: 75%;
+	padding-top: 5px;
+	text-align: center;
+}
+
+.topbar {
+	padding: 10px 5px;
+}
+
+
+.localaudioplayer {
+    margin: 15px 0;
+}
+
+.vimeoplayer,
+.youtubeplayer,
+.localvideoplayer,
+.blipplayer {
+	margin: 15px 5px;
+}
+
+.study_text {
+	margin: 10px;
+	padding: 0 10px 0 10px;
+	text-align: justify;
+}
+
+.shareprint {
+	float: right;
+}
+
+.printbutton {
+	border-right: #999999 solid 1px;
+	display: inline;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+
+.comments {
+	padding-left: 20px;
+}
+
+#pistudylist .te-commentcount {
+    margin: 5px 0 !important;
+}
+
+.logo {
+	background-image: url(../icons/logo.png);
+	background-repeat: no-repeat;
+	height: 50px;
+	padding: 0 10px 10px 20px;
+	width: 150px;
+}
+
+.noneassigned {
+	text-align: center;
+	margin: 20px 0;
+}
+
+.gallery_column {float: left; margin: 0 15px; text-align: center;}
+
+#teacherlist .gallery_column .teacherimage, #serieslist .gallery_column .seriesimage,
+#ministrylist .gallery_column .ministryimage, #ministryview .gallery_column .seriesimage {float: none;}
+
+.clr {clear: both;}
+
+/* --- REVOLUTION MEDIALIST --- */
+
+.mediasermons {
+	font-size: 105%;
+	font-weight: bold;
+	margin: 15px 0 7px 0;
+}
+
+/* --- REVOLUTION SERIES LIST & VIEW --- */
+
+.seriesname {
+	font-size: 135%;
+	font-weight: bold;
+	padding: 15px 0 7px 0;
+	margin: 0;
+}
+
+#seriesview .seriesname {
+	margin-top: 20px;
+}
+
+.seriesdescription {
+	font-size: 105%;
+	padding: 2px 0 3px 0;
+}
+
+#serieslist .seriesdescription {
+	color: #999999;
+}
+
+.seriessermons {
+	font-size: 105%;
+	font-weight: bold;
+	margin: 15px 0 7px 0;
+}
+
+/* --- REVOLUTION MINISTRY LIST & VIEW  --- */
+
+.ministryname {
+	font-size: 135%;
+	font-weight: bold;
+	padding: 15px 0 7px 0;
+	margin: 0;
+}
+
+#ministryview .ministryname {
+	margin-top: 20px;
+}
+
+.ministrydescription {
+	font-size: 105%;
+	padding: 2px 0 3px 0;
+}
+
+#ministrylist .ministrydescription {
+	color: #999999;
+}
+
+.ministryseries {
+	font-size: 105%;
+	font-weight: bold;
+	margin: 15px 0 7px 0;
+}
+
+/* --- REVOLUTION TEACHER LIST & VIEW  --- */
+
+.teachername {
+	font-size: 135%;
+	font-weight: bold;
+	padding: 15px 0 7px 0;
+	margin: 0;
+}
+
+.teacherrole {
+	color: #999999;
+}
+
+.teacherweb {
+	color: #999999;
+	padding-top: 2px;
+}
+
+.teacherdescription {
+	font-size: 105%;
+	padding: 0 10px;
+}
+
+#teacherlist .teacherdescription {
+	color: #999999;
+}
+
+.sermonsbyteacher {
+	font-size: 105%;
+	font-weight: bold;
+	margin: 15px 0 7px 0;
+}
+
+/* --- Print view --- */
+
+@media print {
+.print .noprint {
+    display: none;
+}
+}
+
+/*letter list in album and artist list */
+
+#pialphalist {
+    font-size: 15px;
+    margin-bottom: 0 !important;
+    overflow: hidden;
+    text-align: center;
+}
+
+#pialphalist ul {
+    margin: 0 0 20px 0 !important;
+}
+
+#pialphalist li {
+    margin-right: 2px !important;
+    background: none repeat scroll 0 0 transparent;
+    display: inline-block;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 10px !important;
+}
+#pialphalist a  {
+    font-size: 10px;
+    font-weight: 600;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    display: inline-block;
+    text-decoration: none;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #fafafa;
+    border: 1px solid #DFDED3;
+    color: #464643;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
+
+#pialphalist .alphalist a:hover {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+    background-color: transparent !important;
+}
+#pialphalist .alphalist a:focus,
+#pialphalist .alphalist a:focus {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+#pialphalist a:hover, #pialphalist a:focus, #pialphalist a:active {
+    border-top: 1px #999999 solid;
+    border-right: 1px #999999 solid;
+    border-left: 1px #999999 solid;
+    border-bottom: 1px #999999 solid;
+}
+
+#pialphalist a:hover, #pialphalist a:focus, #pialphalist a:active {
+    color: #000000 !important;
+    background-color: transparent !important;
+}
+#pialphalist li.current a {
+    border: 1px #666666 solid;
+}
+#pialphalist a:active {
+    border-color: #777777 #777777 #DFDED3;
+}
+
+
+/* --- end REVOLUTION styles --- */

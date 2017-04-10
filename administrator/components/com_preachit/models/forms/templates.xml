@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		Study edit XML
+	-->
+<form>
+	<fieldset>
+		<field name="id" type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			default="0"
+			readonly="true"
+		/>
+		<field name="messortlists" id="messortlists" type="textarea"
+			label="COM_PREACHIT_TEMP_SORTLIST_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />
+		<field name="messagelist" id="messagelist" type="textarea"
+			label="COM_PREACHIT_TEMP_MESSAGE_LIST_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="audio" id="audio" type="textarea"
+			label="COM_PREACHIT_TEMP_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />
+		<field name="audiopopup" id="audiopopup" type="textarea"
+			label="COM_PREACHIT_TEMP_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="video" id="video" type="textarea"
+			label="COM_PREACHIT_TEMP_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />
+		<field name="videopopup" id="videopopup" type="textarea"
+			label="COM_PREACHIT_TEMP_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="text" id="text" type="textarea"
+			label="COM_PREACHIT_TEMP_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="seriesheader" id="seriesheader" type="textarea"
+			label="COM_PREACHIT_TEMP_TEMPLATE_HEADER_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />
+		<field name="serieslist" id="serieslist" type="textarea"
+			label="COM_PREACHIT_TEMP_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="series" id="series" type="textarea"
+			label="COM_PREACHIT_TEMP_SERIES_DETAILS_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="seriessermons" id="seriessermons" type="textarea"
+			label="COM_PREACHIT_TEMP_SERIES_SERMONS_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />
+		<field name="teacherheader" id="teacherheader" type="textarea"
+			label="COM_PREACHIT_TEMP_TEMPLATE_HEADER_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="teacherlist" id="teacherlist" type="textarea"
+			label="COM_PREACHIT_TEMP_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="teacher" id="teacher" type="textarea"
+			label="COM_PREACHIT_TEMP_TEACHER_DETAILS_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="teachersermons" id="teachersermons" type="textarea"
+			label="COM_PREACHIT_TEMP_TEACHER_SERMONS_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />
+		<field name="ministryheader" id="ministryheader" type="textarea"
+			label="COM_PREACHIT_TEMP_TEMPLATE_HEADER_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="ministrylist" id="ministrylist" type="textarea"
+			label="COM_PREACHIT_TEMP_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="ministry" id="ministry" type="textarea"
+			label="COM_PREACHIT_TEMP_MINISTRY_DETAILS_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="ministryseries" id="ministryseries" type="textarea"
+			label="COM_PREACHIT_TEMP_MINISTRY_SERIES_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />
+		<field name="medialisthead" id="medialisthead" type="textarea"
+			label="COM_PREACHIT_TEMP_MEDIALIST_HEAD_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />	
+		<field name="mediasermons" id="mediasermons" type="textarea"
+			label="COM_PREACHIT_TEMP_MEDIALIST_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />
+		<field name="taglist" id="taglist" type="textarea"
+			label="COM_PREACHIT_TEMP_TAGLIST_TEMPLATE_CODE"
+			class="inputbox" rows="15" cols="80" filter="safehtml" />
+			
+
+	</fieldset>
+</form>

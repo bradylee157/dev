@@ -1,0 +1,1 @@
+ALTER TABLE `#__hoduma_attachments` ADD `location` text NOT NULL;

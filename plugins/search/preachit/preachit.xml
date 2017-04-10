@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.7" type="plugin" group="search" method="upgrade">
+  <name>plg_search_preachit</name>
+  <author>te-webdesign</author>
+  <creationDate>May 2011</creationDate>
+  <copyright>(C) 2010</copyright>
+  <license>GNU/GPL</license>
+  <authorEmail>paul@te-webdesign.org.uk</authorEmail>
+  <authorUrl>http://te-webdesign.org.uk</authorUrl>
+  <files>
+    <filename plugin="preachit">preachit.php</filename>
+  </files>
+  <version>3.5.3</version>
+  <description>PLG_PREACHIT_SEARCH_DESCRIPTION</description>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_search_preachit.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_search_preachit.sys.ini</language>
+		<language tag="en-US">en-US/en-US.plg_search_preachit.ini</language>
+		<language tag="en-US">en-US/en-US.plg_search_preachit.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_search_preachit.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_search_preachit.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.plg_search_preachit.ini</language>
+		<language tag="de-DE">de-DE/de-DE.plg_search_preachit.sys.ini</language>
+	</languages>  
+  <config>
+  <fields name="params">
+  <fieldset name="basic">
+    <field name="search_limit" type="text" size="5" default="50" label="PLG_PREACHIT_SEARCH_NO" description="PLG_PREACHIT_SEARCH_NO_DESC"/>
+    <field name="itemid" type="menuitem" default="" label="PLG_PREACHIT_SEARCH_MENUID" description="PLG_PREACHIT_SEARCH_MENUID_DESC">
+    	<option value="">COM_PREACHIT_ADMIN_DD_NONE</option> 
+   	 </field>
+   <field name ="linkview" type="list" default="audio" label="PLG_PREACHIT_SEARCH_LINKVIEW" description="PLG_PREACHIT_SEARCH_LINKVIEWDESC">
+   <option value="audio">PLG_PREACHIT_SEARCH_AUDIO</option>
+   <option value="video">PLG_PREACHIT_SEARCH_VIDEO</option>
+   <option value="text">PLG_PREACHIT_SEARCH_TEXT</option>
+   </field>
+   </fieldset>
+  </fields>
+  </config>
+    <!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="te-webdesign site">http://te-webdesign.co.uk/update/media/feeds/plg_search_preachit.xml</server>
+	</updateservers>
+</extension>

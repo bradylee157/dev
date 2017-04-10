@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		Study edit XML
+	-->
+<form>
+	<fieldset name="general">
+		<field name="id" type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			default="0"
+			readonly="true"
+		/>
+		
+		<field id="autopodcast" name="autopodcast" type="radio"
+			class="inputbox" label="COM_PREACHIT_BCKADMIN_AUTOPUBLISH" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field id="droptables" name="droptables" type="radio"
+			class="inputbox" label="COM_PREACHIT_BCKADMIN_DROPTABLES" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field id="checkin" name="checkin" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_CHECKIN_FUNCTION" default="1" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field id="uploadtype" name="uploadtype" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_UPLOAD_TYPE" default="1" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field id="multilanguage" name="multilanguage" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_MULITLANGUAGE" description="COM_PREACHIT_ADMIN_MULITLANGUAGE_DESC" default="1" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field
+			name="cookieconsent"
+			type="radio"
+			label="COM_PREACHIT_ADMIN_COOKIE"
+			description="COM_PREACHIT_ADMIN_COOKIE_CONSENT"
+			class="inputbox"
+			default="0" validate="options">
+			<option
+				value="1">JYES</option>
+			<option
+				value="0">JNO</option>
+		</field>
+		
+		<field id="prefixm" name="prefixm" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_PREFIXM" description="COM_PREACHIT_ADMIN_PREFIX_DESC" default="1" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field id="prefixi" name="prefixi" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_PREFIXI" description="COM_PREACHIT_ADMIN_PREFIX_DESC" default="1" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		</fieldset>
+		
+		<fieldset name="message">
+		
+		<field name="teacher" type="teacherlist" multiple="multiple" size="5" label="COM_PREACHIT_ADMIN_TEACHER" class="inputbox" default=""/>
+
+		<field name="series" type="serieslist" label="COM_PREACHIT_ADMIN_SERIES" class="inputbox" default=""/>
+		
+		<field name="ministry" type="ministrylist" multiple="multiple" size="5" label="COM_PREACHIT_ADMIN_MINISTRY" class="inputbox" default=""/>	
+		
+		<field id="notes" name="notes" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_NOTES" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field id="slides" name="slides" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_SLIDES" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field id="comments" name="comments" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_COMMENTS" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field id="studylist" name="studylist" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_STUDYLIST" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC" class="inputbox" size="1" />
+		
+		<field name="language" type="contentlanguage" label="JFIELD_LANGUAGE_LABEL"
+			class="inputbox"
+		>
+			<option value="*">JALL</option>
+		</field>
+		
+		</fieldset>
+		
+		<fieldset name="audio">
+		
+		<field name="audio_type" type="audioplayerlist" label="COM_PREACHIT_ADMIN_AUDIO_PLAYER" class="inputbox" default=""/>
+
+		<field name="audio_folder" type="folderlist" label="COM_PREACHIT_ADMIN_AUDIO_FOLDER" class="inputbox" default=""/>
+
+		<field id="audio_download" name="audio_download" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_AUDIO_DOWNLOAD" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field id="audpurchase" name="audpurchase" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_PURCHASE" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field name="audpurchase_folder" type="folderlist" label="COM_PREACHIT_ADMIN_PURCHASE_BASE_URL" class="inputbox" default=""/>
+			
+		</fieldset>
+		
+		<fieldset name="video">
+		
+		<field name="video_type" type="videoplayerlist" label="COM_PREACHIT_ADMIN_VIDEO_PLAYER" class="inputbox" default=""/>
+
+		<field name="video_folder" type="folderlist" label="COM_PREACHIT_ADMIN_VIDEO_FOLDER" class="inputbox" default=""/>
+
+		<field id="video_download" name="video_download" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_VIDEO_DOWNLOAD" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field id="add_downloadvid" name="add_downloadvid" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_ALT_DOWNLOAD_VID" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field name="downloadvid_folder" type="folderlist" label="COM_PREACHIT_ADMIN_ALT_DOWNLOAD_VID_FOLDER" class="inputbox" default=""/>
+		
+		<field id="vidpurchase" name="vidpurchase" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_PURCHASE" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field name="vidpurchase_folder" type="folderlist" label="COM_PREACHIT_ADMIN_PURCHASE_BASE_URL" class="inputbox" default=""/>
+
+		</fieldset>
+		
+		<fieldset name="other">
+			
+		<field name="notes_folder" type="folderlist" label="COM_PREACHIT_ADMIN_NOTES_FOLDER" class="inputbox" default=""/>
+		
+		<field name="slides_folder" type="folderlist" label="COM_PREACHIT_ADMIN_SLIDES_FOLDER" class="inputbox" default=""/>
+		
+		<field id="slides_type" name="slides_type" type="list"
+			class="inputbox" label="COM_PREACHIT_ADMIN_SLIDES_TYPE" default="0" validate="options"
+		>
+			<option value="0">COM_PREACHIT_ADMIN_POWERPOINT</option>
+			<option value="1">COM_PREACHIT_ADMIN_KEYNOTE</option>
+			<option value="2">COM_PREACHIT_ADMIN_SLIDES_OTHER</option>
+		</field>	
+		
+		<field name="image_folderlrg" type="folderlist" label="COM_PREACHIT_ADMIN_IMAGE_FOLDERLRG" class="inputbox" default=""/>
+		
+		<field name="upload_folder" type="folderlist" label="COM_PREACHIT_ADMIN_UPLOAD_FOLDER" class="inputbox" default=""/>
+		
+		<field name="upload_selector" type="mfupsellist" label="COM_PREACHIT_ADMIN_UPLOAD_SELECTOR" class="inputbox" default=""/>
+		
+	</fieldset>
+	
+	<fieldset name="messageform">
+		<field name="mfhide" type="mfhide" label="COM_PREACHIT_ADMIN_HIDE_ITEMS" multiple="multiple" size="15" class="inputbox" default=""/>
+		<field name="mfupsel" type="mfupsel" label="COM_PREACHIT_ADMIN_HIDE_UP_SEL" multiple="multiple" size="6" class="inputbox" default=""/>
+	</fieldset>
+	<fieldset name="seriesform">
+		<field name="sfhide" type="sfhide" label="COM_PREACHIT_ADMIN_HIDE_ITEMS" multiple="multiple" size="10" class="inputbox" default=""/>
+		<field name="sfupsel" type="sfupsel" label="COM_PREACHIT_ADMIN_HIDE_UP_SEL" multiple="multiple" size="3" class="inputbox" default=""/>
+	</fieldset>
+	<fieldset name="teacherform">
+		<field name="tfhide" type="tfhide" label="COM_PREACHIT_ADMIN_HIDE_ITEMS" multiple="multiple" size="10" class="inputbox" default=""/>
+		<field name="tfupsel" type="tfupsel" label="COM_PREACHIT_ADMIN_HIDE_UP_SEL" multiple="multiple" size="3" class="inputbox" default=""/>
+	</fieldset>
+	
+	<fieldset name="imgresize">
+		<field name="imagequal" id="imagequal" type="text" class="inputbox"
+			size="3" maxlength="3" label="COM_PREACHIT_ADMIN_IMAGE_QUAL"/>
+		<field name="msimsmw" id="msimsmw" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_MSIMAGE_WIDTH"/>
+		<field name="msimsmh" id="msimsmh" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_MSIMAGE_HEIGHT"/>
+		<field name="msimmedw" id="msimmedw" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_MMIMAGE_WIDTH"/>
+		<field name="msimmedh" id="msimmedh" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_MMIMAGE_HEIGHT"/>
+		<field name="msimlrgw" id="msimlrgw" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_MLIMAGE_WIDTH"/>
+		<field name="msimlrgh" id="msimlrgh" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_MLIMAGE_HEIGHT"/>
+		<field name="serimsmw" id="serimsmw" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_SSIMAGE_WIDTH"/>
+		<field name="serimsmh" id="serimsmh" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_SSIMAGE_HEIGHT"/>
+		<field name="serimmedw" id="serimmedw" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_SMIMAGE_WIDTH"/>
+		<field name="serimmedh" id="serimmedh" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_SMIMAGE_HEIGHT"/>
+		<field name="serimlrgw" id="serimlrgw" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_SLIMAGE_WIDTH"/>
+		<field name="serimlrgh" id="serimlrgh" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_SLIMAGE_HEIGHT"/>
+		<field name="teaimsmw" id="teaimsmw" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_TSIMAGE_WIDTH"/>
+		<field name="teaimsmh" id="teaimsmh" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_TSIMAGE_HEIGHT"/>
+		<field name="teaimmedw" id="teaimmedw" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_TMIMAGE_WIDTH"/>
+		<field name="teaimmedh" id="teaimmedh" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_TMIMAGE_HEIGHT"/>
+		<field name="teaimlrgw" id="teaimlrgw" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_TLIMAGE_WIDTH"/>
+		<field name="teaimlrgh" id="teaimlrgh" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_TLIMAGE_HEIGHT"/>
+		<field name="minimsmw" id="minimsmw" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_MINSIMAGE_WIDTH"/>
+		<field name="minimsmh" id="minimsmh" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_MINSIMAGE_HEIGHT"/>
+		<field name="minimmedw" id="minimmedw" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_MINMIMAGE_WIDTH"/>
+		<field name="minimmedh" id="minimmedh" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_MINMIMAGE_HEIGHT"/>
+		<field name="minimlrgw" id="minimlrgw" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_MINLIMAGE_WIDTH"/>
+		<field name="minimlrgh" id="minimlrgh" type="text" class="inputbox"
+		size="3" maxlength="3" label="COM_PREACHIT_ADMIN_MINLIMAGE_HEIGHT"/>
+	</fieldset>
+</form>

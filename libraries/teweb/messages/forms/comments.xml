@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		Book edit XML
+	-->
+<form>
+
+	<fieldset name="maininfo">
+	
+		<field name="full_name" type="text"
+			filter="string"
+			label="PLG_TECOMMENTS_NAME"
+			required="true"
+			size="20"
+		/>
+		
+		
+		<field name="email" type="email"
+			field="id"
+			filter="string"
+			label="PLG_TECOMMENTS_EMAIL"
+			required="true"
+			size="35"
+			validate="email"
+		/>
+		
+		<field name="comment_text" id="comment_text" type="textarea"
+			label="PLG_TECOMMENTS_COMMENT" required="true"
+			class="inputbox" rows="6" cols="40" filter="safehtml" />	
+		
+		<field
+			name="captcha"
+			type="captcha"
+			label="PLG_TECOMMENTS_COMMENT_LABEL"
+			description="PLG_TECOMMENTS_COMMENT_CAPTCHA_DESC"
+			validate="captcha"
+		/>
+
+	</fieldset>
+</form>

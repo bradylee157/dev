@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<layout title="COM_PREACHIT_VIEW_SERIES">
+<message>
+<![CDATA[COM_PREACHIT_VIEW_SERIES_DESC]]>
+</message>
+</layout>
+<state>
+<name>COM_PREACHIT_VIEW_SERIES</name>
+<description>COM_PREACHIT_VIEW_SERIES_DESC</description>
+<url addpath=
+"/administrator/components/com_preachit/elements">
+<param name="id" type="seriesview" default="" label="COM_PREACHIT_VIEW_PARAMS_CHOOSE_SERIES" />
+</url>
+<params addpath="/administrator/components/com_preachit/elements">
+<param name="template_override" type="tempfolders" default="" label="COM_PREACHIT_VIEW_PARAMS_CHOOSE_TEMPLATE" />
+</params>
+</state>
+<fields name="params">
+<fieldset name="basic" addfieldpath="/administrator/components/com_preachit/models/fields">
+<field name="template_override" type="templatechooser" default="" label="COM_PREACHIT_VIEW_PARAMS_CHOOSE_TEMPLATE" />
+</fieldset>
+</fields>
+<fields name="request">
+<fieldset name="request" addfieldpath="/administrator/components/com_preachit/models/fields">
+              <field name="series" type="seriesview" default="" label="COM_PREACHIT_VIEW_PARAMS_CHOOSE_SERIES" required="true" />
+ </fieldset>
+        </fields>
+</metadata>

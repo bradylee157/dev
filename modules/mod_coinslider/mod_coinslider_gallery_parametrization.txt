@@ -1,0 +1,88 @@
+1) Module parametrization for the mod_coinslider demo on page http://www.joompad.be/index.php/modcoinslider.html
+
+Module Class Suffix : 	
+
+	=== Gallery settings ===
+Gallery width (picture width) : 565	
+Gallery height (picture height) : 230	
+Gallery position : Centered
+Gallery navigation : Enable
+Gallery effect : Standard
+URL link on image : Enable
+Delay between slides : 5000 	
+Teaser background color : black	
+Image Teaser text color : white	
+Image folder directory : modules/mod_coinslider/images/	
+
+	=== Gallery CSS settings ===
+Gallery wrapper CSS :	
+Gallery CSS : border: solid 0px #000;
+Title CSS : font-weight: bold; font-size: 16px;
+Teaser box CSS : width:565px !important; margin-bottom:0px; margin-left:0px; padding:10px;
+New line to br tag : Disable
+Navigation buttons css : left:400px !important; margin-left:10px !important; position:absolute !important; bottom:200px; padding:0 !important;
+Navigation button link CSS : margin-left: 5px; height: 10px; width: 10px; float: left; border: 1px solid #B8C4CF; color: #B8C4CF; text-indent: -1000px;
+Navigation button active link CSS : background-color:#B8C4CF !important;
+ 
+------------------------------------------------------------------------------------------
+
+2) Module parametrization for the mod_coinslider demo on page http://www.joompad.be/index.php/test-all-modules.html
+
+Module Class Suffix :	
+
+	=== Gallery settings ===
+Gallery width (picture width) : 565	
+Gallery height (picture height) : 230	
+Gallery position : Centered
+Gallery navigation : Enable
+Gallery effect : Standard
+URL link on image : Disable
+Delay between slides : 5000	
+Teaser background color : #2A4C93	
+Image Teaser text color : white	
+Image folder directory : modules/mod_coinslider/images/	
+
+	=== Gallery CSS settings ===
+Gallery wrapper CSS :	
+Gallery CSS : border: solid 0px #000;
+Title CSS : font-weight: bold; font-size: 16px;
+Teaser box CSS : width:300px !important; margin-bottom:15px; margin-left: 20px; font-weight: bolder; padding:10px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;
+New line to br tag : Disable
+Navigation buttons css : width:565px !important; margin-bottom:0px; margin-left:0px; padding: 10px;
+Navigation button link CSS : border:1px solid #B8C4CF !important; margin-left: 5px; height: 10px; width: 10px; float: left; color: #B8C4CF; text-indent: -1000px; -webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;
+Navigation button active link CSS : background-color:#B8C4CF !important;
+
+------------------------------------------------------------------------------------------
+
+3) Module parametrization for the mod_coinslider demo on page http://www.joompad.be/index.php/test-easytable-a-coinslider.html
+Module Class Suffix :	
+
+  	=== Gallery settings ===
+Gallery width (picture width):  565	
+Gallery height (picture height) : 230	
+Gallery position : Centered
+Gallery navigation : Enable
+Gallery effect : Standard
+URL link on image : Disable
+Delay between slides : 5000	
+Teaser background color : #d13f68	
+Image Teaser text color : white	
+Image folder directory : modules/mod_coinslider/images/	
+  	=== Gallery CSS settings ===
+Gallery wrapper CSS : 	
+Gallery CSS : border: solid 0px #000;
+Title CSS :font-weight: bold; font-size: 16px;
+Teaser box CSS : width:150px !important; margin-bottom:15px; margin-left: 55px; font-weight: bolder; padding:10px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;
+New line to br tag : Disable
+Navigation buttons css : left:400px !important; margin-left:10px !important; position:absolute !important; bottom:15px; padding:0 !important;
+Navigation button link CSS : margin-left: 5px; height: 10px; width: 10px; float: left; border: 1px solid #d13f68; color: #d13f68; text-indent: -1000px;
+Navigation button active link CSS : background-color:#d13f68 !important;
+ 
+
+------------------------------------------------------------------------------------------
+
+Have fun
+
+If you use and like mod_coinslider, please post a review or vote on the Joomla Extension Directory. 
+
+Daniel

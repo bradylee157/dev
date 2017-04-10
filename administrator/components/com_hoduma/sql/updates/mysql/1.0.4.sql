@@ -1,0 +1,9 @@
+UPDATE `#__hoduma_problems` SET `status` = 100 WHERE `status` = 24;
+UPDATE `#__hoduma_problems` SET `status` = 65 WHERE `status` = 22;
+UPDATE `#__hoduma_problems` SET `status` = 63 WHERE `status` = 21;
+UPDATE `#__hoduma_problems` SET `status` = 60 WHERE `status` = 20;
+UPDATE `#__hoduma_problems` SET `status` = 55 WHERE `status` = 19;
+UPDATE `#__hoduma_problems` SET `status` = 50 WHERE `status` = 18;
+UPDATE `#__hoduma_problems` SET `status` = 20 WHERE `status` = 17;
+UPDATE `#__hoduma_problems` SET `status` = 10 WHERE `status` = 16;
+UPDATE `#__hoduma_problems` SET `status` = 1 WHERE `status` = 15;

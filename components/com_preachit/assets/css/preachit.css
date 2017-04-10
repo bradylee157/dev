@@ -1,0 +1,173 @@
+.icon-48-preachit { background:url(../images/icon-48-preachit.png) no-repeat;}
+.icon-48-message { background:url(../images/message.png) no-repeat;}
+.icon-48-teacher { background:url(../images/teacher.png) no-repeat;}
+.icon-48-series { background:url(../images/series.png) no-repeat;}
+.icon-48-ministry { background:url(../images/ministry.png) no-repeat;}
+.icon-48-comment { background:url(../images/comment.png) no-repeat;}
+.icon-48-folder { background:url(../images/folder.png) no-repeat;}
+.icon-48-book { background:url(../images/book.png) no-repeat;}
+.icon-48-version { background:url(../images/version.png) no-repeat;}
+.icon-48-podcast { background:url(../images/podcast.png) no-repeat;}
+.icon-48-mime { background:url(../images/mime.png) no-repeat;}
+.icon-48-mediaplayer { background:url(../images/player.png) no-repeat;}
+.icon-48-admin { background:url(../images/admin.png) no-repeat;}
+.icon-48-template { background:url(../images/template.png) no-repeat;}
+.icon-48-css { background:url(../images/css.png) no-repeat;}
+.icon-48-extension { background:url(../images/extension.png) no-repeat;}
+.icon-48-picpanel { background:url(../images/icon-48-preachit.png) no-repeat;}
+.icon-48-tag { background:url(../images/tag.png) no-repeat;}
+.icon-48-share { background:url(../images/share.png) no-repeat;}
+.icon-32-hits32 { background:url(../images/hits32.png) no-repeat;}
+.icon-32-down32 { background:url(../images/down32.png) no-repeat;}
+.icon-32-restemp { background:url(../images/restoretemp.png) no-repeat;}
+.icon-32-publishxml { background:url(../images/rss.png) no-repeat;}
+.piadmin-functitle {
+    border: 1px solid #CCCCCC;
+    clear: both;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 48px;
+    line-height: 44px;
+    padding: 5px;
+    text-align: left;
+    text-indent: 50px;
+     }
+.template-manager { 
+	background:url(../images/templateinstall.png) 0.2% 25% no-repeat;
+}
+
+.piupgrade {
+	color: red !important; 
+	font-weight: bold;
+}
+
+.desc-title {
+	font-weight: bold; 
+	font-size: 130%; 
+	padding: 10px 0 10px 0; 
+	width: 100%;
+}
+
+.desc {
+	padding: 0 0 10px 0;
+}
+
+.piformdiv {
+    min-height: 500px;
+}
+
+.piformdiv table.piadmintable {
+	width: 100%; 
+	padding-bottom: 20px;
+}
+
+.piformdiv table.admintable td {
+    padding: 5px 0 5px 5px;
+}
+
+.piformdiv table.pitable {
+    width: 100%;
+}
+
+.inline-desc {
+	padding: 0 10px;
+}
+
+.inline-desc-lt {
+	padding: 0 10px 0 0;
+}
+
+.mc-form-frame .inline-desc {
+	padding: 0 5px;
+	font-size: 10px;
+}
+
+.mc-form-frame .inline-desc-lt {
+	padding: 0 5px 0 0;
+	font-size: 10px;
+}
+
+ 
+table.admintable .comp input[type="text"] {
+	font-size: 12px !important;
+}
+
+.pitablesubhead {
+    font-size: 140%;
+    font-weight: bold;
+    height: 50px;
+}
+
+.pitempdetails {
+	display: inline-block;
+	margin: 10px 0 10px 20px;
+   font-size: 16px;
+}
+
+.borderrt {
+    border-right: 1px dotted black;
+}
+
+.panelform {
+    padding: 20px 40px !important;
+}
+
+/* front end edit */
+
+ tr, .pifrontedit td, .pifrontedit table {
+    border: none !important;
+}
+
+.pifrontedit label {
+    margin: 2px 0 10px 0 !important;
+}
+
+.pifrontedit button {
+    margin-left: 10px !important;
+    margin-top: 3px;
+}
+
+.pifrontedit fieldset.panelform label, .pifrontedit fieldset.panelform div.paramrow label, .pifrontedit fieldset.panelform span.faux-label {
+    max-width: 145px !important;
+}
+
+.pifrontedit fieldset.panelform .pitablesubhead {
+    max-width: 300px !important;
+    margin-top: 20px !important;
+}
+.pifrontedit fieldset.uploadform {
+    border: 1px solid #CCCCCC;
+}
+
+.tempcsslinks li {
+    list-style: none outside none;
+    text-align: left;
+}
+.tempcsslinks {
+    padding: 0;
+    margin: 5px;
+}
+span.master {
+    background: none repeat scroll 0 0 #CC0000;
+    color: #FFFFFF;
+    font-family: Georgia,serif;
+    font-size: 8px;
+    margin: 0 5px;
+    padding: 1px 3px 2px 3px;
+    position: relative;
+    top: -7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

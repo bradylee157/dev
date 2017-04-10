@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		Template title XML
+	-->
+<form>
+	<fieldset name="general">
+		<field name="title" type="text"
+			label="COM_PREACHIT_ADMIN_TEMPLATE_TITLE"
+			default="" size="50" maxlength="250"
+			required="true"
+		/>
+		<field name="template" type="text"
+			label="COM_PREACHIT_ADMIN_TEMPLATE_NAME"
+			default="" size="50" maxlength="250"
+			readonly="true" class="readonly"
+		/>
+		<field name="id" type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			default="0"
+			class="readonly"
+			readonly="true"
+		/>
+	</fieldset>
+</form>

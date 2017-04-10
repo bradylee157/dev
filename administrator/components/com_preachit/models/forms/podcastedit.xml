@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		Podcast edit XML
+	-->
+<form>
+	<fieldset name="maininfo">
+		<field name="id" type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			default="0"
+			readonly="true"
+		/>
+		<field name="podpub" id="podpub" type="calendar" class="readonly"
+			readonly="true" size="50" format="D, d M, Y" maxlength="100" label="COM_PREACHIT_ADMIN_LAST_WRITE_XML" />	
+		<field
+			name="published"
+			type="list"
+			label="COM_PREACHIT_ADMIN_STATE"
+			description="COM_PREACHIT_FIELD_STATE_DESC"
+			class="inputbox"
+			size="1"
+			default="" validate="options">
+			<option
+				value="1">JPUBLISHED</option>
+			<option
+				value="0">JUNPUBLISHED</option>
+			<option
+				value="-2">JTRASH</option>
+		</field>
+		<field name="name" id="name" type="text" class="inputbox"
+			size="50" maxlength="50" label="COM_PREACHIT_ADMIN_NAME" required="true" />
+		<field name="records" id="records" type="text" class="inputbox"
+			size="3" maxlength="3" label="COM_PREACHIT_ADMIN_RECORDS" />
+		<field name="description" id="description" type="textarea"
+			label="COM_PREACHIT_ADMIN_DESCRIPTION"
+			class="inputbox" rows="10" cols="20" filter="safehtml" />
+		<field name="image" id="image" type="text" class="inputbox"
+			size="50" maxlength="100" label="COM_PREACHIT_ADMIN_IMGURL" />	
+		<field name="imagehgt" id="imagehgt" type="text" class="inputbox"
+			size="4" maxlength="4" label="COM_PREACHIT_ADMIN_IMGHGT" />
+		<field name="imagewth" id="imagewth" type="text" class="inputbox"
+			size="4" maxlength="4" label="COM_PREACHIT_ADMIN_IMGWDTH" />
+		<field name="author" id="author" type="text" class="inputbox"
+			size="50" maxlength="50" label="COM_PREACHIT_ADMIN_AUTHOR" />
+		<field name="search" id="search" type="text" class="inputbox"
+			size="100" maxlength="100" label="COM_PREACHIT_ADMIN_SEARCH" />
+		<field name="filename" id="filename" type="text" class="inputbox"
+			size="50" maxlength="50" label="COM_PREACHIT_ADMIN_FILENAME" />
+		<field name="language" id="language" type="text" class="inputbox"
+			size="10" maxlength="10" label="COM_PREACHIT_ADMIN_LANGUAGE" />
+		<field name="editor" id="editor" type="text" class="inputbox"
+			size="50" maxlength="50" label="COM_PREACHIT_ADMIN_PODEDITOR" />
+		<field name="email" id="email" type="text" class="inputbox"
+			size="100" maxlength="100" label="COM_PREACHIT_ADMIN_PODEDITOREMAIL" />
+	</fieldset>
+	<fieldset name="episodes">
+		<field
+			name="itunestitle" type="list" label="COM_PREACHIT_ADMIN_PODTITLE" class="inputbox"
+			size="1" default="0" validate="options">
+			<option
+				value="0">COM_PREACHIT_PODCAST_TITLE_SMT</option>
+			<option
+				value="1">COM_PREACHIT_PODCAST_TITLE_MT</option>
+		</field>
+		<field
+			name="itunessub" type="list" label="COM_PREACHIT_ADMIN_ITUNESSUBTITLE" class="inputbox"
+			size="1" default="0" validate="options">
+			<option
+				value="0">COM_PREACHIT_PODCAST_SUB_MD</option>
+			<option
+				value="1">COM_PREACHIT_PODCAST_SUB_SMD</option>
+			<option
+				value="2">COM_PREACHIT_PODCAST_SUB_SMT</option>
+		</field>
+		<field
+			name="itunesdesc" type="list" label="COM_PREACHIT_ADMIN_ITUNESDESC" class="inputbox"
+			size="1" default="0" validate="options">
+			<option
+				value="1">COM_PREACHIT_PODCAST_DESC_SMD</option>
+			<option
+				value="0">COM_PREACHIT_PODCAST_DESC_MD</option>
+		</field>
+		<field name="menu_item" id="menu_item" type="menuitem" default="0" 
+			class="inputbox" label="COM_PREACHIT_ADMIN_MENUITEM">
+			<option value="">COM_PREACHIT_ADMIN_DD_NONE</option> 
+		</field>
+	</fieldset>
+	<fieldset name="content">
+		<field name="teacher" type="radio" default="0" label="COM_PREACHIT_MENU_POD_TEACHER_SEL_TITLE" 
+			description="COM_PREACHIT_MENU_POD_TEACHER_SEL_DESC"> 
+			<option value="0">PIAll</option> 
+			<option value="1">PISelect</option> </field> 
+		<field name="teacher_list" type="teacherlist" default="" multiple="true" size="10" label="COM_PREACHIT_MENU_POD_TEACHER_SELECTION" />
+		<field name="series" type="radio" default="0" label="COM_PREACHIT_MENU_POD_SERIES_SEL_TITLE" 
+			description="COM_PREACHIT_MENU_POD_SERIES_SEL_DESC"> 
+			<option value="0">PIAll</option> 
+			<option value="1">PISelect</option> </field> 
+		<field name="series_list" type="serieslist" default="" multiple="true" size="10" label="COM_PREACHIT_MENU_POD_SERIES_SELECTION" />
+		<field name="ministry" type="radio" default="0" label="COM_PREACHIT_MENU_POD_MINISTRY_SEL_TITLE" 
+			description="COM_PREACHIT_MENU_POD_MINISTRY_SEL_DESC"> 
+			<option value="0">PIAll</option> 
+			<option value="1">PISelect</option> </field> 
+		<field name="ministry_list" type="ministrylist" default="" multiple="true" size="5" label="COM_PREACHIT_MENU_POD_MINISTRY_SELECTION" />
+		<field name="media" type="radio" default="1" label="COM_PREACHIT_MENU_POD_MEDIA_SEL_TITLE" 
+			description="COM_PREACHIT_MENU_POD_MEDIA_SEL_DESC"> 
+			<option value="0">PIAll</option> 
+			<option value="1">PISelect</option> </field> 
+		<field name="media_list" type="medialist" default="1" multiple="true" size="5" label="COM_PREACHIT_MENU_POD_MEDIA_SELECTION" />
+		<field name="languagesel" type="contentlanguage" label="JFIELD_LANGUAGE_LABEL"
+		 class="inputbox">
+			<option value="*">JALL</option>
+		</field>
+	</fieldset>
+</form>

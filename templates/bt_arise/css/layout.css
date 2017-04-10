@@ -1,0 +1,51 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA T3 System plugin for Joomla 1.7
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 JoomlArt.com. All Rights Reserved.
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * Author: JoomlArt.com
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com.
+ * ------------------------------------------------------------------------
+ */
+
+/* MAIN LAYOUT DIVS
+--------------------------------------------------------- */
+
+/* Gutter ---*/
+.main .inner {
+/* We use liquid layout, so we need to insert a div which will create margin if need */
+	padding-left: 13px;
+	padding-right: 13px;
+}
+
+.main .main-inner1 {
+/* We use liquid layout, so we need to insert a div which will create margin if need */
+	margin-left: 13px;
+	margin-right: 13px;
+}
+
+.column div.ja-moduletable, .column div.moduletable, .column div.ja-module, .column div.module { 
+/* for side columns and spotlight, we only need to add margin or padding to Module */
+	margin-left: 36px;
+	margin-right: 13px;
+	/* too high up for ep swirl logo and menu system, so moved down. */
+	margin-top: 20px;
+}
+.ja-inset2 div.ja-moduletable, .ja-inset2 .div.moduletable, .ja-inset2 div.ja-module, .ja-inset2 div.module {
+    margin:0 1px 10px 25px;
+}
+
+.item .contentpaneopen {
+/* for article columns, we only need to add margin or padding to this div  */
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.items-leading { }
+
+.items-row {
+/* minus the spacing of the article row to macth with the Gutter & global grid */
+	margin-left: 0px;
+	margin-right: 0px; 
+}

@@ -1,0 +1,120 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA T3 Blank template for joomla 1.7
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 JoomlArt.com. All Rights Reserved.
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * Author: JoomlArt.com
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com.
+ * ------------------------------------------------------------------------
+*/
+.ja-megamenu a.over, .ja-megamenu a.active {  }
+
+.ja-megamenu ul.level0 {
+	font-family: 'Cuprum';
+}
+
+.ja-megamenu ul.level0 li.mega a.mega {
+	text-transform: uppercase;
+	font-size: 145%;
+	font-weight: normal;
+	color: #fff;
+	padding: 20px 15px 9px;
+}
+.ja-megamenu ul.level0 li.active, .ja-megamenu ul.level0 li.over { background: url(../../images/bgd-nav-l0-over.png) center bottom no-repeat; }
+
+.ja-megamenu ul.level0 li.haschild-over {background: url(../../images/bgd-nav-l0-haschild-over.png) center bottom no-repeat;}
+
+.ja-megamenu ul.level0 li.mega span.menu-title { padding-bottom: 10px; }
+
+.ja-megamenu ul.level0 li.mega span.menu-desc { display: none; }
+
+.ja-megamenu ul.level0 li.haschild a.mega span.menu-title, .ja-megamenu ul.level0 li.haschild-over a.mega span.menu-title {
+	background: url(../../images/arrow3.png) center bottom no-repeat;
+	padding-left: 0;
+}
+.ja-megamenu ul.level0 li.haschild li a.mega span.menu-title, .ja-megamenu ul.level0 li.haschild-over li a.mega span.menu-title {
+	background: none;
+}
+
+/* lv - 1 and below
+-----------------------------------*/
+/* Styling ---*/
+.ja-megamenu ul.level1 li.mega { border-top: 1px dotted #ccc; }
+
+.ja-megamenu ul.level1 li.first { border-top: 0; }
+
+.ja-megamenu ul.level1 li.mega a.mega {
+	text-transform: none;
+	font-size: 115%;
+	color: #616161;
+	border: 0;
+	padding: 8px 5px;
+}
+.ja-megamenu ul.level1 li.mega a.mega:hover,
+.ja-megamenu ul.level1 li.mega a.active{
+	color:#6A7F08;
+}
+
+ /* CHILD CONTENT
+-----------------------------------*/
+.ja-megamenu .group-content .ja-moduletable, .ja-megamenu .group-content ul.megamenu {
+	margin: 0;
+}
+
+.ja-megamenu .childcontent-inner-wrap { 
+	background: url(../../images/bgd-nav-child.png) repeat-x;
+	position: relative;
+	margin-top: -4px;
+	padding-top: 4px;
+	z-index:300;
+}
+.ja-megamenu .childcontent-inner {
+	background: #fff;
+	color: #333;
+	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+
+	-moz-box-shadow: 0 0px 10px -3px #3C3C3C;
+	-webkit-box-shadow: 0 0px 10px -3px #3C3C3C;
+	box-shadow: 0 0px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+.ja-megamenu .level1 .childcontent-inner-wrap {
+	background: none;
+	margin: 0;
+	padding: 0;
+}
+
+.ja-megamenu .level1 .childcontent-inner { }
+
+.ja-megamenu .childcontent .ja-moduletable { color: #616161; font-size: 115%; }
+
+.ja-megamenu .childcontent .ja-moduletable h3 {
+	font-family: 'Cuprum';
+	font-weight: normal;
+	font-size: 115%;
+	background: none;
+	border-bottom: 1px solid #ccc;
+	text-transform: uppercase;
+	padding: 8px 0 8px;
+	color: #627905;
+}
+
+/* Grouped --- */
+.ja-megamenu .group-title { border-bottom: 1px solid #ccc; }
+
+.ja-megamenu .group-title .menu-title {
+	color: #627905;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 115%;
+}
+
+.ja-megamenu .group-title .menu-desc {
+	color: #999;
+	padding-left: 0 !important;
+}
+
+

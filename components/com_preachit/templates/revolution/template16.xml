@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+
+<!-- general params for 1.6 -->
+
+<fieldset name="general" addfieldpath="/administrator/components/com_preachit/models/fields">
+
+	<field name="date_format" type="list" default="" label="COM_PREACHIT_TEMP_PARAMS_DATEFORMAT_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_DATEFORMAT_DESC"> 
+		<option value="">Default</option> 
+		<option value="Y-m-d">2010-12-25</option> 
+		<option value="m-d-Y">12-25-2010</option> 
+		<option value="d-m-Y">25-12-2010</option> 
+		<option value="M d, Y">Dec 25, 2010</option> 
+		<option value="D, M d, Y">Sat, Dec 25, 2010</option> 
+		<option value="M d">Dec 25</option> 
+		<option value="F d, Y">December 25, 2010</option> 
+		<option value="l, F d, Y">Saturday, December 25, 2010</option> </field> 
+		
+	<field name="dur_format" type="list" default="1" label="COM_PREACHIT_TEMP_PARAMS_DURFORMAT_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_DURFORMAT_DESC"> 
+		<option value="1">1 hr 10 mins 5 secs</option> 
+		<option value="2">1 hr 10 mins</option> 
+		<option value="3">1:10:05</option> 
+	</field> 
+	
+	<field name="display_comments" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_COMMENTS_TITLE"> 
+		<option value="1">JYes</option> 
+		<option value="0">JNo</option> </field>
+		
+	<field name="share" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_SBENABLE_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_SBENABLE_DESC"> 
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="sharecode" type="sharelist" default="1" label="COM_PREACHIT_TEMP_PARAMS_SHARECODE_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_SHARECODE_DESC" multiple="multiple" size="5" /> 
+		
+	<field name="fbimg" type="text" size="50" default="" label="COM_PREACHIT_TEMP_PARAMS_FBIMG_TITLE"
+		description="COM_PREACHIT_TEMP_PARAMS_FBIMG_DESC"/>
+		
+	<field name="bible_link" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_SCRIPTLINKS_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_SCRIPTLINKS_DESC"> 
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+	
+	<field name="bible_link_modal" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_SCRIPTLINKS_MODAL_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_SCRIPTLINKS_MODAL_DESC"> 
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+	
+	<field name="biblelinktype" type="list" default="1" label="COM_PREACHIT_TEMP_PARAMS_SCRIPTLINKS_TYPE_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_SCRIPTLINKS_TYPE_DESC"> 
+		<option value="1">COM_PREACHIT_TEMP_PARAMS_BIBLEGATEWAY</option> 
+		<option value="2">COM_PREACHIT_TEMP_PARAMS_BIBLIA_COM</option>
+		<option value="3">COM_PREACHIT_TEMP_PARAMS_YOUVERSION</option>  </field> 
+		
+	<field name="bible_version" type="biblevers" default="NIV" label="COM_PREACHIT_TEMP_PARAMS_BIBLEVERS_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_BIBLEVERS_DESC" />
+	
+	<field name="bible_sep" type="text" default=":" size="3" label="COM_PREACHIT_TEMP_PARAMS_BIBLE_SEP" 
+	description="COM_PREACHIT_TEMP_PARAMS_BIBLE_SEP_DESC" />	
+	
+	<field name="teacher_link" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_TEACHERLINK_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_TEACHERLINK_DESC"> 
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="series_link" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_SERIESLINK_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_SERIESLINK_DESC"> 
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="ministry_link" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MINISTRYLINK_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_MINISTRYLINK_DESC"> 
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="edit_link" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_EDITLINK_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_EDITLINK_DESC"> 
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="asmedia" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_ASMEDIA_TITLE" description="COM_PREACHIT_TEMP_PARAMS_ASMEDIA_DESC">  
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="asmediatext" type="text" default="media" label="COM_PREACHIT_TEMP_PARAMS_ASTEXT_TITLE"/>
+	
+	<field name="mobtemp" type="tempmob" default="" label="COM_PREACHIT_TEMP_PARAMS_MOB_SWITCH" description="COM_PREACHIT_TEMP_PARAMS_MOB_SWITCH_DESC"/>	
+	
+	<field name="download_method" type="list" default="0" label="COM_PREACHIT_CONFIG_DOWNLOAD_METHOD_TITLE" description="COM_PREACHIT_CONFIG_DOWNLOAD_METHOD_DESC">
+		<option value="0">COM_PREACHIT_ADMIN_DD_AUTO</option>
+		<option value="1">readfile function</option>
+		<option value="2">Curl function</option>
+	</field>
+	
+	<field name="popup" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_POPUP_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_POPUP_DESC"> 
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+	
+	<field name="access" type="accesslevel" label="JFIELD_ACCESS_LABEL"
+	description="JFIELD_ACCESS_DESC" class="inputbox" size="1" />
+		
+	<field name="powered_by" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_POWERED_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_POWERED_DESC"> 
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+</fieldset>
+  
+<!-- Messagelist params -->
+
+<fieldset name="messagelist" addfieldpath="/administrator/components/com_preachit/models/fields">
+
+	<field name="studylist_no" type="text" default="10" label="COM_PREACHIT_TEMP_PARAMS_LNO_TITLE" />
+	
+	<field name="date_studylist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLDATE_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="series_studylist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLSERIES_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="teacher_studylist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLTEACHER_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="description_studylist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLDESCRIPTION_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="duration_studylist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLDUR_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+	
+	<field name="commentcount_studylist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_COMMENTNO_TITLE"> 
+		<option value="1">JYes</option> 
+		<option value="0">JNo</option> </field>
+		
+	<field name="filterbar" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLFILTERS_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+		
+	<field name="filter_book" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLBOOKFILTER_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="filter_teacher" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLTEACHERFILTER_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+		
+	<field name="filter_series" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLSERIESFILTER_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+		
+	<field name="filter_ministry" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_MLMINFILTER_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+		
+	<field name="filter_year" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLDATEFILTER_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+		
+	<field name="datelist" type="list" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLDATEFILTEROPTIONS_TITLE">
+		<option value="1">COM_PREACHIT_ADMIN_DD_MONTHS</option> 
+		<option value="2">COM_PREACHIT_ADMIN_DD_YEARS</option> 
+	</field> 
+	
+	<field name="jsdropdowns" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_JSDROPDOWNS_TITLE"
+	description="COM_PREACHIT_TEMP_PARAMS_JSDROPDOWNS_DESC">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+		
+	<field name="ajaxrefresh" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_AJAXREFRESH_TITLE"
+	description="COM_PREACHIT_TEMP_PARAMS_AJAXREFRESH_DESC">
+		<option value="1">JYes</option> 
+		<option value="0">JNo</option> </field>
+	
+	<field name="messagesort" type="list" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLSORT_TITLE">
+		<option value="1">COM_PREACHIT_ADMIN_DD_DATEDESC</option> 
+		<option value="2">COM_PREACHIT_ADMIN_DD_DATEASC</option> 
+		<option value="3">COM_PREACHIT_ADMIN_DD_DATEENTASC</option>
+		<option value="4">COM_PREACHIT_ADMIN_DD_DATEENTDESC</option>
+	</field> 
+	
+	<field name="listimage" type="list" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLIMAGE_TITLE" description="COM_PREACHIT_TEMP_PARAMS_MLIMAGE_DESC">
+		<option value="1">COM_PREACHIT_ADMIN_DD_NONE</option> 
+		<option value="2">COM_PREACHIT_ADMIN_DD_TEACHER</option> 
+		<option value="3">COM_PREACHIT_ADMIN_DD_SERIES</option>
+		<option value="4">COM_PREACHIT_ADMIN_DD_MESSAGE</option>
+	</field>
+	
+</fieldset>
+  
+<!-- video view params -->
+
+<fieldset name="video" addfieldpath="/administrator/components/com_preachit/models/fields">
+
+	<field name="videoplayer_width" type="text" default="400" label="COM_PREACHIT_TEMP_PARAMS_VPLAYERWIDTH_TITLE" description="COM_PREACHIT_TEMP_PARAMS_VPLAYERWIDTH_DESC" />
+	
+	<field name="videoplayer_height" type="text" default="300" label="COM_PREACHIT_TEMP_PARAMS_VPLAYERHEIGHT_TITLE" description="COM_PREACHIT_TEMP_PARAMS_VPLAYERHEIGHT_DESC" />
+	
+	<field name="videoskin" type="jwskins" default="" label="COM_PREACHIT_TEMP_PARAMS_VPLAYERSKIN_TITLE" description="COM_PREACHIT_TEMP_PARAMS_VPLAYERSKIN_DESC" >
+	</field>
+	
+	<field name="show_duration_vid" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_VDURATION_TITLE" description="COM_PREACHIT_TEMP_PARAMS_VDURATION_DESC">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+		
+	<field name="show_text_vid" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_VTEXT_TITLE" description="COM_PREACHIT_TEMP_PARAMS_VTEXT_DESC">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="show_2links_vid" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_VLINKS2_TITLE" description="COM_PREACHIT_TEMP_PARAMS_VLINKS2_DESC">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+		
+</fieldset>
+  
+<!-- audio view params -->
+
+<fieldset name="audio" addpath="/administrator/components/com_preachit/elements">
+
+	<field name="audioplayer_width" type="text" default="500" label="COM_PREACHIT_TEMP_PARAMS_APLAYERWIDTH_TITLE" description="COM_PREACHIT_TEMP_PARAMS_APLAYERWIDTH_DESC" />
+	
+	<field name="audioplayer_height" type="text" default="24" label="COM_PREACHIT_TEMP_PARAMS_APLAYERHEIGHT_TITLE" description="COM_PREACHIT_TEMP_PARAMS_APLAYERHEIGHT_DESC" />
+	
+	<field name="audioskin" type="jwskins" default="" label="COM_PREACHIT_TEMP_PARAMS_APLAYERSKIN_TITLE" description="COM_PREACHIT_TEMP_PARAMS_APLAYERSKIN_DESC" >
+	</field>
+	
+	<field name="show_duration_aud" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_APLAYERDUR_TITLE" description="COM_PREACHIT_TEMP_PARAMS_APLAYERDER_DESC">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+		
+	<field name="show_text_aud" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_APLAYERTEXT_TITLE" description="COM_PREACHIT_TEMP_PARAMS_APLAYERTEXT_DESC">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="show_2links_aud" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_APLAYERLINKS2_TITLE" description="COM_PREACHIT_TEMP_PARAMS_APLAYERLINKS2_DESC">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+		
+</fieldset>
+  
+<!-- video popup params -->
+
+<fieldset name="videopopup" addfieldpath="/administrator/components/com_preachit/models/fields">
+
+	<field name="popupvid_width" type="text" default="600" label="COM_PREACHIT_TEMP_PARAMS_VPOPUPWIDTH_TITLE" description="COM_PREACHIT_TEMP_PARAMS_VPOPUPWIDTH_DESC" />
+	
+	<field name="popupvid_height" type="text" default="650" label="COM_PREACHIT_TEMP_PARAMS_VPOPUPHEIGHT_TITLE" description="COM_PREACHIT_TEMP_PARAMS_VPOPUPHEIGHT_DESC" />
+	
+</fieldset>
+  
+<!-- audio popup params -->
+
+<fieldset name="audiopopup" addpath="/administrator/components/com_preachit/elements">
+
+	<field name="popupaud_width" type="text" default="600" label="COM_PREACHIT_TEMP_PARAMS_APOPUPWIDTH_TITLE" description="COM_PREACHIT_TEMP_PARAMS_APOPUPWIDTH_DESC" />
+	
+	<field name="popupaud_height" type="text" default="400" label="COM_PREACHIT_TEMP_PARAMS_APOPUPHEIGHT_TITLE" description="COM_PREACHIT_TEMP_PARAMS_APOPUPHEIGHT_DESC" />
+	
+</fieldset>
+  
+<!-- text view params -->
+
+<fieldset name="text" addfieldpath="/administrator/components/com_preachit/models/fields">
+
+	<field name="print_text" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_TEXTPRINT_TITLE" description="COM_PREACHIT_TEMP_PARAMS_TEXTPRINT_DESC">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="show_2links_text" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_TEXTLINKS2_TITLE" description="COM_PREACHIT_TEMP_PARAMS_TEXTLINKS2_DESC">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field>
+		
+</fieldset>
+  
+<!-- general media view params -->
+
+<fieldset name="generalmedia" addfieldpath="/administrator/components/com_preachit/models/fields">
+
+	<field name="mediapriority" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MEDIA_PRIORITY">
+		<option value="1">PIAUDIO</option> 
+		<option value="2">PIVIDEO</option> </field> 
+
+	<field name="backlinkmain" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MEDIABACKLINK_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="backlinkmaintext" description="COM_PREACHIT_TEMP_PARAMS_BACKLINKTEXT_DESC" 
+		type="text" default="" label="COM_PREACHIT_TEMP_PARAMS_MEDIABACKLINKTEXT_TITLE"/>
+
+</fieldset>
+  
+<!-- serieslist params -->
+
+<fieldset name="serieslist" addfieldpath="/administrator/components/com_preachit/models/fields">
+
+	<field name="series_listtype" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_SLLISTTYPE_TITLE">
+		<option value="0">PILIST</option> 
+		<option value="1">PIGALLERY</option> 
+	</field>
+
+	<field name="serieslist_no" type="text" default="10" label="COM_PREACHIT_TEMP_PARAMS_SLNO_TITLE" />
+	
+	<field name="series_imageacross" type="text" default="4" label="COM_PREACHIT_TEMP_PARAMS_SLNOACROSS_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_NOACROSS_DESC"/>
+	
+	<field name="seriessort" type="list" default="1" label="COM_PREACHIT_TEMP_PARAMS_SLSORT_TITLE">
+		<option value="1">COM_PREACHIT_ADMIN_DD_DATEDESC</option> 
+		<option value="2">COM_PREACHIT_ADMIN_DD_DATEASC</option> 
+		<option value="3">COM_PREACHIT_ADMIN_DD_MANUAL</option>
+		<option value="4">COM_PREACHIT_ADMIN_DD_MANUALDESC</option>
+		<option value="5">COM_PREACHIT_ADMIN_DD_NAMEASC</option> 
+		<option value="6">COM_PREACHIT_ADMIN_DD_NAMEDESC</option> 
+	</field>
+	
+	<field name="picture_serieslist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_SLIMAGE_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+	
+	<field name="description_serieslist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_SLDESCRIPTION_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+	
+	<field name="date_serieslist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLDATE_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+	
+	<field name="seriesdate_format" type="list" default="M Y" label="COM_PREACHIT_TEMP_PARAMS_DATEFORMAT_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_SERIES_DATEFORMAT_DESC"> 
+		<option value="M Y">Dec 2010</option> 
+		<option value="F Y">December 2010</option> </field> 
+		
+	<field name="serimgdef" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_IMAGE_DEFAULT" description="COM_PREACHIT_TEMP_PARAMS_IMAGE_DEFAULT_DESC">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+</fieldset>
+  
+<!-- series view params -->
+
+<fieldset name="series" addfieldpath="/administrator/components/com_preachit/models/fields">
+	
+	<field name="headerseriessermons" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_SVHEADER_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="headerseriestext" description="COM_PREACHIT_TEMP_PARAMS_MULTIHEADERTEXT_DESC" 
+		type="text" default="Sermons in this series" label="COM_PREACHIT_TEMP_PARAMS_SVHEADTEXT_TITLE"/>
+	
+	<field name="seriesimage" type="list" default="0" label="COM_PREACHIT_TEMP_PARAMS_SVIMAGE_TITLE" description="COM_PREACHIT_TEMP_PARAMS_SVIMAGE_DESC">
+		<option value="1">COM_PREACHIT_ADMIN_DD_NONE</option> 
+		<option value="2">COM_PREACHIT_ADMIN_DD_MESSAGE</option> 
+		<option value="3">COM_PREACHIT_ADMIN_DD_TEACHER</option> 
+	</field> 
+		
+	<field name="backlinkseries" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_SVBACKINK_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="backlinkseriestext" description="COM_PREACHIT_TEMP_PARAMS_BACKLINKTEXT_DESC" 
+		type="text" default="" label="COM_PREACHIT_TEMP_PARAMS_SVBACKINKTEXT_TITLE" />
+	
+</fieldset>
+  
+<!-- teacherlist params -->
+
+<fieldset name="teacherlist" addfieldpath="/administrator/components/com_preachit/models/fields">
+
+	<field name="teacher_listtype" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_TLLISTTYPE_TITLE">
+		<option value="0">PILIST</option> 
+		<option value="1">PIGALLERY</option> 
+	</field>
+
+	<field name="teacherlist_no" type="text" default="10" label="COM_PREACHIT_TEMP_PARAMS_TLNO_TITLE" />
+	
+	<field name="teacher_imageacross" type="text" default="4" label="COM_PREACHIT_TEMP_PARAMS_TLNOACROSS_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_NOACROSS_DESC"/>
+	
+	<field name="teachersort" type="list" default="1" label="COM_PREACHIT_TEMP_PARAMS_TLSORT_TITLE">
+		<option value="1">COM_PREACHIT_ADMIN_DD_NAMEDESC</option> 
+		<option value="2">COM_PREACHIT_ADMIN_DD_NAMEASC</option> 
+		<option value="3">COM_PREACHIT_ADMIN_DD_MANUAL</option>
+		<option value="4">COM_PREACHIT_ADMIN_DD_MANUALDESC</option>
+	</field>
+	
+	<field name="picture_teacherlist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_TLIMAGE_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="role_teacherlist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_TLROLE_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="description_teacherlist" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_TLDESCRIPTION_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+	
+	<field name="teaimgdef" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_IMAGE_DEFAULT" description="COM_PREACHIT_TEMP_PARAMS_IMAGE_DEFAULT_DESC">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+</fieldset>
+  
+<!-- teacher view params -->
+
+<fieldset name="teacher" addfieldpath="/administrator/components/com_preachit/models/fields">
+	
+	<field name="headerteachersermons" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_TVHEADER_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="headerteachertext" description="COM_PREACHIT_TEMP_PARAMS_MULTIHEADERTEXT_DESC" 
+		type="text" default="Latest sermons by" label="COM_PREACHIT_TEMP_PARAMS_TVHEADERTEXT_TITLE"/>
+	
+	<field name="teacherimage" type="list" default="0" label="COM_PREACHIT_TEMP_PARAMS_TVIMAGE_TITLE" description="COM_PREACHIT_TEMP_PARAMS_TVIMAGE_DESC">
+		<option value="1">COM_PREACHIT_ADMIN_DD_NONE</option> 
+		<option value="2">COM_PREACHIT_ADMIN_DD_MESSAGE</option> 
+		<option value="3">COM_PREACHIT_ADMIN_DD_SERIES</option>  
+	</field> 
+		
+	<field name="backlinkteacher" description="COM_PREACHIT_TEMP_PARAMS_BACKLINKTEXT_DESC" 
+		type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_TVBACKLINK_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="backlinkteachertext" type="text" default="" label="COM_PREACHIT_TEMP_PARAMS_TVBACKLINKTEXT_TITLE"/>
+
+</fieldset>
+  
+<!-- ministry list params -->
+
+<fieldset name="ministrylist" addfieldpath="/administrator/components/com_preachit/models/fields">
+
+	<field name="ministry_listtype" type="radio" default="0" label="COM_PREACHIT_TEMP_PARAMS_MLLISTTYPE_TITLE">
+		<option value="0">PILIST</option> 
+		<option value="1">PIGALLERY</option> 
+	</field>
+
+	<field name="ministrylist_no" type="text" default="10" label="COM_PREACHIT_TEMP_PARAMS_MLNO_TITLE" />
+	
+	<field name="ministry_imageacross" type="text" default="4" label="COM_PREACHIT_TEMP_PARAMS_MLNOACROSS_TITLE" 
+	description="COM_PREACHIT_TEMP_PARAMS_NOACROSS_DESC"/>
+	
+	<field name="ministrysort" type="list" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLSORT_TITLE">
+		<option value="1">COM_PREACHIT_ADMIN_DD_NAMEDESC</option> 
+		<option value="2">COM_PREACHIT_ADMIN_DD_NAMEASC</option> 
+		<option value="3">COM_PREACHIT_ADMIN_DD_MANUAL</option>
+		<option value="4">COM_PREACHIT_ADMIN_DD_MANUALDESC</option>
+	</field>
+	
+	<field name="picture_ministrylist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLIMAGE_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="description_ministrylist" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MLDESCRIPTION_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="minimgdef" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_IMAGE_DEFAULT" description="COM_PREACHIT_TEMP_PARAMS_IMAGE_DEFAULT_DESC">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+</fieldset>
+  
+<!-- ministry view params -->
+
+<fieldset name="ministry" addfieldpath="/administrator/components/com_preachit/models/fields">
+		
+	<field name="headerministryseries" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MVHEADER_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="headerministrytext" description="COM_PREACHIT_TEMP_PARAMS_MULTIHEADERTEXT_DESC" 
+		type="text" default="Series from this ministry" label="COM_PREACHIT_TEMP_PARAMS_MVHEADERTEXT_TITLE"/>
+	
+	<field name="backlinkministry" description="COM_PREACHIT_TEMP_PARAMS_BACKLINKTEXT_DESC" 
+		type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_MVBACKLINK_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="backlinkministrytext" type="text" default="" label="COM_PREACHIT_TEMP_PARAMS_MVBACKLINKTEXT_TITLE"/>
+	
+</fieldset>
+  
+<!-- asmedia params -->
+
+<fieldset name="asmedia" addfieldpath="/administrator/components/com_preachit/models/fields">
+	
+	<field name="headermediasermons" type="radio" default="1" label="COM_PREACHIT_TEMP_PARAMS_ASMHEADER_TITLE">
+		<option value="1">Jyes</option> 
+		<option value="0">Jno</option> </field> 
+		
+	<field name="headermediatext" description="COM_PREACHIT_TEMP_PARAMS_MULTIHEADERTEXT_DESC" 
+		type="text" default="Media linked to this message" label="COM_PREACHIT_TEMP_PARAMS_ASMHEADERTEXT_TITLE"/>
+	
+	<field name="asmediaimage" type="list" default="0" label="COM_PREACHIT_TEMP_PARAMS_ASMIMAGE_TITLE" description="COM_PREACHIT_TEMP_PARAMS_ASMIMAGE_DESC">
+		<option value="1">COM_PREACHIT_ADMIN_DD_NONE</option> 
+		<option value="2">COM_PREACHIT_ADMIN_DD_TEACHER</option> 
+		<option value="3">COM_PREACHIT_ADMIN_DD_SERIES</option>
+		<option value="4">COM_PREACHIT_ADMIN_DD_MESSAGE</option>
+	</field> 
+	
+</fieldset>
+
+<!-- taglist parameters -->
+
+<fieldset name="taglist" addfieldpath="/administrator/components/com_preachit/models/fields">
+	
+	<field name="tagmediaimage" type="list" default="0" label="COM_PREACHIT_TEMP_PARAMS_TAGIMAGE_TITLE" description="COM_PREACHIT_TEMP_PARAMS_TAGIMAGE_DESC">
+		<option value="1">COM_PREACHIT_ADMIN_DD_NONE</option> 
+		<option value="2">COM_PREACHIT_ADMIN_DD_TEACHER</option> 
+		<option value="3">COM_PREACHIT_ADMIN_DD_SERIES</option>
+		<option value="4">COM_PREACHIT_ADMIN_DD_MESSAGE</option>
+	</field>
+	
+</fieldset>
+	
+</form>

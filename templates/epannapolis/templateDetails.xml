@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://dev.joomla.org/xml/1.5/template-install.dtd">
+<extension version="2.5" type="template" client="site">
+	<name>EP Annapolis</name>
+	<creationDate>May 2013</creationDate>
+	<author>KABAM.net</author>
+	<authorEmail>mike@kabam.net</authorEmail>
+	<authorUrl>http://www.kabam.net</authorUrl>
+	<copyright>2013 KABAM, Inc. - All Rights Reserved</copyright>
+	<license>Commercial</license>
+	<version>1.0.0</version>
+	<description>Custom Template for EP Annapolis</description>
+	<folder>css</folder>
+	<folder>images</folder>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>error.php</filename>
+		<filename>template_preview.png</filename>
+		<!-- folder>blocks</folder> <!- - clbates - added for login support -->
+	</files>
+	<languages>
+	</languages>
+	<administration>
+	</administration>
+	<positions>
+		<position>search</position>	
+		<position>mainmenu</position>
+		<position>homeslide</position>	
+		<position>homeevents</position>	
+		<position>left</position>
+		<position>right</position>		
+		<position>footer_menu</position>
+		<position>top_image</position>
+	</positions>
+	<config>
+	</config>
+</extension>

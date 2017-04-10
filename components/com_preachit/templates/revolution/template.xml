@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="pitemplate">
+  <name>Revolution</name>
+  <author>te-webdesign</author>
+  <authorUrl>te-webdesign.org.uk</authorUrl>
+  <creationDate>January 2011</creationDate>
+  <version>3.5.4</version>
+  <license>GNU/GPL</license>
+  
+  <core>
+  	<folder>js</folder>
+  	<folder>plugin</folder>
+  	<folder>helpers</folder>
+  	<file>index.html</file>
+  	<file>messagelist.php</file>
+  	<file>messagelist_item.php</file>
+  	<file>messagelist_mediaheader.php</file>
+  	<file>messagelist_messageheader.php</file>
+  	<file>messagelist_seriesheader.php</file>
+  	<file>messagelist_tagheader.php</file>
+  	<file>messagelist_teacherheader.php</file>
+  	<file>ministrylist.php</file>
+  	<file>serieslist.php</file>
+  	<file>serieslist_ministry.php</file>
+  	<file>studypopup.php</file>
+  	<file>studypopup_audiopopup.php</file>
+  	<file>studypopup_videopopup.php</file>
+  	<file>studyview.php</file>
+  	<file>studyview_audioview.php</file>
+  	<file>studyview_textview.php</file>
+  	<file>studyview_videoview.php</file>
+  	<file>teacherlist.php</file>
+  	<file>template.xml</file>
+  	<file>template16.xml</file>
+  </core>
+  <style>
+  	<file>params.ini</file>
+  	<folder>css</folder>
+  	<folder>icons</folder>
+  </style>
+ 
+
+</install>

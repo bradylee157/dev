@@ -1,0 +1,19 @@
+/* CSS for piseries module */
+
+.clr {clear: both;}
+
+/* Default view */
+
+.modsdefault .seriesname {font-size:12px; padding-top: 20px;}
+.modsdefault .sdescription {font-size: 12px;}
+
+.modsdefault .seriesimage {margin: 5px 10px 5px 5px; position: relative; border: 1px solid #D5D5D5; padding: 4px; background: transparent; float: left; width: 50px; height: 50px;}
+
+
+/* Bulleted view */
+
+.modsbullet .seriesname {font-size:12px; padding-top: 20px;}
+
+.modsbullet .sdescription {font-size: 12px;}
+
+.modsbullet .seriesimage {margin: 5px 10px 5px 5px; position: relative; border: 1px solid #D5D5D5; padding: 4px; background: transparent; float: left;}

@@ -1,0 +1,17 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA T3 Blank template for joomla 1.7
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 JoomlArt.com. All Rights Reserved.
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * Author: JoomlArt.com
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com.
+ * ------------------------------------------------------------------------
+*/
+#ja-subnav ul li a:hover,
+#ja-subnav ul.active li a:hover,
+#ja-subnav ul li.active a.active, #ja-subnav ul li.active a.active:hover, #ja-subnav ul li.active a.active:active, #ja-subnav ul li.active a.active:focus,
+#ja-subnav ul li ul li a:hover,
+#ja-subnav ul li.hover a.haschild{
+	color:#002147;
+}

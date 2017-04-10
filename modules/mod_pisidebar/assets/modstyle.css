@@ -1,0 +1,51 @@
+/**
+ * @Module - piside
+ * @author Paul Kosciecha http://www.truthengaged.org.uk
+ * @copyright Copyright (C) Paul Kosciecha
+ * @license GNU/GPL
+ */
+
+/* latest message */
+.pi-side-desc {
+    padding-bottom: 15px;
+    margin: 0 4px;
+}
+.piside-cont {
+    background-color: #FAFAFA;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 95%;
+    height: 300px;
+    line-height: 130%;
+    overflow: auto;
+    width: 185px;
+}
+.pisidelist {
+    border-bottom: 1px solid #C2C2C2;
+    padding: 5px 0 10px;
+}
+.pisidelist .name {
+    font-size: 110%;
+    padding-bottom: 5px;
+}
+.pisidelist .nowplaying {
+    border-radius: 0 5px 5px 0;
+    margin: 5px 0;
+    padding: 2px 0 3px 5px;
+    width: 80px;
+}
+.pisidelist .name, .pisidelist .teacher, .pisidelist .date, .pisidelist .scripture {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pisidebar .pi-block, .pisidebar .moduletable {
+    margin-bottom: 10px;
+}
+.pisidelist .nowplaying {
+    background-color: #ab3013;
+    color: #FFFFFF;
+}
+.pisidebar .seriesimage {
+    float: left;
+    margin:  0 5px 5px 0;
+}

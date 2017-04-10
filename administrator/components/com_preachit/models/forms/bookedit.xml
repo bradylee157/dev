@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		Book edit XML
+	-->
+<form>
+	<fieldset name="maininfo">
+		<field name="id" type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			default="0"
+			readonly="true"
+		/>
+		<field
+			name="published"
+			type="list"
+			label="COM_PREACHIT_ADMIN_STATE"
+			class="inputbox"
+			size="1"
+			default="1" validate="options">
+			<option
+				value="1">JPUBLISHED</option>
+			<option
+				value="0">JUNPUBLISHED</option>
+			<option
+				value="-2">JTRASH</option>
+		</field>
+		<field name="display_name" id="display_name" type="text" class="inputbox"
+			size="50" maxlength="50" label="COM_PREACHIT_ADMIN_DISPLAY_NAME" required="true" />
+		<field name="book_name" id="book_name" type="text" class="inputbox"
+			size="50" maxlength="50" label="COM_PREACHIT_ADMIN_BOOK_NAME" required="true" />
+		<field name="shortform" id="shortform" type="text" class="inputbox"
+			size="50" maxlength="50" label="COM_PREACHIT_ADMIN_SHORTFORM" required="true" />
+
+	</fieldset>
+</form>

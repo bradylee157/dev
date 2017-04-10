@@ -1,0 +1,53 @@
+<div align="center" style="background-color:#ffffff;padding:20px 0;">
+<style>
+body {background-color: #fff;font-family: "lucida grande", "lucida sans unicode", verdana, helvetica, sans-serif;}
+table {border-collapse:collapse;font-family: "lucida grande", "lucida sans unicode", verdana, helvetica, sans-serif;font-size:11px;	line-height:1.75em;} 
+a:link {color: #043aa6;text-decoration: underline;}
+a:visited {color: #043aa6;text-decoration: underline;}
+a:active {color: #043aa6;text-decoration: underline; }
+a:hover {color: #043aa6;text-decoration: none; }
+
+hr {border:1px solid #d0d0d0;border-width:0 0 1px 0;}
+
+h1 {margin: 20px 0 15px 0;padding: 5px 0 5px 0;color: #043aa6;font-size: 17px;font-weight:normal;display: block; }
+ 
+h2 {margin:0;padding: 5px 0 5px 0;font-size: 10px;font-weight: bold;text-transform:uppercase;display: block; }
+
+h3 {margin: 20px 0 10px 8px;padding: 0 0 2px 0;font-size: 10px;font-weight: bold;display: block;}
+ 
+p {margin: 8px 0 20px 0; }
+
+ul {list-style: square;margin:0 0 0 20px;padding:0 0 0 20px;}
+
+ol li {padding: 4px 0 8px 0;}
+
+p.para02 {margin: 8px 20px 16px 20px;}
+ 
+</style>
+<table border="0" cellspacing="0" width="600" style="border-collapse:collapse;font-family: 'lucida grande', 'lucida sans unicode', verdana, helvetica, sans-serif;">
+  <tr>
+    <td bgcolor="ffffff" valign="center"> <a href="http://www.intermedia.net/" target="_blank"> <img border="0" src="https://www.intermedia.net/images/v3/email/header-welcome.gif"></a></td>
+  </tr>
+  <tr>
+    <td bgcolor="ffffff">
+      <div style="width:600px;" align="center">
+        <table border="0" cellpadding="0" cellspacing="0" style="margin:0 30px;width:540px;" width="540">
+          <tr>
+            <td valign="top">
+              <p style="font-size:14px;line-height:1.75em;" align="justify"> Congratulations! Your virtual server is setup and ready to go.</span></p>
+              <p style="line-height:21.0pt" align="justify"> You can immediately start uploading your Web pages to the Web server root directory, "<a target="_blank" href="http://www.intermedia.net/support/kb/viewKBArticle.asp?id=1064">/htdocs</a>&quot; 
+                using <a href="http://www.intermedia.net/support/kb/default.asp?id=686" target="_blank">FTP</a>. We  recommend designing your Web pages locally on your computer first and then uploading/publishing the files to your virtual server.</p>
+              <p style="line-height:21.0pt" align="justify"> To access your virtual server via HTTP or FTP, use the IP address that was provided to you in the Welcome message until your domain name is transferred to Intermedia Name Servers or the DNS has propagated. </p>
+              <p style="line-height:21.0pt" align="justify"> For additional infromation on how to use Intermedia Web hosting services, go to our <a href="http://kb.intermedia.net">Knowledge 
+                Base</a>.</p>
+              <p style="line-height:21.0pt" align="justify"> <strong>Note:</strong> This page (welcome.htm) will stop appearing as soon as you have placed your own default page in the "/htdocs" directory.</p>
+              <hr noshade="noshade" size="0" />
+              <p align="justify">Thanks for signing up with Intermedia - the leading business hosting provider offering <a target="blank" href="http://www.intermedia.net/exchange-hosting/exchange-hosting.asp">Hosted Exchange Server 2010</a>, <a target="blank" href="http://www.intermedia.net/products/sharepoint.asp">SharePoint hosting</a>, <a target="blank" href="http://www.intermedia.net/products/ocs-2007.asp">OCS 2007</a>, <a target="blank" href="http://www.intermedia.net/web-hosting/web-hosting.asp">Business Web hosting</a> and more.</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>
+</div>

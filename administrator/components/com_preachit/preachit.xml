@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.7" method="upgrade">
+  <name>Preach it</name>
+  <author>te-webdesign</author>
+  <creationDate>March 2011</creationDate>
+  <copyright>(C) 2010</copyright>
+  <authorEmail></authorEmail>
+  <authorUrl>te-webdesign.org.uk</authorUrl>
+  <version>3.5.11</version>
+  <license>GNU/GPL</license>
+   <description><![CDATA[Preachit Sermon library]]></description>
+  <scriptfile>script.php</scriptfile>
+  <install>
+    <sql>
+     <file driver="mysql" charset="utf8">install.mysql.sql</file>
+    </sql>
+  </install>
+  <files folder="site">
+	<filename>preachit.php</filename>
+	<filename>router.php</filename>
+	<folder>assets</folder>
+	<folder>controllers</folder>
+	<folder>models</folder>
+	<folder>views</folder>
+	<folder>helpers</folder>
+	<folder>templates</folder>
+	<folder>sef_ext</folder>
+  </files>
+  <languages folder="site/language">
+  		<language tag="en-GB">en-GB/en-GB.com_preachit.ini</language>
+  		<language tag="en-US">en-US/en-US.com_preachit.ini</language>
+  		<language tag="es-ES">es-ES/es-ES.com_preachit.ini</language>
+  		<language tag="de-DE">de-DE/de-DE.com_preachit.ini</language>
+   	</languages>
+  <administration>
+    <menu img="../components/com_preachit/assets/images/preachitmenu.png">Preachit</menu>
+    <submenu>
+    <menu img="../components/com_preachit/assets/images/icon-16-cpanel.png" view="cpanel">Control-panel</menu>
+      <menu img="../components/com_preachit/assets/images/messagemenu.png" view="studylist">Messages</menu>
+	<menu img="../components/com_preachit/assets/images/teachermenu.png" view="teacherlist">Teachers</menu>
+	<menu img="../components/com_preachit/assets/images/seriesmenu.png" view="serieslist">Series</menu>
+	<menu img="../components/com_preachit/assets/images/ministrymenu.png" view="ministrylist">Ministries</menu>
+	<menu img="../components/com_preachit/assets/images/commentmenu.png" view="commentlist">Comments</menu>
+	<menu img="../components/com_preachit/assets/images/foldermenu.png" view="filepathlist">Folders</menu>
+	<menu img="../components/com_preachit/assets/images/bookmenu.png" view="booklist">Bible-books</menu>
+	<menu img="../components/com_preachit/assets/images/versionmenu.png" view="bibleverslist">Bible-versions</menu>
+	<menu img="../components/com_preachit/assets/images/podcastmenu.png" view="podcastlist">Podcasts</menu>
+	<menu img="../components/com_preachit/assets/images/tagmenu.png" view="taglist">Tags</menu>
+	<menu img="../components/com_preachit/assets/images/mimemenu.png" view="mimelist">MIME-types</menu>
+	<menu img="../components/com_preachit/assets/images/templatemenu.png" view="templatelist">Templates</menu>
+	<menu img="../components/com_preachit/assets/images/playermenu.png" view="mediaplayerslist">Media-players</menu>
+	<menu img="../components/com_preachit/assets/images/sharemenu.png" view="sharelist">Share</menu>
+	<menu img="../components/com_preachit/assets/images/extensionmenu.png" view="extensionlist">Extensions</menu>
+	<menu img="../components/com_preachit/assets/images/adminmenu.png" view="admin">Admin</menu>
+    </submenu>
+    <files folder="admin">
+      <folder>controllers</folder>
+	  <filename>install.mysql.sql</filename>
+	  <folder>models</folder>
+	  <filename>preachit.php</filename>
+	  <filename>config.xml</filename>
+		<filename>access.xml</filename>
+	  <folder>tables</folder>
+	  <folder>views</folder>
+	  <folder>helpers</folder>
+	  <folder>help</folder>
+	  <folder>lib</folder>
+    </files>
+    <languages folder="admin/language">
+			<language tag="en-GB">en-GB/en-GB.com_preachit.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_preachit.sys.ini</language>
+			<language tag="en-US">en-US/en-US.com_preachit.ini</language>
+			<language tag="en-US">en-US/en-US.com_preachit.sys.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_preachit.ini</language>
+			<language tag="es-ES">es-ES/es-ES.com_preachit.sys.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_preachit.ini</language>
+			<language tag="de-DE">de-DE/de-DE.com_preachit.sys.ini</language>
+    	</languages>
+  </administration>
+  <!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="te-webdesign site">http://te-webdesign.co.uk/update/media/feeds/com_preachit.xml</server>
+	</updateservers>
+</extension>

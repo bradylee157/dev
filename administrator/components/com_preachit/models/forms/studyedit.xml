@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		Study edit XML
+	-->
+<form>
+	<fieldset name="maininfo">
+		<field name="id" type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			default="0"
+			readonly="true"
+		/>
+		
+		<field name="hits" type="text" size="3" label="COM_PREACHIT_ADMIN_HITS" default="0" readonly="readonly" class="readonly" />
+		
+		<field
+			name="published"
+			type="list"
+			label="COM_PREACHIT_ADMIN_STATE"
+			description="COM_PREACHIT_FIELD_STATE_DESC"
+			class="inputbox"
+			size="1"
+			default="" validate="options">
+			<option
+				value="1">JPUBLISHED</option>
+			<option
+				value="0">JUNPUBLISHED</option>
+			<option
+				value="-2">JTRASH</option>
+		</field>
+		
+		<field name="study_name" id="study_name" type="text" class="inputbox"
+			size="50" maxlength="250" label="COM_PREACHIT_ADMIN_NAME"
+			 required="true" />
+		
+		<field name="study_alias" id="study_alias" type="text" class="inputbox"
+			size="50" maxlength="250" label="COM_PREACHIT_ADMIN_ALIAS" />
+			
+		<field name="study_date" id="study_date" type="calendar" class="inputbox" size="20"
+			label="COM_PREACHIT_ADMIN_MESDATE" format="%Y-%m-%d %H:%M:%S" filter="user_utc" />
+			
+		<field name="study_description" id="study_description" type="textarea"
+			label="COM_PREACHIT_ADMIN_DESCRIPTION"
+			class="inputbox&quot; style=&quot;margin-bottom: 10px;" rows="8" cols="50" filter="safehtml" />	
+		
+		<field name="study_book" type="booklist" label="COM_PREACHIT_ADMIN_BIBLE_REF" class="inputbox" default=""/>
+		
+		<field name="study_book2" type="booklist" label="COM_PREACHIT_ADMIN_BIBLE_REF2" class="inputbox" default=""/>
+		
+		<field name="dur_hrs" id="dur_hrs" type="text" size="4" maxlength="2" default="" label="COM_PREACHIT_ADMIN_DURATION" class="inputbox"/>
+			
+		<field name="teacher" type="teacherlist" multiple="multiple" size="5" label="COM_PREACHIT_ADMIN_TEACHER" class="inputbox" default=""/>
+
+		<field name="series" type="serieslist" label="COM_PREACHIT_ADMIN_SERIES" class="inputbox" default=""/>
+		
+		<field name="ministry" type="ministrylist" multiple="multiple" size="5" label="COM_PREACHIT_ADMIN_MINISTRY" class="inputbox" default=""/>	
+		
+		<field name="tags" id="tags" size="50" maxlength="250" label="COM_PREACHIT_ADMIN_TAGS" type="text" class="textarea" default="" />
+	
+	</fieldset>
+		
+	<fieldset name="addinfo">
+			
+		<field name="ref_ch_beg" id="ref_ch_beg" type="text" size="6" maxlength="4" default="" label="BIBLE_REFERENCE1:" class="inputbox"/>	
+		
+		<field name="ref_vs_beg" id="ref_vs_beg" type="text" size="6" maxlength="4" default="" label="BIBLE_REFERENCE2:" class="inputbox"/>		
+			
+		<field name="ref_ch_end" id="ref_ch_end" type="text" size="6" maxlength="4" default="" label="BIBLE_REFERENCE3:" class="inputbox"/>		
+			
+		<field name="ref_vs_end" id="ref_vs_end" type="text" size="6" maxlength="4" default="" label="BIBLE_REFERENCE4:" class="inputbox"/>	
+		
+		<field name="ref_ch_beg2" id="ref_ch_beg2" type="text" size="6" maxlength="4" default="" label="2ND_BIBLE_REFERENCE1:" class="inputbox"/>	
+		
+		<field name="ref_vs_beg2" id="ref_vs_beg2" type="text" size="6" maxlength="4" default="" label="2ND_BIBLE_REFERENCE2:" class="inputbox"/>		
+			
+		<field name="ref_ch_end2" id="ref_ch_end2" type="text" size="6" maxlength="4" default="" label="2ND_BIBLE_REFERENCE3:" class="inputbox"/>		
+			
+		<field name="ref_vs_end2" id="ref_vs_end2" type="text" size="6" maxlength="4" default="" label="2ND_BIBLE_REFERENCE4:" class="inputbox"/>			
+								
+		<field name="dur_mins" id="dur_mins" type="text" size="4" maxlength="2" default="" label="DURATION2:" class="inputbox"/>	
+		
+		<field name="dur_secs" id="dur_secs" type="text" size="4" maxlength="2" default="" label="DURATION3:" class="inputbox"/>
+		
+	</fieldset>
+		
+	<fieldset name="puboptions">
+	
+		<field name="publish_up" id="publish_up" type="calendar" class="inputbox" size="20"
+			label="COM_PREACHIT_ADMIN_PUBLISHUP" format="%Y-%m-%d %H:%M:%S" filter="user_utc" />
+			
+		<field name="publish_down" id="publish_down" type="calendar" class="inputbox" size="20"
+			label="COM_PREACHIT_ADMIN_PUBLISHDOWN" format="%Y-%m-%d %H:%M:%S" filter="user_utc" />	
+			
+	</fieldset>
+	
+	<fieldset name="podoptions">
+	
+		<field name="podpublish_up" id="podpublish_up" type="calendar" class="inputbox" size="20"
+			label="COM_PREACHIT_ADMIN_PUBLISHUP" format="%Y-%m-%d %H:%M:%S" filter="user_utc" />
+			
+		<field name="podpublish_down" id="podpublish_down" type="calendar" class="inputbox" size="20"
+			label="COM_PREACHIT_ADMIN_PUBLISHDOWN" format="%Y-%m-%d %H:%M:%S" filter="user_utc" />	
+			
+	</fieldset>
+	
+	<fieldset name="displayoptions">
+		
+		<field id="comments" name="comments" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_COMMENTS" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field id="studylist" name="studylist" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_STUDYLIST" default="0" validate="options"
+		> 
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field name="access" type="accesslevel" default="1" label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC" class="inputbox" size="1" />
+		
+		<field name="language" type="contentlanguage" label="JFIELD_LANGUAGE_LABEL"
+		 class="inputbox"
+		>
+			<option value="*">JALL</option>
+		</field>
+		
+		<field name="asmedia" type="messagelist" label="COM_PREACHIT_ADMIN_ASMEDIA" class="inputbox" default=""/>
+	
+	</fieldset>
+	
+	<fieldset name="metaoptions">
+		
+		<field name="metadesc" type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL" description="JFIELD_META_DESCRIPTION_DESC"
+			class="inputbox&quot; style=&quot;margin-bottom: 10px;" rows="3" cols="30" />
+
+		<field name="metakey" type="textarea"
+			label="JFIELD_META_KEYWORDS_LABEL" description="JFIELD_META_KEYWORDS_DESC"
+			class="inputbox&quot; style=&quot;margin-bottom: 10px;" rows="3" cols="30" />
+	</fieldset>
+	<fieldset name="audtab">
+		
+		<field name="audio_type" type="audioplayerlist" label="COM_PREACHIT_ADMIN_AUDIO_PLAYER" class="inputbox" default=""/>
+
+		<field name="audio_folder" type="folderlist" label="COM_PREACHIT_ADMIN_AUDIO_FOLDER" class="inputbox" default=""/>
+
+		<field name="audio_link" id="audio_link" size="50" maxlength="250" label="COM_PREACHIT_ADMIN_AUDIO_FILE" type="text" class="textarea" default="" />
+		
+		<field name="audiofs" id="audiofs" size="14" maxlength="24" label="COM_PREACHIT_ADMIN_FILESIZE" type="text" class="textarea" default="" />
+		
+		<field id="audio_download" name="audio_download" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_AUDIO_DOWNLOAD" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+	</fieldset>
+	<fieldset name="audpurtab">
+		
+		<field id="audpurchase" name="audpurchase" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_PURCHASE" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field name="audpurchase_folder" type="folderlist" label="COM_PREACHIT_ADMIN_PURCHASE_BASE_URL" class="inputbox" default=""/>
+		
+		<field name="audpurchase_link" id="audpurchase_link" size="50" maxlength="250" label="COM_PREACHIT_ADMIN_PURCHASE_LINK" type="text" class="textarea" default="" />
+		
+		<field name="audioprice" id="audioprice" size="5" maxlength="10" label="COM_PREACHIT_ADMIN_AUDIOPRICE" type="text" class="textarea" default="" />
+	
+	</fieldset>
+	<fieldset name="vidtab">
+		
+		<field name="video_type" type="videoplayerlist" label="COM_PREACHIT_ADMIN_VIDEO_PLAYER" class="inputbox" default=""/>
+
+		<field name="video_folder" type="folderlist" label="COM_PREACHIT_ADMIN_VIDEO_FOLDER" class="inputbox" default=""/>
+
+		<field name="video_link" id="video_link" size="50" maxlength="250" label="COM_PREACHIT_ADMIN_VIDEOFILE" type="text" class="textarea" default="" />
+		
+		<field name="videofs" id="videofs" size="14" maxlength="24" label="COM_PREACHIT_ADMIN_FILESIZE" type="text" class="textarea" default="" />
+				
+		<field id="video_download" name="video_download" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_VIDEO_DOWNLOAD" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+	
+	</fieldset>
+	<fieldset name="addvidtab">
+		
+		<field id="add_downloadvid" name="add_downloadvid" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_ALT_DOWNLOAD_VID" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+		
+		<field name="downloadvid_folder" type="folderlist" label="COM_PREACHIT_ADMIN_ALT_DOWNLOAD_VID_FOLDER" class="inputbox" default=""/>
+
+		<field name="downloadvid_link" id="downloadvid_link" size="50" maxlength="250" label="COM_PREACHIT_ADMIN_ALT_DOWNLOAD_VID_LINK" type="text" class="textarea" default="" />
+
+		<field name="advideofs" id="advideofs" size="14" maxlength="24" label="COM_PREACHIT_ADMIN_FILESIZE" type="text" class="textarea" default="" />
+		
+	</fieldset>
+	<fieldset name="vidpurtab">
+		
+		<field id="vidpurchase" name="vidpurchase" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_PURCHASE" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+
+		<field name="vidpurchase_folder" type="folderlist" label="COM_PREACHIT_ADMIN_PURCHASE_BASE_URL" class="inputbox" default=""/>
+
+		<field name="vidpurchase_link" id="vidpurchase_link" size="50" maxlength="250" label="COM_PREACHIT_ADMIN_PURCHASE_LINK" type="text" class="textarea" default="" />
+		
+		<field name="videoprice" id="videoprice" size="5" maxlength="10" label="COM_PREACHIT_ADMIN_VIDEOPRICE" type="text" class="textarea" default="" />
+		
+	</fieldset>
+	<fieldset name="texttab">
+
+		<field name="study_text" id="study_text" type="editor" buttons="true" hide="pagebreak,readmore"
+			class="inputbox"
+			filter="safehtml"
+			label="COM_PREACHIT_ADMIN_STUDY_TEXT"
+			rows="40"
+        	cols="200" />
+        	
+    </fieldset>
+   <fieldset name="notestab">
+   
+   	<field id="notes" name="notes" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_NOTES" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+			
+		<field name="notes_folder" type="folderlist" label="COM_PREACHIT_ADMIN_NOTES_FOLDER" class="inputbox" default=""/>
+
+		<field name="notes_link" id="notes_link" size="50" maxlength="250" label="COM_PREACHIT_ADMIN_NOTES_FILE" type="text" class="textarea" default="" />
+		
+		<field name="notesfs" id="notesfs" size="14" maxlength="24" label="COM_PREACHIT_ADMIN_FILESIZE" type="text" class="textarea" default="" />
+		
+	</fieldset>
+	
+	<fieldset name="slidestab">
+   
+   	<field id="slides" name="slides" type="radio"
+			class="inputbox" label="COM_PREACHIT_ADMIN_SLIDES" default="0" validate="options"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>	
+			
+		<field name="slides_folder" type="folderlist" label="COM_PREACHIT_ADMIN_SLIDES_FOLDER" class="inputbox" default=""/>
+
+		<field name="slides_link" id="slides_link" size="50" maxlength="250" label="COM_PREACHIT_ADMIN_SLIDES_FILE" type="text" class="textarea" default="" />
+		
+		<field id="slides_type" name="slides_type" type="list"
+			class="inputbox" label="COM_PREACHIT_ADMIN_SLIDES_TYPE" default="0" validate="options"
+		>
+			<option value="0">COM_PREACHIT_ADMIN_POWERPOINT</option>
+			<option value="1">COM_PREACHIT_ADMIN_KEYNOTE</option>
+			<option value="2">COM_PREACHIT_ADMIN_SLIDES_OTHER</option>
+		</field>	
+		
+		<field name="slidesfs" id="slidesfs" size="14" maxlength="24" label="COM_PREACHIT_ADMIN_FILESIZE" type="text" class="textarea" default="" />
+		
+	</fieldset>
+	
+	<fieldset name="imagetab">
+		
+		<field name="image_folderlrg" type="folderlist" label="COM_PREACHIT_ADMIN_IMAGE_FOLDERLRG" class="inputbox" default=""/>
+
+		<field name="imagelrg" id="imagelrg" size="50" maxlength="250" label="COM_PREACHIT_ADMIN_IMAGE_LARGE" type="text" class="textarea" default="" />
+
+	</fieldset>
+</form>

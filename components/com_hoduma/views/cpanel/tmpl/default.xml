@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="com_hoduma_cpanel_view_default_title" option="com_hoduma_cpanel_view_default_option">
+		<message>
+			<![CDATA[COM_HODUMA_CPANEL_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+</metadata>

@@ -1,0 +1,98 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA T3 Blank template for joomla 1.7
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 JoomlArt.com. All Rights Reserved.
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * Author: JoomlArt.com
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com.
+ * ------------------------------------------------------------------------
+*/
+#jasdl-mainnav li.active a,
+#jasdl-mainnav li.active a:hover,
+#jasdl-mainnav li.active a:active,
+#jasdl-mainnav li.active a:focus,
+#jasdl-mainnav li.hover a {
+	background: url(../../images/bgd-nav-l0-over.png) center bottom no-repeat;	
+}
+#jasdl-mainnav li.haschild span.menu-title{
+	background: url(../../images/arrow3.png) center bottom no-repeat;
+}
+
+#jasdl-mainnav a {
+	text-transform: uppercase;
+	font-size: 145%;
+	font-weight: normal;
+	color: #fff;
+	padding: 20px 15px 9px;	
+}
+
+span.menu-title { padding-bottom: 10px; }
+span.menu-desc { display: none; }
+
+/* Sub Nav ---*/
+#ja-subnav ul li.haschild a.haschild span.menu-title {
+    background: url("../../images/arrow1.png") no-repeat scroll right center transparent;
+    padding-right: 12px;
+}
+#ja-subnav {
+	background: url(../../images/bgd-dropline.png) repeat-x; 
+	margin-left: -10px;
+	margin-right: 10px;
+	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+}
+#ja-subnav ul li.hover a.haschild span.menu-title{
+	background:url(../../images/arrow-down.png) center right no-repeat!important;
+}
+
+#ja-subnav ul li a {
+	color: #fff;
+}
+#ja-subnav ul li a:hover,
+#ja-subnav ul.active li a:hover,
+#ja-subnav ul li.active a.active, #ja-subnav ul li.active a.active:hover, #ja-subnav ul li.active a.active:active, #ja-subnav ul li.active a.active:focus,
+#ja-subnav ul li ul li a:hover,
+#ja-subnav ul li.hover a.haschild{
+	color:#6A7F08;
+}
+#ja-subnav ul li a span.menu-title {
+	padding-bottom: 0;
+}
+
+/* Sub Nav (lv2) ---*/
+#ja-subnav ul li ul {
+	background: #f9f9f9;
+	/*border: 1px solid #ccc;*/
+	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	-moz-box-shadow: 0 0px 10px -3px #3C3C3C;
+	-webkit-box-shadow: 0 0px 10px -3px #3C3C3C;
+	box-shadow: 0 0px 10px -3px rgba(0, 0, 0, 0.7);	
+	padding-bottom:10px;
+}
+
+#ja-subnav ul li ul li {
+	border-bottom: 1px solid #e8e8e8;
+}
+#ja-subnav ul li ul li.hover,
+#ja-subnav ul li ul li:hover{
+	background:#fff;
+}
+
+
+#ja-subnav ul li ul li a {
+	color: #616161;
+	padding:4px 0;
+}
+/*
+#ja-subnav ul li ul li a:hover{
+	color:#616161;
+}
+*/
+
+#ja-subnav ul li ul li:first-child {
+	/*border: 0;*/
+}

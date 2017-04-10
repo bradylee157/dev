@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<layout title="Tag list" hidden="true">
+</layout>
+<state>
+<name>Tags list</name>
+<description>Shows a list of media with the same tags</description>
+</state>
+</metadata>

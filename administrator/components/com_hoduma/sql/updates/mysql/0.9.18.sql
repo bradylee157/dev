@@ -1,0 +1,2 @@
+ALTER TABLE `#__hoduma_categories` ADD `asset_id` INTEGER UNSIGNED NOT NULL DEFAULT 0 COMMENT 'FK to the #__assets table.';
+ALTER TABLE `#__hoduma_departments` ADD `asset_id` INTEGER UNSIGNED NOT NULL DEFAULT 0 COMMENT 'FK to the #__assets table.';

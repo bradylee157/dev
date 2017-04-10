@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<layout title="COM_PREACHIT_VIEW_SERIESLIST">
+<message>
+<![CDATA[COM_PREACHIT_VIEW_SERIESLIST_DESC]]>
+</message>
+</layout>
+<state>
+<name>COM_PREACHIT_VIEW_SERIESLIST</name>
+<description>COM_PREACHIT_VIEW_SERIESLIST_DESC</description>
+</state>
+<fields name="params">
+<fieldset name="basic" addfieldpath="/administrator/components/com_preachit/models/fields">
+<field name="template_override" type="templatechooser" default="" label="COM_PREACHIT_VIEW_PARAMS_CHOOSE_TEMPLATE" />
+<field name="seriessel" type="radio" default="0" label="COM_PREACHIT_MENU_PARAMS_SERIES_SEL_TITLE" 
+	description="COM_PREACHIT_MENU_PARAMS_SERIES_SEL_DESC"> 
+		<option value="0">PIAll</option> 
+		<option value="1">PISelect</option> </field> 
+<field name="seriesselect" type="serieslist" default="" multiple="true" size="10" label="COM_PREACHIT_MENU_PARAMS_SERIES_SELECTION" />
+</fieldset>
+</fields>
+</metadata>

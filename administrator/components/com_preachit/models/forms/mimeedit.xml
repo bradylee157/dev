@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+		Mime edit XML
+	-->
+<form>
+	<fieldset name="maininfo">
+		<field name="id" type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			default="0"
+			readonly="true"
+			required="true"
+		/>
+		<field
+			name="published"
+			type="list"
+			label="COM_PREACHIT_ADMIN_STATE"
+			class="inputbox"
+			size="1"
+			default="" validate="options">
+			<option
+				value="1">JPUBLISHED</option>
+			<option
+				value="0">JUNPUBLISHED</option>
+			<option
+				value="-2">JTRASH</option>
+		</field>
+		<field name="extension" id="extension" type="text" class="inputbox"
+			size="10" maxlength="10" label="COM_PREACHIT_ADMIN_EXTENSION" required="true" />
+			
+		<field name="mediatype" id="mediatype" type="text" class="inputbox"
+			size="100" maxlength="100" label="COM_PREACHIT_ADMIN_POD_MEDIATYPE" />
+
+	</fieldset>
+</form>

@@ -1,0 +1,197 @@
+.te-commentcount {margin-top:1em;}
+.te-icon {background:url(comment.png) no-repeat;padding-left:21px;height:16px;line-height:16px;}
+
+/* inbuilt comment list */
+
+.tecommentslist {
+    margin: 20px 10px;
+}
+
+.comment-container {
+    padding: 10px 0;
+    margin: 0 0 25px 0;
+    border-bottom: 1px dashed #d9d9d9;
+}
+
+.comment {
+    padding: 10px 20px;
+    margin-left: 140px;
+}
+
+.commentinfo {
+    width: 120px;
+    float: left;
+}
+
+.commentinfo h5 {
+    border-top: 1px solid #d9d9d9;
+    padding: 5px 0;
+}
+.commentinfo .comment-date, .commentinfo .comment-name {
+    font-size: 80% !important;
+    padding: 0 2px 5px 2px;
+}
+
+.tecommentslist .quote {
+    padding: 5px 10px;
+    font-style: italic;
+}
+
+.clr {
+    clear: both;
+}
+
+/* inbuilt comment form */
+
+.tecommentsform {
+    padding: 10px 10px 20px 10px;
+}
+
+#tecommentsform fieldset li {
+    list-style: none;
+    margin: 10px 0 !important;
+}
+
+#tecommentsform fieldset li label {
+    clear: left;
+    float: left;
+    padding: 3px 0;
+    width: 8em;
+}
+#tecommentsform fieldset li input, #tecommentsform fieldset li textarea {
+    float: left;
+    border: 1px solid #C0C0C0;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-box-shadow: 0 0 10px rgba(192, 192, 192, 0.7) inset, 0 0 7px rgba(192, 192, 192, 0.7);
+    -webkit-box-shadow: 0 0 10px rgba(192, 192, 192, 0.7) inset, 0 0 7px rgba(192, 192, 192, 0.7);        
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.7) inset, 0 0 7px rgba(192, 192, 192, 0.7);
+    color: #505050;
+    margin: 0 3px;
+    padding: 5px;
+}
+
+.commentsheader {
+    margin: 30px 0 !important;
+    font-size: 140%;
+    border-bottom: 1px dashed #d9d9d9;
+    padding: 0 0 15px 0;
+}
+
+.tecommentsform .noentry {
+    border: 1px solid red;
+}
+
+.tecomment-button {
+    display: inline-block;
+    text-decoration: none !important;
+    text-align: center;
+    color: white !important;
+    /* rounded corners */
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+
+    /* inset shadow */
+    text-shadow: -1px -1px 1px rgba(0,0,0,.3);
+
+    /* drop shadow */
+    -webkit-box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+    -moz-box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+    box-shadow: 2px 2px 4px rgba(0,0,0,.3);
+    /* add gloss */
+    background-image: -webkit-gradient(linear,
+        0 45%,
+        0 55%,
+        from(rgba(255,255,255,.4)),
+        to(rgba(255,255,255,0)));
+    background-image: -moz-linear-gradient(270deg,
+        rgba(255,255,255,.4) 45%,
+        rgba(255,255,255,.0) 55%);
+    -webkit-transition: all 0.1s linear; -moz-transition: all 0.1s linear; -o-transition: all 0.1s linear;
+}
+
+.tecomment-button{
+     background-color: #999999 !important;
+     padding: 5px 10px;
+     margin-left: 110px;
+}
+
+.tecomment-button:hover {
+    /* drop shadow */
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    /* remove gloss */
+    background-image: none;
+    background-image: none;
+}
+
+.tecommentsform .showmessage {
+    padding: 5px 0 10px 0;
+    margin-left: 100px;
+}
+
+ .error {
+    color: red;
+}
+
+.tecommentsform .star {
+    color: #EB8207;
+    font-size: 1.2em;
+}
+
+#tecommentsform fieldset li.bbcode {
+    margin-left: 8em !important;
+    margin-top: 20px !important;
+}
+#tecommentsform fieldset li.bbcode a {
+    margin-bottom: 0 !important;
+}
+
+.tecommentsform .bbcode a, .tecommentsform .bbcode a:focus, .tecommentsform .bbcode a:active, .tecommentsform .bbcode a:hover {
+    background-color: transparent !important;
+    background-image: url("bbcode.gif") !important;
+    background-repeat: no-repeat;
+    border: medium none !important;
+    display: block;
+    float: left;
+    height: 23px;
+    margin: 0 2px 10px 0;
+    text-decoration: none;
+    width: 23px;
+}
+
+.tecommentsform a.bbcode-b {
+    background-position: -30px 0 !important;
+}
+
+.tecommentsform a.bbcode-i {
+    background-position: -60px 0 !important;
+}
+
+.tecommentsform a.bbcode-u {
+    background-position: -90px 0 !important;
+}
+
+.tecommentsform a.bbcode-p {
+    background-position: -120px 0 !important;
+}
+
+.tecommentsform a.bbcode-url {
+    background-position: -150px 0 !important;
+}
+
+.tecommentsform a.bbcode-quote {
+    background-position: -270px 0 !important;
+}
+
+.tecommentsform #comment_text {
+    width:300px; 
+    height:100px;
+}
+
+#recaptcha_widget_div {
+    margin: 0 0 10px 100px;
+}

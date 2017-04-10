@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<layout title="COM_PREACHIT_VIEW_TEACHERLIST">
+<message>
+<![CDATA[COM_PREACHIT_VIEW_TEACHERLIST_DESC]]>
+</message>
+</layout>
+<state>
+<name>COM_PREACHIT_VIEW_TEACHERLIST</name>
+<description>COM_PREACHIT_VIEW_TEACHERLIST_DESC</description>
+</state>
+<fields name="params">
+<fieldset name="basic" addfieldpath="/administrator/components/com_preachit/models/fields">
+<field name="template_override" type="templatechooser" default="" label="COM_PREACHIT_VIEW_PARAMS_CHOOSE_TEMPLATE" />
+<field name="teachersel" type="radio" default="0" label="COM_PREACHIT_MENU_PARAMS_TEACHER_SEL_TITLE" 
+	description="COM_PREACHIT_MENU_PARAMS_TEACHER_SEL_DESC"> 
+		<option value="0">PIAll</option> 
+		<option value="1">PISelect</option> </field> 
+<field name="teacherselect" type="teacherlist" default="" multiple="true" size="10" label="COM_PREACHIT_MENU_PARAMS_TEACHER_SELECTION" />
+</fieldset>
+</fields>
+</metadata>

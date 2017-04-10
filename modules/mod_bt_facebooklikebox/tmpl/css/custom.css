@@ -1,0 +1,46 @@
+.fan_box .full_widget { 
+	background: none; 
+	border: none;
+}
+.fan_box .connections_grid .grid_item {
+	padding: 0 5px 10px;
+}
+.fan_box .connections_grid .grid_item a img {
+	box-shadow: 0px 0px 10px #333; 
+	-moz-box-shadow: 0px 0px 10px #333; 
+	-webkit-box-shadow: 0px 0px 10px #333; 
+	border-radius: 10px #333;
+}
+.fan_box .connections_grid .grid_item a:hover img {
+	box-shadow: 0px 3px 10px #333; 
+	-moz-box-shadow: 0px 3px 10px #333; 
+	-webkit-box-shadow: 0px 3px 10px #333; 
+	border-radius:  0px 0px 10px #333;
+}
+.fan_box .full_widget .connect_top {
+	background: url(http://bowthemes.com/images/extensions/mod_bt_facebooklikebox/blue.png);
+	border-radius: 6px; -moz-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	-moz-box-shadow: 6px;
+}
+.fan_box .connections .connections_grid {
+	padding-top:16px;
+}
+.fan_box .connections {
+	border-top: none;
+	padding:15px 0 0;
+	color: #111;
+	font: italic 21px Georgia;
+	text-align: center;
+	text-shadow: 0px 1px 4px #757575;
+}
+.fan_box .connections span.total {
+	color: #463535;
+}
+.fan_box .connections_grid .grid_item .name {
+	color: #111;
+	font-size: 11px;
+}
+.fan_box .profileimage {
+	margin: 0;
+}

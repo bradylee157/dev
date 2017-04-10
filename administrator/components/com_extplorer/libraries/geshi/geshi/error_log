@@ -1,0 +1,3 @@
+[21-Nov-2016 12:27:27 America/Denver] PHP Notice:  Use of undefined constant GESHI_CAPS_NO_CHANGE - assumed 'GESHI_CAPS_NO_CHANGE' in /home1/epannapo/public_html/administrator/components/com_extplorer/libraries/geshi/geshi/autoit.php on line 64
+[21-Nov-2016 12:27:27 America/Denver] PHP Notice:  Use of undefined constant GESHI_COMMENTS - assumed 'GESHI_COMMENTS' in /home1/epannapo/public_html/administrator/components/com_extplorer/libraries/geshi/geshi/autoit.php on line 1086
+[21-Nov-2016 12:27:27 America/Denver] PHP Notice:  Use of undefined constant GESHI_MAYBE - assumed 'GESHI_MAYBE' in /home1/epannapo/public_html/administrator/components/com_extplorer/libraries/geshi/geshi/autoit.php on line 1147

@@ -1,0 +1,195 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA T3 Blank template for joomla 1.7
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 JoomlArt.com. All Rights Reserved.
+ * @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+ * Author: JoomlArt.com
+ * Websites: http://www.joomlart.com - http://www.joomlancers.com.
+ * ------------------------------------------------------------------------
+*/
+
+
+/* ------------------- */
+/* -- typo.css  -- */
+/* ------------------- */
+
+/* Ja Typo ---*/
+#ja-typo {
+	overflow: hidden;
+}
+
+.ja-typo-blockswrap h1.ja-typo-title {
+	position: static;
+}
+
+ul.ja-typo-list span.icon {
+	left: auto;
+	right: 0;
+}
+
+p.blocknumber {
+	padding: 5px 55px 5px 0 !important
+}
+
+p.blocknumber .bignumber {
+	left: auto;
+	right: 0;
+}
+
+p.ja-typo-icon {
+	padding-left: 0;
+	padding-right: 25px;
+}
+
+p.ja-typo-icon span.icon {
+	left: auto;
+	right: 0;
+}
+
+.ja-typo-bubble .ja-typo-bubblect {
+	border-width: 3px;
+}
+
+*+html .ja-typo-bubble .ja-typo-bubblect {
+	overflow: hidden;
+}
+
+.ja-typo-bubble p.ja-typo-bubble-meta {
+	margin-top: -3px;
+}
+
+.ja-typo-legend {
+	position: static;
+	border-width: 3px;
+}
+
+.ja-typo-legend .legend-title {
+	margin-top: -37px !important;
+	position: static;
+}
+
+div.ja-typo-blockct p {
+	direction: ltr;
+	text-align: right;
+}
+
+span.ja-typo-tag {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.ja-typo-fieldset {
+	overflow: hidden;
+}
+
+/* List ---*/
+ul.ja-unordered-list li {
+	background-position: 90% 7px;
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+ol.ja-ordered-list li { line-height: 180%; margin-left: 0; margin-right: 30px; }
+
+dl.ja-definition-list dt { font-weight: bold; line-height: 160%; }
+
+dl.ja-definition-list dd { margin-left: 0; line-height: 160%; margin-right: 15px; }
+
+#ja-topsl ul.menu li, #ja-botsl ul.menu li,
+#ja-topsl ul.latestnews li, #ja-botsl ul.latestnews li,
+#ja-topsl ul.weblinks li, #ja-botsl ul.weblinks li {
+	background-position: right 6px;
+	padding-left: 0;
+	padding-right: 10px;
+}
+#ja-mainnav .main{
+	padding-right:35px;
+	padding-left:0;
+}
+/*======== SEARCH ===========*/
+#ja-search{
+	left:10px;
+}
+/* Login Module ---*/
+#ja-login{
+	left:30px;
+	right:auto;
+}
+#login-form ul li {
+	background-position: right 8px;
+	padding-left: 0;
+	padding-right: 12px;
+}
+#ja-search .inputbox {
+	margin-left:7px;
+}
+/*Form Login*/
+#bt-user-login td, #bt-user-register td{
+	text-align:right;
+}
+/* User */
+#ja-topsl .moduletable_user1 h3,
+#ja-topsl .moduletable_user2 h3,
+#ja-topsl .moduletable_user3 h3{
+	background-position: top right; 
+}
+/* Slider content*/
+.bt-cs .pagination{
+	left:10px;
+}
+.slides_control{
+	right:-690px;
+}
+/*Left Menu*/
+#ja-left div.moduletable_spotline ul.menu li,
+#ja-inset2 div.moduletable_spotline ul.menu li,
+#ja-right div.moduletable_spotline ul.menu li {
+	background-position: right center;
+}
+#ja-left div.moduletable_spotline h3 span, 
+#ja-right div.moduletable_spotline h3 span, 
+#ja-inset2 div.moduletable_spotline h3 span{
+	background-position:right center;
+}
+/*Slideshow*/
+.box_skitter .label_skitter div.des a.readmore{
+	left:0;
+	right:auto;
+}
+/* Module jabotsl*/
+#ja-botsl div.moduletable_twitterfeed h3{
+	background-position: right center;
+}
+#ja-botsl ul.menu li, #ja-botsl ul.latestnews li, #ja-botsl ul.weblinks li{
+	background-position:right bottom;
+	padding-right:7px;
+}
+#ja-botsl ul.menu li a, #ja-botsl ul.latestnews li a, #ja-botsl ul.weblinks li a{
+	padding-right:10px;
+}
+/*Mega Menu*/
+.ja-megamenu ul.level0 li.haschild a.mega span.menu-title, .ja-megamenu ul.level0 li.haschild-over a.mega span.menu-title{
+	background-position: center 22px;
+	padding-right:0;
+}
+/*Right*/
+div.ja-moduletable div.k2UsersBlock ul li{
+	background-position: right bottom;
+	padding-right:0;
+}
+#twtr-widget-1 .twtr-tweet-text {
+    margin-left: 0px!important;
+	margin-right:40px;
+	text-align: right;
+}
+#twtr-widget-1 .twtr-avatar{
+	float:right;
+}
+/*Pathway */
+#ja-breadcrumbs .breadcrumbs-block{
+	/*background-position: right center;
+	padding: 0 24px 0 0px;*/
+	margin: 0 15px 0 0px;
+	
+}

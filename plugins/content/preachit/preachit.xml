@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.7" type="plugin" group="content" method="upgrade">
+  <name>plg_content_preachit</name>
+  <author>te-webdesign</author>
+  <creationDate>May 2011</creationDate>
+  <copyright>(C) 2010</copyright>
+  <license>GNU/GPL</license>
+  <authorEmail>paul@te-webdesign.org.uk</authorEmail>
+  <authorUrl>http://te-webdesign.org.uk</authorUrl>
+  <version>3.5.0</version>
+  <description>PLG_PREACHIT_PLUGIN_DESCRIPTION</description>
+  <files>
+    <filename plugin="preachit">preachit.php</filename>
+  </files>
+  <languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_content_preachit.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_content_preachit.sys.ini</language>
+		<language tag="en-US">en-US/en-US.plg_content_preachit.ini</language>
+		<language tag="en-US">en-US/en-US.plg_content_preachit.sys.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_content_preachit.ini</language>
+		<language tag="es-ES">es-ES/es-ES.plg_content_preachit.sys.ini</language>
+		<language tag="de-DE">de-DE/de-DE.plg_content_preachit.ini</language>
+		<language tag="de-DE">de-DE/de-DE.plg_content_preachit.sys.ini</language>
+	</languages>  
+ 
+  <config>
+  <fields name="params">
+  <fieldset name="basic">
+  	<field name="title" type="radio" default="1" label="PLG_PREACHIT_CONTENT_TITLE">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+    <field name="description" type="radio" default="1" label="PLG_PREACHIT_CONTENT_DESCRIPTION" description="PLG_PREACHIT_CONTENT_DESCRIPTION_DESC">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+    <field name="date" type="radio" default="1" label="PLG_PREACHIT_CONTENT_DATE" description="PLG_PREACHIT_CONTENT_DATE_DESC">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+    <field name="teacher" type="radio" default="1" label="PLG_PREACHIT_CONTENT_TEACHER" description="PLG_PREACHIT_CONTENT_TEACHER_DESC">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+    <field name="series" type="radio" default="1" label="PLG_PREACHIT_CONTENT_SERIES" description="PLG_PREACHIT_CONTENT_SERIES_DESC">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+    <field name="scripture" type="radio" default="1" label="PLG_PREACHIT_CONTENT_SCRIPTURE" description="PLG_PREACHIT_CONTENT_SCRIPTURE_DESC">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+    <field name="scripture_links" type="radio" default="1" label="PLG_PREACHIT_CONTENT_SCRIPTURE_LINK" description="PLG_PREACHIT_CONTENT_SCRIPTURE_LINK_DESC">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+    <field name="duration" type="radio" default="1" label="PLG_PREACHIT_CONTENT_DURATION" description="PLG_PREACHIT_CONTENT_DURATION_DESC">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+    <field name="tags" type="radio" default="1" label="PLG_PREACHIT_CONTENT_TAGS" description="PLG_PREACHIT_CONTENT_TAGS_DESC">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+    <field name="share" type="radio" default="1" label="PLG_PREACHIT_CONTENT_SHARE" description="PLG_PREACHIT_CONTENT_SHARE_DESC">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+    <field name="links" type="radio" default="1" label="PLG_PREACHIT_CONTENT_LINKS" description="PLG_PREACHIT_CONTENT_LINKS_DESC">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+    <field name="popup" type="radio" default="0" label="PLG_PREACHIT_CONTENT_POPUP" description="PLG_PREACHIT_CONTENT_POPUP_DESC">
+      <option value="1">Yes</option>
+      <option value="0">No</option>
+    </field>
+    <field name="videoplayer_width" type="text" default="400" label="PLG_PREACHIT_CONTENT_VPWIDTH" description="PLG_PREACHIT_CONTENT_VPWIDTH_DESC" />
+	<field name="videoplayer_height" type="text" default="300" label="PLG_PREACHIT_CONTENT_VPHEIGHT" description="PLG_PREACHIT_CONTENT_VPHEIGHT_DESC" />
+	<field name="audioplayer_width" type="text" default="500" label="PLG_PREACHIT_CONTENT_APWIDTH" description="PLG_PREACHIT_CONTENT_APWIDTH_DESC" />
+	<field name="audioplayer_height" type="text" default="20" label="PLG_PREACHIT_CONTENT_APHEIGHT" description="PLG_PREACHIT_CONTENT_APHEIGHT_DESC" />   
+    <field name="menuitem" type="menuitem" default="" label="PLG_PREACHIT_CONTENT_MENUID" description="PLG_PREACHIT_CONTENT_MENUID_DESC"/>
+  		<option value="">COM_PREACHIT_ADMIN_DD_NONE</option> 
+   </fieldset>
+  </fields>
+  </config>
+  <!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="te-webdesign site">http://te-webdesign.co.uk/update/media/feeds/plg_content_preachit.xml</server>
+	</updateservers>
+</install>

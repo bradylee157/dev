@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+<layout title="COM_PREACHIT_VIEW_MESLIST">
+<message>
+<![CDATA[COM_PREACHIT_VIEW_MESLIST_DESC]]>
+</message>
+</layout>
+<state>
+<name>COM_PREACHIT_VIEW_MESLIST</name>
+<description>COM_PREACHIT_VIEW_MESLIST_DESC</description>
+</state>
+<fields name="params">
+<fieldset name="basic" addfieldpath="/administrator/components/com_preachit/models/fields">
+<field name="template_override" type="templatechooser" default="" label="COM_PREACHIT_VIEW_PARAMS_CHOOSE_TEMPLATE" />
+<field name="teachersel" type="radio" default="0" label="COM_PREACHIT_MENU_PARAMS_TEACHER_SEL_TITLE" 
+	description="COM_PREACHIT_MENU_PARAMS_TEACHER_SEL_DESC"> 
+		<option value="0">PIAll</option> 
+		<option value="1">PISelect</option> </field> 
+<field name="teacherselect" type="teacherlist" default="" multiple="true" size="10" label="COM_PREACHIT_MENU_PARAMS_TEACHER_SELECTION" />
+<field name="seriessel" type="radio" default="0" label="COM_PREACHIT_MENU_PARAMS_SERIES_SEL_TITLE" 
+	description="COM_PREACHIT_MENU_PARAMS_SERIES_SEL_DESC"> 
+		<option value="0">PIAll</option> 
+		<option value="1">PISelect</option> </field> 
+<field name="seriesselect" type="serieslist" default="" multiple="true" size="10" label="COM_PREACHIT_MENU_PARAMS_SERIES_SELECTION" />
+<field name="ministrysel" type="radio" default="0" label="COM_PREACHIT_MENU_PARAMS_MINISTRY_SEL_TITLE" 
+	description="COM_PREACHIT_MENU_PARAMS_MINISTRY_SEL_DESC"> 
+		<option value="0">PIAll</option> 
+		<option value="1">PISelect</option> </field> 
+<field name="ministryselect" type="ministrylist" default="" multiple="true" size="5" label="COM_PREACHIT_MENU_PARAMS_MINISTRY_SELECTION" />
+<field name="datesel" type="radio" default="0" label="COM_PREACHIT_MENU_PARAMS_DATE_SEL_TITLE" 
+	description="COM_PREACHIT_MENU_PARAMS_DATE_SEL_DESC"> 
+		<option value="0">PIAll</option> 
+		<option value="1">PISelect</option> </field> 
+<field name="dateselect" type="yearlist" default="" multiple="true" size="5" label="COM_PREACHIT_MENU_PARAMS_DATE_SELECTION" />
+</fieldset>
+</fields>
+</metadata>

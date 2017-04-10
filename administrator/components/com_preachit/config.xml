@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<config> 
+<fieldset name="comments" addfieldpath="/libraries/teweb/messages/fields">
+<field name="spacer1" type="spacer" label="LIB_TEWEB_COMMENTS_PREACHIT_OPTIONS" default="" />
+	    <field name="picom" type="enginelist" default="1" label="LIB_TEWEB_COMMENTS_COM_SYS" description="LIB_TEWEB_COMMENTS_COM_SYS_DESC" />
+        <field name="tecomseriessel" type="radio" default="0" label="COM_PREACHIT_MENU_PARAMS_SERIES_SEL_TITLE" 
+			description="COM_PREACHIT_MENU_PARAMS_SERIES_SEL_DESC"> 
+			<option value="0">TEALL</option> 
+			<option value="1">TESELECT</option> </field> 
+        <field name="tecomseries" type="serieslist" multiple="multiple" size="10" default="" label="COM_PREACHIT_MENU_PARAMS_SERIES_SELECTION" />
+			<field name="tecomministrysel" type="radio" default="0" label="COM_PREACHIT_MENU_PARAMS_MINISTRY_SEL_TITLE" 
+			description="COM_PREACHIT_MENU_PARAMS_MINISTRY_SEL_DESC"> 
+			<option value="0">PIALL</option> 
+			<option value="1">PISELECT</option> </field>         
+        <field name="tecomministries" type="ministrylist" multiple="multiple" size="10" default="" label="COM_PREACHIT_MENU_PARAMS_MINISTRY_SELECTION"/>
+        <field name="spacer3" type="spacer" label="LIB_TEWEB_COMMENTS_ENGINE_OPTIONS" default=""/>
+        <field name="showcount" type="radio" default="1" label="LIB_TEWEB_COMMENTS_SHOW_COUNT" description="LIB_TEWEB_COMMENTS_SHOW_COUNT_DESC">
+          <option value="0">JNo</option>
+          <option value="1">JYes</option>
+        </field>
+        <field name="showicon" type="radio" default="te-icon" label="LIB_TEWEB_COMMENTS_SHOW_ICON" description="LIB_TEWEB_COMMENTS_SHOW_ICON_DESC">
+          <option value="te-none">No</option>
+          <option value="te-icon">Yes</option>
+        </field>
+        <field name="tagmode" type="list" default="0" label="LIB_TEWEB_COMMENTS_TAG_MODE" description="LIB_TEWEB_COMMENTS_TAG_MODE_DESC">
+          <option value="0">Basic (alias)</option>
+          <option value="1">Advanced (id:alias)</option>
+        </field>
+       <field name="id-account" type="text" size="50" default="" label="LIB_TEWEB_COMMENTS_INTENSE_ACCT" description="" />
+		<field name="d-subdomain" type="text" size="50" default="" label="LIB_TEWEB_COMMENTS_DISQUS_SUB" description="LIB_TEWEB_COMMENTS_DISQUS_SUB_DESC" />
+	    <field name="d-devmode" type="radio" default="0" label="LIB_TEWEB_COMMENTS_DISQUS_DEV_MODE" description="LIB_TEWEB_COMMENTS_DISQUS_DEV_MODE_DESC">
+          <option value="0">JNo</option>
+          <option value="1">JYes</option>
+        </field>
+		 <field name="spacer4" type="spacer" label="LIB_TEWEB_COMMENTS_INBUILT_OPTIONS" default="" />
+		 <field name="notify" type="radio" default="0" label="LIB_TEWEB_COMMENTS_EMAIL_NOTIFY" description="LIB_TEWEB_COMMENTS_EMAIL_NOTIFY_DESC">
+          <option value="0">JNo</option>
+          <option value="1">JYes</option>
+        </field>
+		 <field name="emailaddress" type="text" size="50" default="" label="LIB_TEWEB_COMMENTS_EMAIL_ADDRESS" description="LIB_TEWEB_COMMENTS_EMAIL_ADDRESS_DESC" />
+		 <field name="access" type="accesslevel" default="1" label="LIB_TEWEB_COMMENTS_ACCESS_LEVEL"
+			description="LIB_TEWEB_COMMENTS_ACCESS_LEVEL_DESC" class="inputbox" size="1" />
+      <field
+			name="captcha"
+			type="plugins"
+			folder="captcha"
+			default=""
+			label="LIB_TEWEB_COMMENTS_CONFIG_FIELD_CAPTCHA_LABEL"
+			description="LIB_TEWEB_COMMENTS_CONFIG_FIELD_CAPTCHA_DESC"
+			filter="cmd" >
+			<option
+				value="">JOPTION_USE_DEFAULT</option>
+			<option
+				value="0">JOPTION_DO_NOT_USE</option>
+		</field>
+</fieldset>
+
+<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			filter="rules"
+			component="com_preachit"
+			section="component" />
+	</fieldset>
+	</config>

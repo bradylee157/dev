@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form addrulepath="/administrator/components/com_hoduma/models/rules">
+
+	<fieldset name="general">
+		<field name="pname" type="text"
+			label="COM_HODUMA_FORM_PRIORITY_FIELD_PNAME"
+			description="COM_HODUMA_FORM_PRIORITY_FIELD_PNAME_DESC"
+			size="60"
+			required="true"
+		/>
+		<field name="id" type="hidden" />
+		<field name="fontcolor" type="text"
+			label="COM_HODUMA_FORM_PRIORITY_FIELD_FONTCOLOR"
+			description="COM_HODUMA_FORM_PRIORITY_FIELD_FONTCOLOR_DESC"
+			size="12"
+			required="false"
+			default="#000000"
+		/>
+		<field name="id" type="hidden" />
+	</fieldset>
+	
+	<fieldset name="editoptions">
+		<field name="published" type="list"
+			class="inputbox"
+			default="1"
+			size="1"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+		>
+			<option value="1">JPUBLISHED</option>
+			<option	value="0">JUNPUBLISHED</option>
+		</field>
+	</fieldset>
+	
+</form>

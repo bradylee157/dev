@@ -1,0 +1,138 @@
+/* CSS for latest module */
+
+.clr {
+    clear: both;
+}
+
+/* Default view */
+
+.moddefault .blocklist {margin: 0; }
+
+.moddefault .date {font-size: 12px;}
+
+.moddefault .studyname {font-size: 12px;}
+
+.moddefault .scripture {font-size: 12px;}
+
+.moddefault .teacher {font-size: 12px;}
+
+.moddefault .series {font-size: 12px;}
+
+.moddefault .medialinks {padding: 0; }
+
+.moddefault .videolink a:link {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.moddefault .videolink a:visited {color: #ffffff; background-color: #000000; margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.moddefault .videolink a:hover {color: #000000; background-color: #999999; margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.moddefault .audiolink a:link {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.moddefault .audiolink a:visited {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.moddefault .audiolink a:hover {color: #000000; background-color: #999999;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.moddefault .textlink a:link {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 12px; -moz-border-radius:8px; }
+
+.moddefault .textlink a:visited {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.moddefault .textlink a:hover {color: #000000; background-color: #999999;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.moddefault .seriesimage {margin: 5px 10px 5px 5px; position: relative; border: 1px solid #D5D5D5; padding: 4px; background: transparent; float: left; width: 50px;}
+
+.moddefault .teacherimage {margin: 5px 10px 5px 5px; position: relative; border: 1px solid #D5D5D5; padding: 4px; background: transparent; float: left; width: 50px;}
+
+.moddefault .messageimage {margin: 5px 10px 5px 5px; position: relative; border: 1px solid #D5D5D5; padding: 4px; background: transparent; float: left; width: 50px;}
+
+/* Bulleted view */
+
+.modbullet .blocklist {margin: 0; }
+
+.modbullet .date {font-size: 12px;}
+
+.modbullet .studyname {font-size: 12px;}
+
+.modbullet .scripture {font-size: 12px;}
+
+.modbullet .teacher {font-size: 12px;}
+
+.modbullet .series {font-size: 12px;}
+
+.modbullet .medialinks {padding: 0; }
+
+.modbullet .videolink a:link {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modbullet .videolink a:visited {color: #ffffff; background-color: #000000; margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modbullet .videolink a:hover {color: #000000; background-color: #999999; margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modbullet .audiolink a:link {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modbullet .audiolink a:visited {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modbullet .audiolink a:hover {color: #000000; background-color: #999999;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modbullet .textlink a:link {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modbullet .textlink a:visited {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modbullet .textlink a:hover {color: #000000; background-color: #999999;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modbullet .seriesimage {margin: 5px 10px 5px 5px; position: relative; border: 1px solid #D5D5D5; padding: 4px; background: transparent; float: left; width: 50px;}
+
+.modbullet .teacherimage {margin: 5px 10px 5px 5px; position: relative; border: 1px solid #D5D5D5; padding: 4px; background: transparent; float: left; width: 50px;}
+
+.modbullet .messageimage {margin: 5px 10px 5px 5px; position: relative; border: 1px solid #D5D5D5; padding: 4px; background: transparent; float: left; width: 50px;}
+
+/* Horizontal view */
+
+.modhorizontal .tdstudyname {width: 20%;}
+
+.modhorizontal .tdscripture {width: 15%;}
+
+.modhorizontal .tddate {width: 15%;}
+
+.modhorizontal .tdteacher {width: 15%;}
+
+.modhorizontal .tdseries{width: 15%;}
+
+.modhorizontal .tdmedialinks {width: 20%;}
+
+.modhorizontal .blocklist {margin: 0; }
+
+.modhorizontal .date {font-size: 12px;}
+
+.modhorizontal .studyname {font-size: 12px;}
+
+.modhorizontal .scripture {font-size: 12px;}
+
+.modhorizontal .teacher {font-size: 12px;}
+
+.modhorizontal .series {font-size: 12px;}
+
+.modhorizontal .medialinks {padding: 0; }
+
+.modhorizontal .videolink a:link {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modhorizontal .videolink a:visited {color: #ffffff; background-color: #000000; margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modhorizontal .videolink a:hover {color: #000000; background-color: #999999; margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modhorizontal .audiolink a:link {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modhorizontal .audiolink a:visited {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modhorizontal .audiolink a:hover {color: #000000; background-color: #999999;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modhorizontal .textlink a:link {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modhorizontal .textlink a:visited {color: #ffffff; background-color: #000000;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modhorizontal .textlink a:hover {color: #000000; background-color: #999999;  margin-left: 10px; padding: 5px 10px 5px 10px; text-decoration: none; border-radius: 8px; -moz-border-radius:8px; }
+
+.modhorizonta .seriesimage {margin: 5px 10px 5px 5px; position: relative; border: 1px solid #D5D5D5; padding: 4px; background: transparent; float: left; width: 50px;}
+
+.modhorizonta .teacherimage {margin: 5px 10px 5px 5px; position: relative; border: 1px solid #D5D5D5; padding: 4px; background: transparent; float: left; width: 50px;}
+
+.modhorizonta .messageimage {margin: 5px 10px 5px 5px; position: relative; border: 1px solid #D5D5D5; padding: 4px; background: transparent; float: left; width: 50px;}
+

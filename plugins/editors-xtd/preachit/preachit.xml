@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.7" type="plugin" group="editors-xtd" method="upgrade">
+  <name>plg_editors-xtd_preachit</name>
+  <author>te-webdesign</author>
+  <creationDate>May 2011</creationDate>
+  <copyright>(C) 2010</copyright>
+  <license>GNU/GPL</license>
+  <authorEmail>paul@te-webdesign.org.uk</authorEmail>
+  <authorUrl>http://te-webdesign.org.uk</authorUrl>
+  <version>3.5.0</version>
+  <description>PLG_EDITORS-XTD_PREACHIT_DESC</description>
+  <files>
+    <filename plugin="preachit">preachit.php</filename>
+  </files>
+  <languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_editors-xtd_preachit.ini</language>
+		<language tag="en-GB">en-GB/en-GB.plg_editors-xtd_preachit.sys.ini</language>
+	</languages> 
+  <config>
+  <fields name="params">
+  <fieldset name="basic">
+  
+   </fieldset>
+  </fields>
+  </config>
+  <!-- UPDATESERVER DEFINITION -->
+	<updateservers>
+		<!-- Note: No spaces or linebreaks allowed between the server tags -->
+		<server type="extension" priority="1" name="te-webdesign site">http://te-webdesign.co.uk/update/media/feeds/plg_editors-xtd_preachit.xml</server>
+	</updateservers>
+</install>

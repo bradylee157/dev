@@ -1,0 +1,28 @@
+# CLB - 3/03/13 - Added .htaccess for directory browsing
+#  For design help, look at:
+# http://perishablepress.com/better-default-directory-views-with-htaccess/
+
+Options +Indexes
+
+# Strong HTACCESS Protection
+<Files ~ "^.*\.([Hh][Tt][Aa])">
+    order allow,deny
+    deny from all
+</Files>
+
+# Directory Customization
+<IfModule mod_autoindex.c>
+
+#Set index options
+    IndexOptions IgnoreCase FancyIndexing FoldersFirst NameWidth=* DescriptionWidth=* SuppressHTMLPreamble
+#Set Display Order
+    IndexOrderDefault Descending Name
+
+# Ignore These Files
+IndexIgnore header.html footer.html favicon.ico .htaccess .ftpquota .DS_Store icons *.log *,v *,t .??* *~ *#
+
+</IfModule>
+
+#Specify custom header and footer
+HeaderName header.html
+ReadmeName footer.html

@@ -1,0 +1,91 @@
+/**
+* @author    JoomlaShine.com http://www.joomlashine.com
+* @copyright Copyright (C) 2008 - 2011 JoomlaShine.com. All rights reserved.
+* @license   GNU/GPL v2 http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/* ============================== DEFAULT HTML ============================== */
+a {
+	color: #9f2d30;
+}
+/* ============================== LAYOUT ============================== */
+/* =============== LAYOUT - OVERALL PAGE =============== */
+#jsn-master_inner {
+	background-image: url(../images/colors/red/bg-master.jpg); 
+}
+/* =============== LAYOUT - MENU AREA =============== */
+#jsn-menu_inner {
+	background: url(../images/colors/red/bg-mainmenu.jpg) center top no-repeat;
+}
+/* =============== LAYOUT - CONTENT TOP AREA =============== */
+#jsn-content-top.jsn-haspromoleft #jsn-promo_inner,
+#jsn-content-top.jsn-haspromoright #jsn-promo_inner2 {
+	background: #191919 url(../images/colors/red/bg-featured.png) left top repeat-x;
+}
+/* ============================== TYPOGRAPHY ============================== */
+/* =============== TYPOGRAPHY - LINK STYLES =============== */
+/* ----- ACTION LINK ----- */
+.link-action {
+	border-bottom: 1px solid #9F2D30;
+}
+.link-action:hover {
+	background-color: #9F2D30;
+}
+/* =============== TYPOGRAPHY - TABLE STYLES =============== */
+.sectiontableheader {
+	background-color: #5A1512;
+}
+/* ============================== MENU ============================== */
+/* =============== MENU - MAIN MENU =============== */
+/* ----- 1st LEVEL ----- */
+div.jsn-modulecontainer ul.menu-mainmenu ul {
+	background-color: #6C1E1F;
+}
+body.jsn-mmtransparency div.jsn-modulecontainer ul.menu-mainmenu ul {
+	background: url(../images/colors/red/bg-submenu.png);
+}
+div.jsn-modulecontainer ul.menu-mainmenu ul li a {
+	border-bottom: 1px solid #401313;
+	border-left: 1px solid #401313;
+	border-right: 1px solid #401313;
+	color: #DAB6B6;
+}
+/* ----- HOVER STATE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu > li:hover {
+	background: url(../images/colors/red/bg-mainmenuitem.png) center center repeat-x;
+}
+div.jsn-modulecontainer ul.menu-mainmenu ul li:hover > a {
+	background-color: #9F2D30;
+}
+/* ----- ACTIVE STATE ----- */
+div.jsn-modulecontainer ul.menu-mainmenu > li.active {
+	background: url(../images/colors/red/bg-mainmenuitem.png) center center repeat-x;
+}
+div.jsn-modulecontainer ul.menu-mainmenu ul li.active > a {
+	background-color: #9F2D30;
+}
+/* =============== MENU - TREE MENU =============== */
+div.jsn-modulecontainer ul.menu-treemenu li a:hover,
+div.jsn-modulecontainer ul.menu-treemenu li a.current {
+	background-color: #6C1E1F;
+}
+/* =============== MENU - TOP MENU =============== */
+ul.menu-topmenu li a {
+	background: url(../images/colors/red/bg-submenu.png);
+}
+ul.menu-topmenu li a:hover {
+	background: #9F2D30;
+}
+/* ============================== MODULE STYLES ============================== */
+/* =============== MODULE STYLES - MODULE BOXES =============== */
+/* ----- MODULE RICHBOX ----- */
+div.richbox-2 h3.jsn-moduletitle {
+	color: #af2323;
+	border-color: #af2323;
+}
+/* ============================== JOOMLA! DEFAULT EXTENSIONS ============================== */
+/* =============== JOOMLA! EXTENSIONS - COM_CONTENT =============== */
+/* ----- SECTION / CATEGORY BLOG LAYOUT ----- */
+/* PAGE PAGINATION */
+ul.jsn-pagination li.navigation-page span {
+	background-color: #9f2d30;
+}
