@@ -89,13 +89,13 @@ jQuery.noConflict();
             <?php if ($contentClass == 'home'): ?>
               <div id="slideshow"><jdoc:include type="modules" name="homeslide" /></div>
                 
-                <div style="position:relative;width:748px;height:138px;float:left;">
+                <!-- <div style="position:relative;width:748px;height:138px;float:left;">
                   <span style="position:absolute;top:0px;left:-10px;display:block;float:left;"><a href="index.php?option=com_content&amp;view=article&amp;id=142&amp;catid=79"><img src="images/ep/button-imnew.jpg" alt="button-imnew" onmouseover="this.src='images/ep/button-rollover-imnew.jpg';" onmouseout="this.src='images/ep/button-imnew.jpg';"  /></a></span> 
                   <span style="position:absolute;top:0px;left:245px;display:block;">                
                 <a href="index.php?option=com_content&amp;view=article&amp;id=143&amp;catid=79"><img src="images/ep/button-connect.jpg" alt="button-connect" onmouseover="this.src='images/ep/button-rollover-connect.jpg';" onmouseout="this.src='images/ep/button-connect.jpg';"/></a> </span>
                   <span style="position:absolute;top:0px;left:500px;display:block;width:230px;">                
                 <a href="index.php?option=com_content&amp;view=article&amp;id=144&amp;catid=79"><img src="images/ep/button-serve.jpg" alt="button-serve" onmouseover="this.src='images/ep/button-rollover-serve.jpg';" onmouseout="this.src='images/ep/button-serve.jpg';" /></a></span>
-                </div>                
+                </div> -->
                          
             <?php endif; ?>       
         <article id="center" class="<?php echo $contentClass; ?>">
